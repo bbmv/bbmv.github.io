@@ -1,0 +1,26 @@
+* { 
+	margin: 0; 
+	padding: 0; 
+	background-repeat: no-repeat; 
+}
+html { 
+	font: normal 1rem Arial;
+}
+body {
+  padding: .5rem;
+  text-align: center;
+}
+h1 {
+	font-size: 2.5rem;
+	line-height: 1.5rem;
+	margin-bottom: .5rem;
+}
+span.small {
+	font-size: 1.2rem;
+}
+p.caption {
+	font-size: .9rem;
+}
+canvas {
+	background-color:#000;
+}
