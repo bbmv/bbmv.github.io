@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Panorama 360</title>
+	<script src="../lib/three.min.js"></script>
+  <script src="../lib/Detector.js"></script>
+	<script src="../lib/OrbitControls.js"></script>
+	<script src="../lib/Tween.js"></script>
+
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <script id="particleVertexShader" type="x-shader/x-vertex">
+        precision highp float;
+        precision highp int;
+
+        attribute float pSize;
+        attribute float pOpacity;
+
+        uniform float size;
+        uniform float scale;
+
+        varying vec3 vColor;
+        varying float vOpacity;
+
+        void main() {
+            vColor = color;
+            vOpacity = pOpacity;
+
+            vec4 mvPosition = modelViewMatrix * vec4( position, 1.0 );
+            gl_PointSize = 2.0 * pSize * size;
+            gl_Position = projectionMatrix * mvPosition;
+        }
+    </script>
+
+    <script id="particleFragmentShader" type="x-shader/x-fragment">
+        precision highp float;
+        precision highp int;
+
+        uniform vec3 psColor;
+        uniform float opacity;
+
+        varying vec3 vColor;
+        varying float vOpacity;
+
+        uniform sampler2D map;
+
+        void main() {
+            gl_FragColor = vec4( psColor, vOpacity );
+            gl_FragColor = gl_FragColor * texture2D( map, gl_PointCoord );
+            gl_FragColor = gl_FragColor * vec4( vColor, 1.0 );
+        }
+    </script>
+	<p style="position: absolute; width: 100%; text-align: center;">
+        Rotation - click and drag<br>
+        Zooming - scroll wheel
+	</p>
+    <p id="loading" style="position: absolute; top:50%; width: 100%; font: 2rem sans-serif; text-align: center;">
+        Loading...
+    </p>
+	<script src="js/app.js"></script>
+</body>
+</html>
