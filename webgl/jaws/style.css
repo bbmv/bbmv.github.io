@@ -1,0 +1,85 @@
+* {
+	margin: 0;
+	padding: 0;
+	line-height: 0;
+	background-repeat: no-repeat;
+}
+body {
+	font-family: sans-serif;
+}
+body, #container3D {
+	overflow: hidden;
+}
+.bubble {
+	position: absolute;
+	width: 120px;
+}
+.bubble__text-container {
+	position: relative;
+	width: 100%;
+}
+.bubble__text, .bubble__text-space {
+	font-family: sans-serif;
+	font-size: 0.7rem;
+	line-height: normal;
+	padding: 0.4rem;
+	border-radius: 7px;
+	border: 0;
+	box-sizing: border-box;
+	width: 100%;
+	overflow: hidden;
+	outline: none;
+}
+.bubble__text {
+	position: absolute;
+	resize: none;
+	height: 100%;
+}
+.bubble__text-space {
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+	visibility: hidden;
+}
+.bubble__text:focus {
+	color: white;
+	background-color: red;
+}
+.bubble__button-delete {
+	right: 0;
+	top: 0;
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	font-size: 11px;
+	font-weight: bold;
+	line-height: normal;
+	text-align: center;
+	border-radius: 7px;
+	margin: 1px;
+	transform: rotate(45deg);
+	color: red;
+	background-color: #ffffff;
+	user-select: none;
+	cursor: default;
+}
+.bubble__button-delete:hover {
+	color: white;
+	background-color: red;
+}
+#loading {
+	position: absolute;
+	top:50%;
+	width: 100%;
+	font-size: 2rem;
+	text-align: center;
+	color: #ffffff;
+	opacity: 1.0;
+	animation: fadeOut 3s linear infinite;
+	font-weight: bold;
+}
+@keyframes fadeOut {
+	0% { opacity: 1.0; }
+	50% { opacity: 0.0; }
+	100% { opacity: 1.0; }
+}
