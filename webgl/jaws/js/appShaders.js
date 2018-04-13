@@ -68,7 +68,7 @@
 
         // --------------------------------------------
         var loader = new THREE.STLLoader();
-        loader.load('../model/test_1_Maxillar.stl', function(geometryObject) {
+        loader.load('./model/test_1_Maxillar.stl', function(geometryObject) {
             meshObject = new THREE.Mesh(geometryObject, materialObject);
             meshObject.castShadow = true;
             meshObject.receiveShadow = true;
