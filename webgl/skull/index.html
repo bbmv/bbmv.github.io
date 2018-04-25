@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Jaws</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="./style.css">
+	<script src="../lib/three.min.js"></script>
+	<script type="x-shader/x-vertex" id="vertexShader">
+	#define PHONG
+	varying vec3 vViewPosition;
+	varying vec3 v_position;
+	#ifndef FLAT_SHADED
+		varying vec3 vNormal;
+	#endif
+	#include <common>
+	#include <uv_pars_vertex>
+	#include <uv2_pars_vertex>
+	#include <displacementmap_pars_vertex>
+	#include <envmap_pars_vertex>
+	#include <color_pars_vertex>
+	#include <fog_pars_vertex>
+	#include <morphtarget_pars_vertex>
+	#include <skinning_pars_vertex>
+	#include <shadowmap_pars_vertex>
+	#include <logdepthbuf_pars_vertex>
+	#include <clipping_planes_pars_vertex>
+	void main() {
+		#include <uv_vertex>
+		#include <uv2_vertex>
+		#include <color_vertex>
+		#include <beginnormal_vertex>
+		#include <morphnormal_vertex>
+		#include <skinbase_vertex>
+		#include <skinnormal_vertex>
+		#include <defaultnormal_vertex>
+	#ifndef FLAT_SHADED
+		vNormal = normalize( transformedNormal );
+	#endif
+		#include <begin_vertex>
+		#include <morphtarget_vertex>
+		#include <skinning_vertex>
+		#include <displacementmap_vertex>
+		#include <project_vertex>
+		#include <logdepthbuf_vertex>
+		#include <clipping_planes_vertex>
+		vViewPosition = - mvPosition.xyz;
+		#include <worldpos_vertex>
+		#include <envmap_vertex>
+		#include <shadowmap_vertex>
+		#include <fog_vertex>
+		v_position = position;
+	}
+	</script>
+	<script type="x-shader/x-fragment" id="fragmentShader">
+	#define PHONG
+	uniform vec3 diffuse;
+	uniform vec3 emissive;
+	uniform vec3 specular;
+	uniform float shininess;
+	uniform float opacity;
+	uniform float u_brushSize;
+	uniform float u_opacity;
+	uniform vec4 u_brushColor;
+	const int LENGTH = 500;
+	uniform vec3 u_trail[LENGTH];
+	varying vec3 v_position;
+	#include <common>
+	#include <packing>
+	#include <dithering_pars_fragment>
+	#include <color_pars_fragment>
+	#include <uv_pars_fragment>
+	#include <uv2_pars_fragment>
+	#include <map_pars_fragment>
+	#include <alphamap_pars_fragment>
+	#include <aomap_pars_fragment>
+	#include <lightmap_pars_fragment>
+	#include <emissivemap_pars_fragment>
+	#include <envmap_pars_fragment>
+	#include <gradientmap_pars_fragment>
+	#include <fog_pars_fragment>
+	#include <bsdfs>
+	#include <lights_pars>
+	#include <lights_phong_pars_fragment>
+	#include <shadowmap_pars_fragment>
+	#include <bumpmap_pars_fragment>
+	#include <normalmap_pars_fragment>
+	#include <specularmap_pars_fragment>
+	#include <logdepthbuf_pars_fragment>
+	#include <clipping_planes_pars_fragment>
+	void main() {
+		#include <clipping_planes_fragment>
+		vec4 diffuseColor = vec4( diffuse, opacity );
+		ReflectedLight reflectedLight = ReflectedLight( vec3( 0.0 ), vec3( 0.0 ), vec3( 0.0 ), vec3( 0.0 ) );
+		vec3 totalEmissiveRadiance = emissive;
+		#include <logdepthbuf_fragment>
+		#include <map_fragment>
+		#include <color_fragment>
+		#include <alphamap_fragment>
+		#include <alphatest_fragment>
+		#include <specularmap_fragment>
+		#include <normal_fragment>
+		#include <emissivemap_fragment>
+		#include <lights_phong_fragment>
+		#include <lights_template>
+		#include <aomap_fragment>
+		vec3 outgoingLight = reflectedLight.directDiffuse + reflectedLight.indirectDiffuse + reflectedLight.directSpecular + reflectedLight.indirectSpecular + totalEmissiveRadiance;
+		#include <envmap_fragment>
+		vec4 backgroundColor = vec4( outgoingLight, diffuseColor.a );
+		vec4 resultColor = backgroundColor;
+		float d;
+		for(int i=0; i<LENGTH; i++)
+		{
+			if(u_trail[i].x > 9000.0) break;
+			d = distance(v_position, u_trail[i]);
+			if(d < u_brushSize)
+			{
+				resultColor = mix(u_brushColor, backgroundColor, u_opacity); //u_brushColor * (1.0 - u_opacity) + backgroundColor * u_opacity;
+				break;
+			}
+		}
+		gl_FragColor = resultColor;
+		#include <tonemapping_fragment>
+		#include <encodings_fragment>
+		#include <fog_fragment>
+		#include <premultiplied_alpha_fragment>
+		#include <dithering_fragment>
+	}
+	</script>
+</head>
+<body>
+	<p style="position: absolute; width: 100%; text-align: center; line-height: 1.5; color:#fff;">
+		Interact - Right mouse and Wheel<br>
+		Painting - Left mouse
+	</p>
+	<p id="loading">
+		Loading...
+	</p>
+	<div id="container3D"></div>
+	<script src="./js/app.js"></script>
+</body>
+</html>
