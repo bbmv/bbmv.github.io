@@ -1,0 +1,60 @@
+* {
+	margin: 0;
+	padding: 0;
+	background-repeat: no-repeat;
+}
+body {
+	font-family: sans-serif;
+	height: 100%;
+	background: linear-gradient(-60deg, #1d0006, #00011d);
+/*	background-repeat: no-repeat;*/
+	background-attachment: fixed;
+}
+body, #container3D {
+	overflow: hidden;
+}
+#container3D {
+	line-height: 0;
+}
+main {
+	text-align: center;
+}
+header {
+	text-align: center;
+}
+main section {
+	position: absolute;
+	padding-top: 20%;
+	/*top: 15%;*/
+	left: 15%;
+	width: 25rem;
+	height: 20rem;
+	margin-bottom: 10px;
+	text-align: left;
+	line-height: normal;
+}
+#text {
+	padding: 0 1rem;
+	text-align: justify;
+	font-size: .9rem;
+	line-height: 1.5;
+}
+h1 {
+	font-size: 2.5rem;
+	text-align: center;
+	padding-bottom: 1rem;
+	color: #b6c4ff;
+}
+.container {
+	position: relative;
+	padding-bottom: 20px;
+	color: #ffffff;
+}
+#SELogo {
+	width: 15rem;
+	height: 7rem;
+}
+#container3D {
+	top: 0;
+	position: absolute;
+}
