@@ -17,6 +17,7 @@ body, #container3D {
 	line-height: 0;
 }
 .container {
+	visibility: hidden;
 	display: flex;
 	position: fixed;
 	flex-direction: column;
