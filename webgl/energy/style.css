@@ -3,8 +3,20 @@
 	padding: 0;
 	background-repeat: no-repeat;
 }
+@font-face {
+    font-family: "SegoeUI";
+    src: url("./fonts/SegoeUI.woff") format("woff");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+	font-family: "SegoeUIBold";
+	src: url("./fonts/SegoeUIBold.woff") format("woff");
+	font-style: normal;
+	font-weight: normal;
+}
 body {
-	font-family: "Segoe UI", sans-serif;
+	font-family: "SegoeUI", sans-serif;
 	background: linear-gradient(-60deg, #1d0006, #00011d);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -28,15 +40,16 @@ body, #container3D {
 }
 #redBar {
 	position: absolute;
-	top: 10%;
+	top: 50%;
 	transform: translate(-50%, -50%);
-	left: 80%;
+	left: 35%;
 	width: 300px;
 	height: 150px;
 	background: radial-gradient(ellipse at center, rgba(100,100,209,0.22) 0%,rgba(100,100,209,0.03) 63%,rgba(100,100,209,0.01) 69%,rgba(100,100,209,0) 72%);
 }
 main {
 	position: relative;
+    perspective: 50rem;
 	flex-grow: 1;
 	width: 100%;
 	/*	background-color: #777777;*/
@@ -61,7 +74,7 @@ footer {
 #page_num {
 	position: absolute;
 	left: 1%;
-	top: 50%;
+	top: 45%;
 	transform: translateY(-50%);
 }
 #arrow {
@@ -84,7 +97,7 @@ footer {
 }
 #note {
 	position: absolute;
-	top: 50%;
+	top: 45%;
 	transform: translateY(-50%);
 	width: 30rem;
 	text-align: left;
@@ -97,7 +110,9 @@ footer {
 	left: 15%;
 }
 #note__title {
+	font-family: "SegoeUIBold", sans-serif;
 	font-size: 3.0rem;
+	font-weight: bold;
 	text-align: center;
 	padding-bottom: 1rem;
 	color: #b6c4ff;
