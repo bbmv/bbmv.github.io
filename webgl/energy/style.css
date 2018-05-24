@@ -38,7 +38,7 @@ body, #container3D {
 	height: 100%;
 	user-select: none;
 }
-#redBar {
+#spot {
 	position: absolute;
 	top: 50%;
 	transform: translate(-50%, -50%);
@@ -47,9 +47,17 @@ body, #container3D {
 	height: 150px;
 	background: radial-gradient(ellipse at center, rgba(100,100,209,0.22) 0%,rgba(100,100,209,0.03) 63%,rgba(100,100,209,0.01) 69%,rgba(100,100,209,0) 72%);
 }
-.under {
+.shadow {
 	position: absolute;
 	top: 90%;
+	left: 0;
+	width: 100%;
+	height: 15%;
+	background: radial-gradient(ellipse at center, rgba(100,100,209,0.22) 0%,rgba(100,100,209,0.03) 63%,rgba(100,100,209,0.01) 69%,rgba(100,100,209,0) 72%);
+}
+.light {
+	position: absolute;
+	top: -2%;
 	left: 0;
 	width: 100%;
 	height: 15%;
@@ -87,10 +95,10 @@ footer {
 }
 #arrow {
 	margin-bottom: 10px;
+	cursor: pointer;
 }
 #arrow:hover .arrow_cls-1{
 	fill: #5b5bb6;
-	cursor: pointer;
 }
 #share {
 	position: absolute;
