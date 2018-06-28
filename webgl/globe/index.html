@@ -3,9 +3,31 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Globe</title>
+	<style>
+		body {
+			background-color: #000;
+            overflow: hidden;
+		}
+		#loading {
+			position: absolute;
+			top:50%;
+			width: 100%;
+			font-size: 2rem;
+			font-weight: normal;
+			text-align: center;
+			color: #ffffff;
+			opacity: 1.0;
+			animation: fadeOut 3s linear infinite;
+        }
+        @keyframes fadeOut {
+            0% { opacity: 1.0; }
+            50% { opacity: 0.0; }
+            100% { opacity: 1.0; }
+        }
+	</style>
 </head>
 <body>
-	<select id="cityList"></select>
+	<p id="loading">Loading...</p>
 	<div id="container3D"></div>
 	<script src="./dist/app.js"></script>
 </body>
