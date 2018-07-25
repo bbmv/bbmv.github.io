@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Globe</title>
+	<style>
+        * {
+            margin: 0;
+            padding: 0;
+            line-height: 0;
+            background-repeat: no-repeat;
+        }
+		body {
+            font-family: sans-serif;
+			background-color: #000;
+            overflow: hidden;
+		}
+		#loading {
+			position: absolute;
+			top:50%;
+			width: 100%;
+			font-size: 2rem;
+			font-weight: normal;
+			text-align: center;
+			color: #ffffff;
+			opacity: 1.0;
+			animation: fadeOut 3s linear infinite;
+			z-index: 1000;
+        }
+        @keyframes fadeOut {
+            0% { opacity: 1.0; }
+            50% { opacity: 0.0; }
+            100% { opacity: 1.0; }
+        }
+	</style>
+	<script type="x-shader/x-vertex" id="vertexShader">
+		attribute float opacity;
+		attribute float size;
+
+		varying vec4 vcolor;
+
+		void main() {
+			vcolor = vec4(color, opacity);
+			vec4 mvPosition = modelViewMatrix * vec4( position, 1.0 );
+			gl_PointSize = size;
+			gl_Position = projectionMatrix * mvPosition;
+		}
+	</script>
+
+	<script type="x-shader/x-fragment" id="fragmentShader">
+		varying vec4 vcolor;
+
+		void main() {
+			gl_FragColor = vcolor;
+		}
+	</script>
+	<script type="x-shader/x-fragment" id="fragmentShader2">
+		varying vec4 vcolor;
+		uniform sampler2D map;
+
+		void main() {
+			gl_FragColor = vcolor * texture2D( map, gl_PointCoord );
+		}
+	</script>
+</head>
+<body>
+	<!--p id="loading">Loading...</p-->
+	<div id="container3D"><p style="text-align: center; margin-top: 20px; color: #fff">click to hide</p></div>
+	<script src="./dist/app.js"></script>
+</body>
+</html>
