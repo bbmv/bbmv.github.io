@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Globe</title>
+	<title>Signs</title>
 	<style>
         * {
             margin: 0;
@@ -42,7 +42,7 @@
 		void main() {
 			vcolor = vec4(color, opacity);
 			vec4 mvPosition = modelViewMatrix * vec4( position, 1.0 );
-			gl_PointSize = size;
+			gl_PointSize = 1000.0 * size / length( mvPosition.xyz );
 			gl_Position = projectionMatrix * mvPosition;
 		}
 	</script>
