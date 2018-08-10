@@ -7,13 +7,39 @@
         * {
             margin: 0;
             padding: 0;
-            line-height: 0;
             background-repeat: no-repeat;
         }
 		body {
             font-family: sans-serif;
 			background-color: #fff;
-            overflow: hidden;
+		}
+		h1 {
+			font-size: 4.5rem;
+		}
+		.red {
+			color: #df0000;
+		}
+		.stuff__content p {
+			padding-top: 1.8rem;
+			line-height: 130%;
+		}
+		.stuff {
+			top: 0;
+			width: 100%;
+			position: absolute;
+			display: -webkit-flex;
+			display: flex;
+			-webkit-flex-direction: column;
+			flex-direction: column;
+			-webkit-align-items: center;
+			align-items: center;
+		}
+		.stuff__content {
+			box-sizing: border-box;
+			padding-top: 10vh;
+            height: 100vh;
+			font-size: 1.3rem;
+			text-align: center;
 		}
 		#loading {
 			position: absolute;
@@ -64,8 +90,15 @@
 	</script>
 </head>
 <body>
-	<p id="loading">Loading...</p>
+	<!--p id="loading">Loading...</p-->
 	<div id="container3D"></div>
+	<div class="stuff">
+		<div id="page1" class="stuff__content"><h1>Lorem ipsum<br><span class="red">dolor sit amet</span><br>adipisicing</h1><p>Consequatur iste saepe voluptate! Assumenda<br>atque consequatur, dolores dolorum<br>earum expedita explicabo</p></div>
+		<div id="page2" class="stuff__content"><h1>Lorem ipsum<br><span class="red">dolor sit amet</span><br>adipisicing</h1><p>Consequatur iste saepe voluptate! Assumenda<br>atque consequatur, dolores dolorum<br>earum expedita explicabo</p></div>
+		<div id="page3" class="stuff__content"><h1>Lorem ipsum<br><span class="red">dolor sit amet</span><br>adipisicing</h1><p>Consequatur iste saepe voluptate! Assumenda<br>atque consequatur, dolores dolorum<br>earum expedita explicabo</p></div>
+		<div id="page4" class="stuff__content"><h1>Lorem ipsum<br><span class="red">dolor sit amet</span><br>adipisicing</h1><p>Consequatur iste saepe voluptate! Assumenda<br>atque consequatur, dolores dolorum<br>earum expedita explicabo</p></div>
+		<div id="page5" class="stuff__content"><h1>Lorem ipsum<br><span class="red">dolor sit amet</span><br>adipisicing</h1><p>Consequatur iste saepe voluptate! Assumenda<br>atque consequatur, dolores dolorum<br>earum expedita explicabo</p></div>
+	</div>
 	<script src="./dist/app.js"></script>
 </body>
 </html>
