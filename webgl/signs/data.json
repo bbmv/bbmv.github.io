@@ -2,69 +2,74 @@
   "chain": ["sphere", "torus", "tetrahedron", "teapot", "box"],
   "items": [
     {
-      "id":"tetrahedron",
-      "url":"./models/tetrahedron.obj",
+      "id":"sphere",
+      "url":"./models/sphere.obj",
       "zoom":1.2,
       "angle":{"aX":0,"aY":-1},
-      "vertical":0,
+      "vertical":14,
       "response":1,
       "tolerance":30,
+      "area":{"width":0.7,"height":0.9},
       "point":{"color":{"r":255,"g":105,"b":0},"opacity":1,"size":0.55},
       "line":{"color":{"r":71,"g":71,"b":155},"opacity":0.5,"maxLength":15},
       "show":{"duration":5000,"delay":500},
-      "hide":{"duration":3000,"delay":2000}
+      "hide":{"duration":2000,"delay":500}
     },
     {
       "id":"sphere",
       "url":"./models/sphere.obj",
       "zoom":1.2,
       "angle":{"aX":0,"aY":-1},
-      "vertical":0,
+      "vertical":14,
       "response":1,
       "tolerance":30,
+      "area":{"width":0.7,"height":0.9},
       "point":{"color":{"r":255,"g":105,"b":0},"opacity":1,"size":0.55},
       "line":{"color":{"r":71,"g":71,"b":155},"opacity":0.5,"maxLength":15},
       "show":{"duration":5000,"delay":500},
-      "hide":{"duration":3000,"delay":2000}
+      "hide":{"duration":2000,"delay":500}
     },
     {
-      "id":"torus",
-      "url":"./models/torus.obj",
+      "id":"sphere",
+      "url":"./models/sphere.obj",
       "zoom":1.2,
       "angle":{"aX":0,"aY":-1},
-      "vertical":0,
+      "vertical":14,
       "response":1,
       "tolerance":30,
+      "area":{"width":0.7,"height":0.9},
       "point":{"color":{"r":255,"g":105,"b":0},"opacity":1,"size":0.55},
       "line":{"color":{"r":71,"g":71,"b":155},"opacity":0.5,"maxLength":15},
       "show":{"duration":5000,"delay":500},
-      "hide":{"duration":3000,"delay":2000}
+      "hide":{"duration":2000,"delay":500}
     },
     {
-      "id":"teapot",
-      "url":"./models/teapot.obj",
+      "id":"sphere",
+      "url":"./models/sphere.obj",
       "zoom":1.2,
       "angle":{"aX":0,"aY":-1},
-      "vertical":0,
+      "vertical":14,
       "response":1,
       "tolerance":30,
+      "area":{"width":0.7,"height":0.9},
       "point":{"color":{"r":255,"g":105,"b":0},"opacity":1,"size":0.55},
       "line":{"color":{"r":71,"g":71,"b":155},"opacity":0.5,"maxLength":15},
       "show":{"duration":5000,"delay":500},
-      "hide":{"duration":3000,"delay":2000}
+      "hide":{"duration":2000,"delay":500}
     },
     {
-      "id":"box",
-      "url":"./models/box.obj",
+      "id":"sphere",
+      "url":"./models/sphere.obj",
       "zoom":1.2,
       "angle":{"aX":0,"aY":-1},
-      "vertical":0,
+      "vertical":14,
       "response":1,
       "tolerance":30,
+      "area":{"width":0.7,"height":0.9},
       "point":{"color":{"r":255,"g":105,"b":0},"opacity":1,"size":0.55},
       "line":{"color":{"r":71,"g":71,"b":155},"opacity":0.5,"maxLength":15},
       "show":{"duration":5000,"delay":500},
-      "hide":{"duration":3000,"delay":2000}
+      "hide":{"duration":2000,"delay":500}
     }
   ]
 }
