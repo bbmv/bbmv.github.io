@@ -2,7 +2,7 @@
   "chain": ["sphere", "torus", "tetrahedron", "teapot", "box"],
   "items": [
     {
-      "id":"sphere",
+      "id":"torus",
       "url":"./models/sphere.obj",
       "zoom":1.2,
       "angle":{"aX":0,"aY":-1},
@@ -30,7 +30,7 @@
       "hide":{"duration":2000,"delay":500}
     },
     {
-      "id":"sphere",
+      "id":"tetrahedron",
       "url":"./models/sphere.obj",
       "zoom":1.2,
       "angle":{"aX":0,"aY":-1},
@@ -44,7 +44,7 @@
       "hide":{"duration":2000,"delay":500}
     },
     {
-      "id":"sphere",
+      "id":"box",
       "url":"./models/sphere.obj",
       "zoom":1.2,
       "angle":{"aX":0,"aY":-1},
@@ -58,7 +58,7 @@
       "hide":{"duration":2000,"delay":500}
     },
     {
-      "id":"sphere",
+      "id":"teapot",
       "url":"./models/sphere.obj",
       "zoom":1.2,
       "angle":{"aX":0,"aY":-1},
