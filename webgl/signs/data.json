@@ -19,7 +19,7 @@
       "id":"globe",
       "url":"./models/globe.obj",
       "zoom":1.2,
-      "angle":{"aX":0,"aY":-0.28},
+      "angle":{"aX":0,"aY":-0.5},
       "vertical":10,
       "response":1,
       "tolerance":30,
