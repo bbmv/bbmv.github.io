@@ -18,14 +18,14 @@
     {
       "id":"globe",
       "url":"./models/globe.obj",
-      "zoom":1.2,
+      "zoom":1.25,
       "angle":{"aX":0,"aY":-0.5},
       "vertical":10,
       "response":1,
       "tolerance":30,
       "area":{"width":1,"height":1},
-      "point":{"color":{"r":71,"g":71,"b":155},"opacity":1,"size":0.25},
-      "line":{"color":{"r":71,"g":71,"b":155},"opacity":0.5,"maxLength":15},
+      "point":{"color":{"r":71,"g":71,"b":155},"opacity":1,"size":0.12},
+      "line":{"color":{"r":71,"g":71,"b":155},"opacity":0.57,"maxLength":15},
       "show":{"duration":5000,"delay":500},
       "hide":{"duration":2000,"delay":500}
     },
