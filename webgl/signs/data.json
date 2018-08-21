@@ -1,6 +1,20 @@
 {
-  "chain": ["globe", "city", "room", "flame", "umbrella"],
+  "chain": ["globe", "city", "tetrahedron", "room", "flame", "umbrella"],
   "items": [
+    {
+      "id":"tetrahedron",
+      "url":"./models/tetrahedron.obj",
+      "zoom":1.2,
+      "angle":{"aX":0,"aY":-0.28},
+      "vertical":10,
+      "response":1,
+      "tolerance":30,
+      "area":{"width":1,"height":1},
+      "point":{"color":{"r":81,"g":81,"b":177},"opacity":1,"size":0.25},
+      "line":{"color":{"r":195,"g":80,"b":0},"opacity":0.5,"maxLength":15},
+      "show":{"duration":5000,"delay":500},
+      "hide":{"duration":2000,"delay":500}
+    },
     {
       "id":"city",
       "url":"./models/city.obj",
