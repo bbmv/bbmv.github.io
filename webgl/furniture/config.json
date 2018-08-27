@@ -1,0 +1,7 @@
+{
+  "color": {"r": 255, "g": 255, "b": 255 },
+  "roughness": 1,
+  "metalness": 1,
+  "envMapIntensity": 0,
+  "wireframe": false
+}
