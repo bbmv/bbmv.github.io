@@ -2,7 +2,7 @@
   "color": {"r": 255, "g": 255, "b": 255 },
   "metalness": 1,
   "roughness": 0.9,
-  "envMapIntensity": 9,
+  "envMapIntensity": 9.0,
   "aoMapIntensity": 1,
   "wireframe": false
 }
