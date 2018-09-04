@@ -1,8 +1,8 @@
 {
   "color": {"r": 255, "g": 255, "b": 255 },
-  "roughness": 1,
-  "metalness": 0,
-  "envMapIntensity": 1,
+  "metalness": 1,
+  "roughness": 0.9,
+  "envMapIntensity": 9,
   "aoMapIntensity": 1,
   "wireframe": false
 }
