@@ -4,5 +4,6 @@
   "roughness": 0.9,
   "envMapIntensity": 9,
   "aoMapIntensity": 1,
-  "wireframe": false
+  "wireframe": false,
+  "antialias": true
 }
