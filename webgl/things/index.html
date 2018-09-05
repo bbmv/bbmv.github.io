@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Furniture</title>
+	<style>
+        * {
+            margin: 0;
+            padding: 0;
+            background-repeat: no-repeat;
+        }
+		body {
+            font-family: sans-serif;
+			background-color: #555;
+			background-size: cover;
+            overflow: hidden;
+		}
+		#loading {
+			position: absolute;
+			top:50%;
+			width: 100%;
+			font-size: 2rem;
+			font-weight: normal;
+			text-align: center;
+			color: #ffffff;
+			opacity: 1.0;
+			animation: fadeOut 3s linear infinite;
+			z-index: 1000;
+        }
+        @keyframes fadeOut {
+            0% { opacity: 1.0; }
+            50% { opacity: 0.0; }
+            100% { opacity: 1.0; }
+        }
+
+
+	</style>
+</head>
+<body>
+	<p id="loading">Loading...</p>
+	<div id="container3D"></div>
+	<div id="dropbox"></div>
+	<script src="./dist/app.js"></script>
+</body>
+</html>
