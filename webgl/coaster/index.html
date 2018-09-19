@@ -43,8 +43,8 @@
 			renderer.vr.enabled = true;
 			document.body.appendChild( renderer.domElement );
 
-			document.body.appendChild( WEBVR.createButton( renderer, { frameOfReferenceType: 'eye-level' } ) );
-
+			document.body.appendChild( WEBVR.createButton( renderer/*, { frameOfReferenceType: 'eye-level' }*/ ) );
+console.log('loaded');
 			var scene = new THREE.Scene();
 			scene.background = new THREE.Color( 0xf0f0ff );
 
