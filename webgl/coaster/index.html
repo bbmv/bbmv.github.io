@@ -28,14 +28,15 @@
 
 		<script src="./js/RollerCoaster.js"></script>
 
-		<script src="./lib/webvr-polyfill.min.js"></script>
+		<!--script src="./lib/webvr-polyfill.min.js"></script-->
+		<script src='https://cdn.jsdelivr.net/npm/webvr-polyfill@latest/build/webvr-polyfill.js'></script>
 		<script src="./lib/WebVR.js"></script>
 
 	</head>
 	<body>
 
 		<script>
-
+            var polyfill = new WebVRPolyfill();
 			var renderer = new THREE.WebGLRenderer( { antialias: true } );
 			renderer.setPixelRatio( window.devicePixelRatio );
 			renderer.setSize( window.innerWidth, window.innerHeight );
@@ -43,8 +44,6 @@
 			document.body.appendChild( renderer.domElement );
 
 			document.body.appendChild( WEBVR.createButton( renderer, { frameOfReferenceType: 'eye-level' } ) );
-
-			/*
 
 			var scene = new THREE.Scene();
 			scene.background = new THREE.Color( 0xf0f0ff );
@@ -250,7 +249,7 @@
 			}
 
 			renderer.setAnimationLoop( render );
-*/
+
 		</script>
 
 	</body>
