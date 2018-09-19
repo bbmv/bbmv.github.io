@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 	<head>
 		<title>WebVR roller coaster</title>
@@ -22,16 +23,16 @@
 				color: #00f;
 			}
 		</style>
-	</head>
-	<body>
 
 		<script src="./lib/three.min.js"></script>
 
 		<script src="./js/RollerCoaster.js"></script>
 
+		<script src="./lib/webvr-polyfill.min.js"></script>
 		<script src="./lib/WebVR.js"></script>
 
-		<script src='https://cdn.jsdelivr.net/npm/webvr-polyfill@latest/build/webvr-polyfill.js'></script>
+	</head>
+	<body>
 
 		<script>
 
@@ -41,7 +42,7 @@
 			renderer.vr.enabled = true;
 			document.body.appendChild( renderer.domElement );
 
-			document.body.appendChild( WEBVR.createButton( renderer/*, { frameOfReferenceType: 'eye-level' } */) );
+			document.body.appendChild( WEBVR.createButton( renderer, { frameOfReferenceType: 'eye-level' } ) );
 
 			//
 
