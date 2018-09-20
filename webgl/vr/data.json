@@ -1,68 +1,21 @@
 {
   "items": [
     {
-      "_id": "5b52f60d5466bb584580a732",
-      "name": "Daybed",
-      "slug": "tosca-daybed",
-      "stylesName": "",
-      "relatedModels": [],
-      "placeOnTop": false,
-      "categories": [
-        "5b794d3e259a932c79e201fc"
-      ],
-      "defaultFrame": 1,
-      "sizes": [],
-      "placementType": "Floor",
-      "arName": "",
-      "image": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com/ar-models/Qiy7jl5UwFKX-Bm0.jpg",
-      "path": "daybed",
-      "slugOverride": "tosca-daybed",
-      "inheritStyles": null,
-      "range": null,
-      "androidBundle": "https://inhaabit-sydney.s3.amazonaws.com//ar-models/5b52f60d5466bb584580a732/androidBundle.7z",
-      "bundle": "https://inhaabit-sydney.s3.amazonaws.com//ar-models/5b52f60d5466bb584580a732/bundle.7z",
       "webBundle": {
-        "ao.jpg": "./models/tosca_dining-chair/ao.jpg",
-        "model.dae": "./models/tosca_dining-chair/model.dae",
-        "roughness.jpg": "./models/tosca_dining-chair/roughness.jpg"
-        },
-      "brand": "Tosca",
-      "link": "models/daybed",
+        "ao.jpg": "./models/bacchus/ao.jpg",
+        "model.dae": "./models/bacchus/model.dae",
+        "roughness.jpg": "./models/bacchus/roughness.jpg",
+        "metalness.jpg": "./models/bacchus/metalness.jpg",
+        "shadow.dae": "./models/bacchus/shadow.dae",
+        "shadow.png": "./models/bacchus/shadow.png"
+      },
       "styles": [
         {
-          "_id": "5b52f60d5466bb584580a733",
-          "name": "Linen",
-          "slug": "linen",
-          "sku": "tosca-club-chair",
-          "color": "#57504A",
-          "androidBundle": "https://inhaabit-sydney.s3.amazonaws.com//ar-models/5b52f60d5466bb584580a733/bundle.7z",
-          "bundle": "https://inhaabit-sydney.s3.amazonaws.com//ar-models/5b52f60d5466bb584580a733/bundle.7z",
-          "path": "linen",
+          "name": "Marble",
           "webBundle": {
-            "albedo.jpg": "./models/tosca_dining-chair/linen/albedo.jpg"
-            },
-          "modelUrl": "https://www.coshliving.com.au/products/tosca-club-chair",
-          "cartUrl": "tosca-club-chair",
-          "image": "http://api.inhaabit.com/images/no-image.png"
-        },
-        {
-          "_id": "5b52f60d5466bb584580a734",
-          "name": "Wenge",
-          "slug": "wenge",
-          "sku": "tosca-club-chair",
-          "color": "#b5b5b5",
-          "androidBundle": "https://inhaabit-sydney.s3.amazonaws.com//ar-models/5b52f60d5466bb584580a734/bundle.7z",
-          "bundle": "https://inhaabit-sydney.s3.amazonaws.com//ar-models/5b52f60d5466bb584580a734/bundle.7z",
-          "path": "wenge",
-          "webBundle": {
-            "albedo.jpg": "./models/tosca_dining-chair/wenge/albedo.jpg"
-            },
-          "modelUrl": "https://www.coshliving.com.au/products/tosca-club-chair",
-          "cartUrl": "tosca-club-chair",
-          "image": "http://api.inhaabit.com/images/no-image.png"
+            "albedo.jpg": "./models/bacchus/Marble/Albedo.jpg"
+            }
         }
       ]
     }
-  ],
-  "appId": "5b52ceebcae8281a61357b22"
-}
+  ]}
