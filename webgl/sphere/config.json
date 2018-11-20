@@ -1,9 +1,14 @@
 {
   "color": {"r": 255, "g": 255, "b": 255 },
-  "metalness": 0.854,
-  "roughness": 0.9,
-  "envMapIntensity": 0.61,
-  "aoMapIntensity": 1,
-  "wireframe": false,
-  "antialias": true
+  "antialias": true,
+  "desktop": {
+    "rotationFactor": 0.4,
+    "rX": 0.261,
+    "rY": 0.188
+  },
+  "mobile": {
+    "rotationFactor": 0.6,
+    "rX": 0.261,
+    "rY": 0.188
+  }
 }
