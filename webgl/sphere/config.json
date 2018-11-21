@@ -1,6 +1,4 @@
 {
-  "color": {"r": 255, "g": 255, "b": 255 },
-  "antialias": true,
   "desktop": {
     "rotationFactor": 0.4,
     "rX": 0.261,
