@@ -8,5 +8,10 @@
     "rotationFactor": 0.6,
     "rX": 0.261,
     "rY": 0.188
+  },
+  "tablet": {
+    "rotationFactor": 0.5,
+    "rX": 0.261,
+    "rY": 0.188
   }
 }
