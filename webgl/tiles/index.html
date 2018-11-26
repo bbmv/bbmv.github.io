@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tiles</title>
+	<style>
+        * {
+            margin: 0;
+            padding: 0;
+            background-repeat: no-repeat;
+        }
+		body {
+            font-family: sans-serif;
+			background-color: #000;
+/*			background-image: linear-gradient(-162deg, #FCFBF6 16%, #D7D1C5 99%);
+			background-attachment: fixed;*/
+            overflow: hidden;
+		}
+		#labels { display: none; }
+		#loading {
+			position: absolute;
+			top:50%;
+			width: 100%;
+			font-size: 2rem;
+			font-weight: normal;
+			text-align: center;
+			color: #ffffff;
+			opacity: 1.0;
+			animation: fadeOut 3s linear infinite;
+			z-index: 1000;
+        }
+        @keyframes fadeOut {
+            0% { opacity: 1.0; }
+            50% { opacity: 0.0; }
+            100% { opacity: 1.0; }
+        }
+
+
+	</style>
+</head>
+<body>
+	<p id="loading">Loading...</p>
+	<div id="container3D"></div>
+	<!--div id="labels">
+		<ul>
+			<li id="label0">Live</li>
+			<li id="label1">Timeline</li>
+			<li id="label2">Video</li>
+			<li id="label3">Music</li>
+			<li id="label4">Social Wall</li>
+			<li id="label5">Store</li>
+		</ul>
+	</div-->
+	<script src="./dist/app.js"></script>
+</body>
+</html>
