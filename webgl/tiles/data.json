@@ -1,0 +1,65 @@
+{
+	"models": {
+		"tiles": [ 
+			{"object": "Tile_Grs.obj", "diff": "Tile_Grs_Color.png"}, 
+			{"object": "Tile_Snd.obj", "diff": "Tile_Snd_Color.png"}, 
+			{"object": "Tile_Sea.obj", "diff": "Tile_Sea_Color.png"}, 
+			{"object": "Tile_Mbg.obj", "diff": "Tile_Mbg_Color.png"}, 
+			{"object": "Tile_Mmd.obj", "diff": "Tile_Mmd_Color.png"} 
+		],
+		"connectors": [
+			{"object": "Cont_Grs_Grs.obj", "diff": "Cont_Color.png"}, 
+			{"object": "Cont_Grs_Grs_Riv.obj", "diff": "Cont_Color.png"}, 
+			{"object": "Cont_Grs_Grs_Riv_Uni.obj", "diff": "Cont_Color.png"}, 
+			{"object": "Cont_Grs_Sea.obj", "diff": "Cont_Color.png"}, 
+			{"object": "Cont_Grs_Snd.obj", "diff": "Cont_Color.png"}, 
+			{"object": "Cont_Grs_Snd_Riv.obj", "diff": "Cont_Color.png"}, 
+			{"object": "Cont_Grs_Snd_Riv_Lft.obj", "diff": "Cont_Color.png"}, 
+			{"object": "Cont_Grs_Snd_Riv_Rgt.obj", "diff": "Cont_Color.png"}, 
+			{"object": "Cont_Mbg_Grs.obj", "diff": "Cont_Color.png"}, 
+			{"object": "Cont_Mbg_Grs_Riv.obj", "diff": "Cont_Color.png"}, 
+			{"object": "Cont_Mbg_Grs_Riv_Lft.obj", "diff": "Cont_Color.png"}, 
+			{"object": "Cont_Mbg_Grs_Riv_Rgt.obj", "diff": "Cont_Color.png"}, 
+			{"object": "Cont_Mbg_Mbg.obj", "diff": "Cont_Color.png"}, 
+			{"object": "Cont_Mbg_Mmd.obj", "diff": "Cont_Color.png"}, 
+			{"object": "Cont_Mbg_Mmd_Riv.obj", "diff": "Cont_Color.png"}, 
+			{"object": "Cont_Mbg_Mmd_Riv_Lft.obj", "diff": "Cont_Color.png"}, 
+			{"object": "Cont_Mbg_Mmd_Riv_Rgt.obj", "diff": "Cont_Color.png"}, 
+			{"object": "Cont_Mbg_Sea.obj", "diff": "Cont_Color.png"}, 
+			{"object": "Cont_Mbg_Snd.obj", "diff": "Cont_Color.png"}, 
+			{"object": "Cont_Mbg_Snd_Riv.obj", "diff": "Cont_Color.png"}, 
+			{"object": "Cont_Mbg_Snd_Riv_Lft.obj", "diff": "Cont_Color.png"}, 
+			{"object": "Cont_Mbg_Snd_Riv_Rgt.obj", "diff": "Cont_Color.png"}, 
+			{"object": "Cont_Mmd_Grs.obj", "diff": "Cont_Color.png"}, 
+			{"object": "Cont_Mmd_Grs_Riv.obj", "diff": "Cont_Color.png"}, 
+			{"object": "Cont_Mmd_Grs_Riv_Lft.obj", "diff": "Cont_Color.png"}, 
+			{"object": "Cont_Mmd_Grs_Riv_Rgt.obj", "diff": "Cont_Color.png"}, 
+			{"object": "Cont_Mmd_Mmd.obj", "diff": "Cont_Color.png"}, 
+			{"object": "Cont_Mmd_Mmd_Riv.obj", "diff": "Cont_Color.png"}, 
+			{"object": "Cont_Mmd_Mmd_Riv_Uni.obj", "diff": "Cont_Color.png"}, 
+			{"object": "Cont_Mmd_Sea.obj", "diff": "Cont_Color.png"}, 
+			{"object": "Cont_Mmd_Snd_Lft.obj", "diff": "Cont_Color.png"}, 
+			{"object": "Cont_Mmd_Snd.obj", "diff": "Cont_Color.png"}, 
+			{"object": "Cont_Mmd_Snd_Rgt.obj", "diff": "Cont_Color.png"}, 
+			{"object": "Cont_Mmd_Snd_Riv.obj", "diff": "Cont_Color.png"}, 
+			{"object": "Cont_Sea_Sea.obj", "diff": "Tile_Sea_Color.png"}, 
+			{"object": "Cont_Snd_Sea.obj", "diff": "Cont_Color.png"}, 
+			{"object": "Cont_Snd_Snd.obj", "diff": "Cont_Color.png"}, 
+			{"object": "Cont_Snd_Snd_Riv.obj", "diff": "Cont_Color.png"}, 
+			{"object": "Cont_Snd_Snd_Riv_Dub.obj", "diff": "Cont_Color.png"}, 
+			{"object": "Cont_Snd_Snd_Riv_Uni.obj", "diff": "Cont_Color.png"} 
+		],
+		"houses": [
+			{"object": "House_Small_1.obj", "diff": "House_Small_1_ColorMap.png"}, 
+			{"object": "House_Mid_1.obj", "diff": "House_Mid_1_ColorMap.png"} 
+		],
+		"trees": [
+			{"object": "Tree_Leafy_Big.obj", "diff": "Tree tex 1.png"}, 
+			{"object": "Tree_Leafy_Mid.obj", "diff": "Tree tex 1.png"}, 
+			{"object": "Tree_Needles_Big.obj", "diff": "Tree tex 1.png"}, 
+			{"object": "Tree_Needles_Mid.obj", "diff": "Tree tex 1.png"}, 
+			{"object": "Tree_Shrub.obj", "diff": "Tree tex 1.png"} 
+		],
+		"characters": []
+	}
+}
