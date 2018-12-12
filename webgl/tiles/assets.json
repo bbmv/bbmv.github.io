@@ -7,7 +7,11 @@
 			{"object": "Tile_Mbg.obj", "diffuse": "Tile_Mbg_Color.png"}, 
 			{"object": "Tile_Mmd.obj", "diffuse": "Tile_Mmd_Color.png"} 
 		],
-		"color": "#ffffff"
+		"colors": {
+			"morning": "#f4dfcb",
+			"day": "#fffef2",
+			"night": "#919dcd"
+		}
 	},
 	"connectors": {
 		"models":[ 
@@ -50,16 +54,24 @@
 			{"object": "Cont_Snd_Snd.obj", "diffuse": "Cont_Color.png"}, 
 			{"object": "Cont_Snd_Snd_Riv.obj", "diffuse": "Cont_Color.png"}, 
 			{"object": "Cont_Snd_Snd_Riv_Dub.obj", "diffuse": "Cont_Color.png"}, 
-			{"object": "Cont_Snd_Snd_Riv_Uni.obj", "diffuse": "Cont_Color.png"} 
+			{"object": "Cont_Snd_Snd_Riv_Uni.obj", "diffuse": "Cont_Color.png"}
 		],
-		"color": "#ffffff"
+		"colors": {
+			"morning": "#f4dfcb",
+			"day": "#fffef2",
+			"night": "#919dcd"
+		}
 	},
 	"houses": {
 		"models":[ 
 			{"object": "House_Small_1.obj", "diffuse": "House_Small_1_ColorMap.png"}, 
-			{"object": "House_Mid_1.obj", "diffuse": "House_Mid_1_ColorMap.png"} 
+			{"object": "House_Mid_1.obj", "diffuse": "House_Mid_1_ColorMap.png"}
 		],
-		"color": "#ffffff"
+		"colors": {
+			"morning": "#f4dfcb",
+			"day": "#fffef2",
+			"night": "#919dcd"
+		}
 	},
 	"trees": {
 		"models":[ 
@@ -67,9 +79,13 @@
 			{"object": "Tree_Leafy_Mid.obj", "diffuse": "Tree tex 1.png"}, 
 			{"object": "Tree_Needles_Big.obj", "diffuse": "Tree tex 1.png"}, 
 			{"object": "Tree_Needles_Mid.obj", "diffuse": "Tree tex 1.png"}, 
-			{"object": "Tree_Shrub.obj", "diffuse": "Tree tex 1.png"} 
+			{"object": "Tree_Shrub.obj", "diffuse": "Tree tex 1.png"}
 		],
-		"color": "#ffffff"
+		"colors": {
+			"morning": "#f4dfcb",
+			"day": "#fffef2",
+			"night": "#919dcd"
+		}
 	},
 	"walls": {
 		"models":[
@@ -78,18 +94,30 @@
 			{"object": "Wall_Gateway.obj", "diffuse": "Tower_45_ColorMap_512px.png"},
 			{"object": "Wall_Straight.obj", "diffuse": "Tower_45_ColorMap_512px.png"}
 		],
-		"color": "#ffffff"
+		"colors": {
+			"morning": "#f4dfcb",
+			"day": "#fffef2",
+			"night": "#919dcd"
+		}
 	},
 	"castles": {
 		"models":[
 			{"object": "CastleWall_In.obj", "diffuse": "Castle_ColorMap.png"}
 		],
-		"color": "#ffffff"
+		"colors": {
+			"morning": "#f4dfcb",
+			"day": "#fffef2",
+			"night": "#919dcd"
+		}
 	},
     "castleWalls": {
       "models":[
         {"object": "CastleWall_Ex.obj", "diffuse": "Tower_45_ColorMap_512px.png"}
-      ],
-      "color": "#ffffff"
+	  ],
+		"colors": {
+			"morning": "#f4dfcb",
+			"day": "#fffef2",
+			"night": "#919dcd"
+		}
     }
 }
