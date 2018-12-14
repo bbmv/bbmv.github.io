@@ -1,6 +1,6 @@
 @font-face {
 	font-family: FontAwesome;
-	src: url(https://top3.com.au/fonts/fontawesome-webfont.eot?#iefix&v=4.3.0) format("embedded-opentype"), url(https://top3.com.au/fonts/fontawesome-webfont.woff2?v=4.3.0) format("woff2"), url(https://top3.com.au/fonts/fontawesome-webfont.woff?v=4.3.0) format("woff"), url(https://top3.com.au/fonts/fontawesome-webfont.ttf?v=4.3.0) format("truetype"), url(https://top3.com.au/fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular) format("svg");
+	src: url(./assets/fonts/fontawesome-webfont.eot) format("embedded-opentype"), url(./assets/fonts/fontawesome-webfont.woff2) format("woff2"), url(./assets/fonts/fontawesome-webfont.woff) format("woff"), url(./assets/fonts/fontawesome-webfont.ttf) format("truetype"), url(./assets/fonts/fontawesome-webfont.svg) format("svg");
 	font-weight: normal;
 	font-style: normal;
 }
@@ -398,10 +398,10 @@ input.ui-button {
 	width: 16px; height: 16px;
 }
 .ui-icon {
-	background-image: url("https://top3.com.au/images/ui-icons_49A3FD_256x240.png");
+	
 }
 .ui-widget-content .ui-icon {
-	background-image: url("https://top3.com.au/images/ui-icons_49A3FD_256x240.png");
+	
 }
 .ui-widget-header .ui-icon {
 	background-image: url("https://top3.com.au/images/ui-icons_ffffff_256x240.png");
@@ -6089,7 +6089,7 @@ ul.stock-off li.nostock a:hover {
 }
 }
 body > .row > [class*='coffee-span-'].pagetop {
-	padding-right: 0px; min-height: 260px; max-height: none; background-image: url("https://top3.com.au/assets/skyline.png"); background-repeat: no-repeat; background-size: contain;
+	padding-right: 0px; min-height: 260px; max-height: none; background-image: url("./assets/skyline.png"); background-repeat: no-repeat; background-size: contain;
 }
 h4.nav-r01 {
 	text-align: right; margin-top: 0px; margin-bottom: 0px;
@@ -8690,7 +8690,7 @@ img.item-hint {
 	padding-right: 8px;
 }
 div#herowrapper {
-	width: 259px; height: 259px; position: relative; border: 1px solid #ccc;
+	width: 259px; height: 259px; position: relative; border: 1px solid #ccc; margin-bottom: 35px;
 }
 div.item-hero-01 {
 	border: 1px solid rgb(204, 204, 204); border-image: none; width: 259px; margin-bottom: 35px; max-width: none;

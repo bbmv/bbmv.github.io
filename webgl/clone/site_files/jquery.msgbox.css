@@ -1,5 +1,5 @@
 .jquery-msgbox {
-	background: url("images/background.png") repeat-x left bottom; left: 30% !important; width: 40% !important; right: 30% !important; padding-bottom: 55px;
+	left: 30% !important; width: 40% !important; right: 30% !important; padding-bottom: 55px;
 }
 .jquery-msgbox-wrapper {
 	padding: 20px 20px 20px 100px; text-align: center; color: rgb(119, 119, 121); font-size: 14px; font-weight: bold;

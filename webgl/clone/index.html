@@ -56,7 +56,51 @@ media="screen">
  
 <SCRIPT type="text/javascript">function showloader() {var e = document.getElementById('quoteresult');e.innerHTML = '<div align="center"><image src="/assets/loading/loading-16x16.gif" id="loader-img" /></div>';}</SCRIPT>
 		 
-<META name="GENERATOR" content="MSHTML 11.00.10570.1001"></HEAD>		 
+<META name="GENERATOR" content="MSHTML 11.00.10570.1001">
+<style>
+  #herowrapper {
+    overflow: hidden;
+  }
+  #icon360 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url("./images/360_.png") center bottom no-repeat;
+    display: none;
+    opacity: 0;
+    z-index: 500;
+  }
+  #loading {
+    position: absolute;
+    top:50%;
+    width: 100%;
+    transform: translate(0, -50%);
+    font-size: 1.2rem;
+    font-weight: normal;
+    text-align: center;
+    color: #aaa;
+    opacity: 1.0;
+    animation: fadeOut 3s linear infinite;
+    z-index: 1000;
+  }
+  @keyframes fadeOut {
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+  }
+  @keyframes fadeOut2 {
+    0% { opacity: 1.0; }
+    100% { opacity: 0.0; }
+  }
+  @keyframes fadeIn {
+    0% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+  }
+
+
+</style>
+
+</HEAD>
 <BODY class="grid-1" id="container">
 <DIV class="row page-row-01">
 <DIV class="coffee-span-12 pagetop">
@@ -1469,6 +1513,8 @@ sofas</A><A href="site_files/91020.htm">muuto | outline chair taupe leg | twill
 <DIV class="row item-subgrid-row-01">
 <DIV class="coffee-span-4 item-subgrid-column-01">
 <DIV id="herowrapper">
+  <p id="loading">Loading...</p>
+  <div id="icon360"></div>
 </DIV>
 <H5 class="item-title-05">additional images</H5>
 <DIV class="item-additional-pic-01 "><A href="https://images.top3.com.au/1000/73736547834-muuto_outline_exclusive_chair_280_1000.jpg" 
@@ -2074,7 +2120,8 @@ target="_blank"><IMG width="41" height="20" alt="Credit card payments processed 
 src="site_files/eway.png"></A></DIV>
 <DIV class="security-right">Payment secured by eWay</DIV></DIV></DIV>
 <DIV class="homeclick" onclick="location.href='/';"></DIV><A class="cd-top" 
-href="https://top3.com.au/categories/home-and-living/sofas/outline-sofas/91020#0">Top</A> 
+href="https://top3.com.au/categories/home-and-living/sofas/outline-sofas/91020#0">Top</A>
+<script src="./dist/app.js"></script>
 <SCRIPT src="site_files/backtotop.js"></SCRIPT>
  
 <SCRIPT>
