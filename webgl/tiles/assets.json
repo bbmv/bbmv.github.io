@@ -124,6 +124,7 @@
 	},
 	"heroes": {
 		"knight": {"object": "knight.fbx", "diffuse": "knight.png"},
+		"gnome2": {"object": "gnome2.fbx", "diffuse": "gnome2.jpg"},
 		"forest": {"object": "forest.fbx", "diffuse": "forest.png"}
 	}
 
