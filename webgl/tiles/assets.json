@@ -123,9 +123,24 @@
 		}
 	},
 	"heroes": {
-		"knight": {"object": "knight.fbx", "diffuse": "knight.png"},
+		"bear1": {"object": "bear1.fbx", "diffuse": "bear1.jpg"},
+		"gnome1": {"object": "gnome1.fbx", "diffuse": "gnome1.jpg"},
+		"bear2": {"object": "bear2.fbx", "diffuse": "bear2.jpg"},
 		"gnome2": {"object": "gnome2.fbx", "diffuse": "gnome2.jpg"},
-		"forest": {"object": "forest.fbx", "diffuse": "forest.png"}
+		"bear3": {"object": "bear3.fbx", "diffuse": "bear3.jpg"},
+		"gnome3": {"object": "gnome3.fbx", "diffuse": "gnome3.jpg"},
+		"bear4": {"object": "bear4.fbx", "diffuse": "bear4.jpg"},
+		"gnome4": {"object": "gnome4.fbx", "diffuse": "gnome4.jpg"},
+		"bear5": {"object": "bear5.fbx", "diffuse": "bear5.jpg"},
+		"gnome5": {"object": "gnome5.fbx", "diffuse": "gnome5.jpg"},
+		"bear6": {"object": "bear6.fbx", "diffuse": "bear6.jpg"},
+		"gnome6": {"object": "gnome6.fbx", "diffuse": "gnome6.jpg"},
+		"bear7": {"object": "bear7.fbx", "diffuse": "bear7.jpg"},
+		"gnome7": {"object": "gnome7.fbx", "diffuse": "gnome7.jpg"},
+		"bear8": {"object": "bear8.fbx", "diffuse": "bear8.jpg"},
+		"gnome8": {"object": "gnome8.fbx", "diffuse": "gnome8.jpg"},
+		"bear9": {"object": "bear9.fbx", "diffuse": "bear9.jpg"},
+		"gnome9": {"object": "gnome9.fbx", "diffuse": "gnome9.jpg"}
 	}
 
 }
