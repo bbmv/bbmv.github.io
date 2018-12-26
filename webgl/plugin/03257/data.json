@@ -1,0 +1,24 @@
+{
+  "name": "Muuto",
+  "webBundle": {
+    "ao.jpg": "./models/tosca_dining-chair/ao.jpg",
+    "model.dae": "./models/tosca_dining-chair/model.zip",
+    "roughness.jpg": "./models/tosca_dining-chair/roughness.jpg"
+    },
+  "styles": [
+    {
+      "name": "Linen",
+      "color": "#ADA597",
+      "webBundle": {
+        "albedo.jpg": "./models/tosca_dining-chair/linen/albedo.jpg"
+        }
+    },
+    {
+      "name": "Wenge",
+      "color": "#4D4844",
+      "webBundle": {
+        "albedo.jpg": "./models/tosca_dining-chair/wenge/albedo.jpg"
+      }
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "name": "Space-57",
+  "webBundle": {
+    "ao.jpg": "./models/space-57/ao.jpg",
+    "model.dae": "./models/space-57/model.zip",
+    "roughness.jpg": "./models/space-57/roughness.jpg",
+    "normal.jpg": "./models/space-57/normal.jpg",
+    "metalness.jpg": "./models/space-57/metalness.jpg",
+    "shadow.dae": "./models/space-57/shadow.zip",
+    "shadow.png": "./models/space-57/shadow.png"
+    },
+  "styles": [
+    {
+      "name": "Red",
+      "color": "#E70000",
+      "webBundle": {
+        "albedo.jpg": "./models/space-57/red/albedo.jpg"
+        }
+    },
+    {
+      "name": "Cream",
+      "color": "#E1D2B2",
+      "webBundle": {
+        "albedo.jpg": "./models/space-57/cream/albedo.jpg"
+      }
+    },
+    {
+      "name": "Dark blue",
+      "color": "#1B2366",
+      "webBundle": {
+        "albedo.jpg": "./models/space-57/dark blue/albedo.jpg"
+      }
+    }
+  ]
+}

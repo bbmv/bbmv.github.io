@@ -1,0 +1,24 @@
+{
+  "name": "Muuto",
+  "webBundle": {
+    "ao.jpg": "./models/muuto-chair/ao.jpg",
+    "model.dae": "./models/muuto-chair/model.zip",
+    "roughness.jpg": "./models/muuto-chair/roughness.jpg",
+    "metalness.jpg": "./models/muuto-chair/metalness.jpg",
+    "shadow.dae": "./models/muuto-chair/shadow.zip",
+    "shadow.png": "./models/muuto-chair/shadow.png"
+  },
+  "styles": [
+    {
+      "name": "Style 1",
+      "color": "#A06A59",
+      "webBundle": {
+        "normal.jpg": "./models/muuto-chair/style 1/normal.jpg",
+        "roughness.jpg": "./models/muuto-chair/style 1/roughness.jpg",
+        "metalness.jpg": "./models/muuto-chair/style 1/metalness.jpg",
+        "ao.jpg": "./models/muuto-chair/style 1/ao.jpg",
+        "albedo.jpg": "./models/muuto-chair/style 1/albedo.jpg"
+      }
+    }
+  ]
+}
