@@ -613,7 +613,7 @@ log.innerText = 'handleMouseWheel\n' + log.innerText;
 
         dollyStart.copy(dollyEnd);
 
-        log.innerText = 'DELTA: ' + dollyDelta.y + '\n' + log.innerText;
+log.innerText = 'DELTA: ' + dollyDelta.y + '\n' + log.innerText;
 
 		if ( dollyDelta.y > 7 ) {
 
