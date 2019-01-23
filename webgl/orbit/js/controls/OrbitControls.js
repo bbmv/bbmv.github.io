@@ -388,12 +388,12 @@ THREE.OrbitControls = function ( object, domElement, textsUpdater ) {
 	}();
 
 	function dollyIn( dollyScale ) {
-        log.innerText = 'dollyIn\n' + log.innerText;
+        log.innerText = 'InScale: '+ dollyScale +'\n' + log.innerText;
 			scale *= dollyScale;
 	}
 
 	function dollyOut( dollyScale ) {
-        log.innerText = 'dollyOut\n' + log.innerText;
+        log.innerText = 'OutScale: '+ dollyScale +'\n' + log.innerText;
 			scale /= dollyScale;
 
 	}
@@ -597,6 +597,7 @@ log.innerText = 'handleTouchMoveZoom\n' + log.innerText;
     }
 
     function handleTouchMoveDolly( event ) {
+log.innerText = 'handleTouchMoveDolly\n' + log.innerText;
 
 		//console.log( 'handleTouchMoveDolly' );
 
@@ -856,7 +857,7 @@ log.innerText = 'handleTouchMoveZoom\n' + log.innerText;
                 if ( scope.enableZoom === false && scope.enableRotate === false ) return;
                 //if ( state !== STATE.TOUCH_ROTATE ) return; // is this needed?
 
-                if ( scope.enableZoom === true) handleTouchMoveZoom( event ); //handleTouchMoveDolly( event );
+                if ( scope.enableZoom === true) handleTouchMoveDolly( event ); // handleTouchMoveZoom( event ); //
                 //if ( scope.enableRotate === true) handleTouchMoveRotate( event );
 
 /*				if ( scope.enableRotate === false ) return;
