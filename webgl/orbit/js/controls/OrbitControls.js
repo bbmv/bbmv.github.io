@@ -772,7 +772,7 @@ THREE.OrbitControls = function ( object, domElement, textsUpdater ) {
 
                 if ( scope.enableRotate === true) {
 
-                    scope.rotating = true;
+                    //scope.rotating = true;
 
                 	handleTouchStartRotate( event );
                     state = STATE.TOUCH_ROTATE;
@@ -832,7 +832,7 @@ THREE.OrbitControls = function ( object, domElement, textsUpdater ) {
                 //if ( state !== STATE.TOUCH_ROTATE ) return; // is this needed?
 
                 if ( scope.enableZoom === true) handleTouchMoveDolly( event );
-                if ( scope.enableRotate === true) handleTouchMoveRotate( event );
+                //if ( scope.enableRotate === true) handleTouchMoveRotate( event );
 
 /*				if ( scope.enableRotate === false ) return;
 				if ( state !== STATE.TOUCH_ROTATE ) return; // is this needed?...
