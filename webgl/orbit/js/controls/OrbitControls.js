@@ -592,7 +592,7 @@ log.innerText = 'handleTouchMoveZoom\n' + log.innerText;
 
         dollyStart.copy( dollyEnd );
 
-        scope.update();
+        scope.update(true);
 
     }
 
@@ -680,6 +680,7 @@ log.innerText = 'handleTouchMoveDolly\n' + log.innerText;
 				handleMouseDownPan( event );
 
 				state = STATE.PAN;
+//                state = STATE.DOLLY;
 
 				break;
 
