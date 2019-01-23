@@ -808,7 +808,7 @@ log.innerText = 'DELTA: ' + dollyDelta.y + '\n' + log.innerText;
 
                 if ( scope.enableZoom === true) {
 
-                	handleTouchStartDolly( event );
+                	//handleTouchStartDolly( event );
                     state = STATE.TOUCH_DOLLY;
                 }
 
