@@ -768,12 +768,29 @@ THREE.OrbitControls = function ( object, domElement, textsUpdater ) {
 
 			case 2:	// two-fingered touch: rotate
 
+                if ( scope.enableZoom === false && scope.enableRotate === false ) return;
+
+                if ( scope.enableRotate === true) {
+
+                    //scope.rotating = true;
+
+                    handleTouchStartRotate( event );
+                    state = STATE.TOUCH_ROTATE;
+                }
+
+                if ( scope.enableZoom === true) {
+
+                    //handleTouchStartDolly( event );
+                    state = STATE.TOUCH_DOLLY;
+                }
+
+/*
 				if ( scope.enableRotate === false ) return;
 				scope.rotating = true;
 
 				handleTouchStartRotate( event );
 
-				state = STATE.TOUCH_ROTATE;
+				state = STATE.TOUCH_ROTATE;*/
 
 				break;
 
@@ -819,10 +836,16 @@ THREE.OrbitControls = function ( object, domElement, textsUpdater ) {
 
 			case 2: // two-fingered touch: rotate
 
-				if ( scope.enableRotate === false ) return;
+                if ( scope.enableZoom === false && scope.enableRotate === false ) return;
+                //if ( state !== STATE.TOUCH_ROTATE ) return; // is this needed?
+
+                if ( scope.enableRotate === true) handleTouchMoveRotate( event );
+                if ( scope.enableZoom === true)  handleTouchMoveDolly( event ); // handleTouchMoveZoom( event ); //
+
+/*				if ( scope.enableRotate === false ) return;
 				if ( state !== STATE.TOUCH_ROTATE ) return; // is this needed?...
 
-				handleTouchMoveRotate( event );
+				handleTouchMoveRotate( event );*/
 
 				break;
 
