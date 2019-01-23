@@ -841,6 +841,7 @@ log.innerText += 'handleTouchMoveZoom\n';
 		switch ( event.touches.length ) {
 
 			case 1: // one-fingered touch: pan
+                log.innerText += 'touch 1\n';
 
 				if ( scope.enablePan === false ) return;
 				if ( state !== STATE.TOUCH_PAN ) return; // is this needed?...
@@ -850,6 +851,7 @@ log.innerText += 'handleTouchMoveZoom\n';
 				break;
 
 			case 2: // two-fingered touch: dolly-rotate
+                log.innerText += 'touch 2\n';
 
                 if ( scope.enableZoom === false && scope.enableRotate === false ) return;
                 //if ( state !== STATE.TOUCH_ROTATE ) return; // is this needed?
