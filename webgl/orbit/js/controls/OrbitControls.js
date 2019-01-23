@@ -586,11 +586,11 @@ THREE.OrbitControls = function ( object, domElement, textsUpdater ) {
 
 		dollyDelta.subVectors( dollyEnd, dollyStart );
 
-		if ( dollyDelta.y > 0 ) {
+		if ( dollyDelta.y > 5 ) {
 
 			dollyOut( getZoomScale() );
 
-		} else if ( dollyDelta.y < 0 ) {
+		} else if ( dollyDelta.y < -5 ) {
 
 			dollyIn( getZoomScale() );
 
@@ -598,7 +598,7 @@ THREE.OrbitControls = function ( object, domElement, textsUpdater ) {
 
 		dollyStart.copy( dollyEnd );
 
-		scope.update();
+		scope.update(true);
 
 	}
 
@@ -780,7 +780,7 @@ THREE.OrbitControls = function ( object, domElement, textsUpdater ) {
 
                 if ( scope.enableZoom === true) {
 
-                    //handleTouchStartDolly( event );
+                    handleTouchStartDolly( event );
                     state = STATE.TOUCH_DOLLY;
                 }
 
@@ -840,7 +840,7 @@ THREE.OrbitControls = function ( object, domElement, textsUpdater ) {
                 //if ( state !== STATE.TOUCH_ROTATE ) return; // is this needed?
 
                 if ( scope.enableRotate === true) handleTouchMoveRotate( event );
-                //if ( scope.enableZoom === true)  handleTouchMoveDolly( event ); // handleTouchMoveZoom( event ); //
+                if ( scope.enableZoom === true)  handleTouchMoveDolly( event ); // handleTouchMoveZoom( event ); //
 
 /*				if ( scope.enableRotate === false ) return;
 				if ( state !== STATE.TOUCH_ROTATE ) return; // is this needed?...
