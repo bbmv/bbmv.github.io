@@ -590,7 +590,7 @@ log.innerText = 'handleTouchMoveZoom\n' + log.innerText;
 
         dollyDelta.set( 0, Math.pow( dollyEnd.y / dollyStart.y, scope.zoomSpeed ) );
 
-        dollyIn( dollyDelta.y );
+        dollyOut( dollyDelta.y );
 
         dollyStart.copy( dollyEnd );
 
@@ -860,7 +860,7 @@ log.innerText = 'handleTouchMoveDolly\n' + log.innerText;
                 if ( scope.enableZoom === false && scope.enableRotate === false ) return;
                 //if ( state !== STATE.TOUCH_ROTATE ) return; // is this needed?
 
-                if ( scope.enableZoom === true) handleTouchMoveDolly( event ); // handleTouchMoveZoom( event ); //
+                if ( scope.enableZoom === true) handleTouchMoveZoom( event ); // handleTouchMoveDolly( event ); //
                 if ( scope.enableRotate === true) handleTouchMoveRotate( event );
 
 /*				if ( scope.enableRotate === false ) return;
