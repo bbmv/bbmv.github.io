@@ -157,6 +157,7 @@ THREE.OrbitControls = function ( object, domElement, textsUpdater ) {
 				if(forceUpdate || scope.dragged) {
 
 					if(scale !== 1) {       // :: --- Zoom --- ::
+log.innerText = 'SCALE: '+scale+'\n' + log.innerText;
 						var zoomDelta = 1 - scale;
 						var newY = scope.camera.position.y + zoomDelta;
 						if( (scale < 1 || newY > scope.lowestAltitude) && (scale > 1 || newY < scope.highestAltitude) ) {
@@ -680,7 +681,7 @@ log.innerText = 'handleTouchMoveDolly\n' + log.innerText;
 				handleMouseDownPan( event );
 
 				state = STATE.PAN;
-//                state = STATE.DOLLY;
+                state = STATE.DOLLY;
 
 				break;
 
