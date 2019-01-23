@@ -149,6 +149,7 @@ THREE.OrbitControls = function ( object, domElement, textsUpdater ) {
 			var isPanTowardsZeroVector = deltaDistanceL2 > 0;
 			var backwardLimit = isPanTowardsZeroVector || distanceL2 < scope.LOOK_RADIUS;
 
+log.innerText = 'BACKWARD: ' + backwardLimit+'\n' + log.innerText;
 			if(backwardLimit) {
 				if(scope.panning) {
 					scope.lastDistanceL2 = distanceL2;
