@@ -12,8 +12,12 @@
 //    Orbit - left mouse / touch: one finger move
 //    Zoom - middle mouse, or mousewheel / touch: two finger spread or squish
 //    Pan - right mouse, or arrow keys / touch: three finger swipe
+var log;
 
 THREE.OrbitControls = function ( object, domElement, textsUpdater ) {
+    log = document.getElementById('log');
+
+
 	var zeroVector = new THREE.Vector3(-1.5,0.2,-1.5);
 
 	this.enteringTime = 2000;
@@ -238,11 +242,11 @@ THREE.OrbitControls = function ( object, domElement, textsUpdater ) {
 		tween.start();
 		scope.textsUpdater.exitTextMode();
 	}
-	function startDragging(){ console.log('startDragging');
+	function startDragging(){ //console.log('startDragging');
 		//scope.dragged = true;
 		//scope.stopInertia && clearTimeout(scope.stopInertia);
 	}
-	function stopDragging(){ console.log('stopDragging');
+	function stopDragging(){ //console.log('stopDragging');
 		//scope.dragged = false;
 		scope.rotating = false;
 		scope.panning = false;
@@ -384,12 +388,12 @@ THREE.OrbitControls = function ( object, domElement, textsUpdater ) {
 	}();
 
 	function dollyIn( dollyScale ) {
-
+        log.innerText += 'dollyIn\n';
 			scale *= dollyScale;
 	}
 
 	function dollyOut( dollyScale ) {
-
+        log.innerText += 'dollyOut\n';
 			scale /= dollyScale;
 
 	}
@@ -479,7 +483,7 @@ THREE.OrbitControls = function ( object, domElement, textsUpdater ) {
 	}
 
 	function handleMouseWheel( event ) {
-
+log.innerText += 'handleMouseWheel\n';
 		// console.log( 'handleMouseWheel' );
 
 		if ( event.deltaY < 0 ) {
@@ -574,7 +578,7 @@ THREE.OrbitControls = function ( object, domElement, textsUpdater ) {
 	}
 
     function handleTouchMoveZoom( event ) {
-
+log.innerText += 'handleTouchMoveZoom\n';
         var dx = event.touches[ 0 ].pageX - event.touches[ 1 ].pageX;
         var dy = event.touches[ 0 ].pageY - event.touches[ 1 ].pageY;
 
