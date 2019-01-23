@@ -154,7 +154,6 @@ THREE.OrbitControls = function ( object, domElement, textsUpdater ) {
 				if(scope.panning) {
 					scope.lastDistanceL2 = distanceL2;
 				}
-
 				if(forceUpdate || scope.dragged) {
 
 					if(scale !== 1) {       // :: --- Zoom --- ::
@@ -607,23 +606,24 @@ log.innerText = 'handleMouseWheel\n' + log.innerText;
 		var dy = event.touches[ 0 ].pageY - event.touches[ 1 ].pageY;
 
 		var distance = Math.sqrt( dx * dx + dy * dy );
-log.innerText = 'DISTANCE: ' + distance + '\n' + log.innerText;
 
 		dollyEnd.set( 0, distance );
 
 		dollyDelta.subVectors( dollyEnd, dollyStart );
 
-		if ( dollyDelta.y > 0 ) {
+        dollyStart.copy(dollyEnd);
+
+        log.innerText = 'DELTA: ' + dollyDelta.y + '\n' + log.innerText;
+
+		if ( dollyDelta.y > 7 ) {
 
 			dollyOut( getZoomScale() );
 
-		} else if ( dollyDelta.y < 0 ) {
+		} else if ( dollyDelta.y < 7 ) {
 
 			dollyIn( getZoomScale() );
 
-		}
-
-		dollyStart.copy( dollyEnd );
+		} else return;
 
 		scope.update(true);
 
