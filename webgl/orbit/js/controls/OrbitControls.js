@@ -615,11 +615,11 @@ log.innerText = 'handleMouseWheel\n' + log.innerText;
 
 log.innerText = 'DELTA: ' + dollyDelta.y + '\n' + log.innerText;
 
-		if ( dollyDelta.y > 7 ) {
+		if ( dollyDelta.y > 5 ) {
 
 			dollyOut( getZoomScale() );
 
-		} else if ( dollyDelta.y < 7 ) {
+		} else if ( dollyDelta.y < -5 ) {
 
 			dollyIn( getZoomScale() );
 
