@@ -687,13 +687,13 @@ THREE.OrbitControls = function ( object, domElement, textsUpdater ) {
 
 				break;
 
-			/*case STATE.DOLLY:
+			case STATE.DOLLY:
 
 				if ( scope.enableZoom === false ) return;
 
 				handleMouseMoveDolly( event );
 
-				break;*/
+				break;
 
 			case STATE.PAN:
 
@@ -766,7 +766,7 @@ THREE.OrbitControls = function ( object, domElement, textsUpdater ) {
 
 				break;
 
-			case 2:	// two-fingered touch: rotate
+			case 2:	// two-fingered touch: dolly-rotate
 
                 if ( scope.enableZoom === false && scope.enableRotate === false ) return;
 
@@ -826,14 +826,13 @@ THREE.OrbitControls = function ( object, domElement, textsUpdater ) {
 
 				break;
 
-			case 2: // two-fingered touch: rotate
+			case 2: // two-fingered touch: dolly-rotate
 
                 if ( scope.enableZoom === false && scope.enableRotate === false ) return;
                 //if ( state !== STATE.TOUCH_ROTATE ) return; // is this needed?
 
-                if ( scope.enableRotate === true) handleTouchMoveRotate( event );
                 if ( scope.enableZoom === true) handleTouchMoveDolly( event );
-
+                if ( scope.enableRotate === true) handleTouchMoveRotate( event );
 
 /*				if ( scope.enableRotate === false ) return;
 				if ( state !== STATE.TOUCH_ROTATE ) return; // is this needed?...
