@@ -772,7 +772,7 @@ THREE.OrbitControls = function ( object, domElement, textsUpdater ) {
 
                 if ( scope.enableRotate === true) {
 
-                    //scope.rotating = true;
+                    scope.rotating = true;
 
                     handleTouchStartRotate( event );
                     state = STATE.TOUCH_ROTATE;
