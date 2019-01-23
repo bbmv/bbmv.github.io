@@ -149,7 +149,7 @@ THREE.OrbitControls = function ( object, domElement, textsUpdater ) {
 			var isPanTowardsZeroVector = deltaDistanceL2 > 0;
 			var backwardLimit = isPanTowardsZeroVector || distanceL2 < scope.LOOK_RADIUS;
 
-log.innerText = 'BACKWARD: ' + backwardLimit+'\n' + log.innerText;
+log.innerText = 'BACKWARD: ' + backwardLimit + '\n' + log.innerText;
 			if(backwardLimit) {
 				if(scope.panning) {
 					scope.lastDistanceL2 = distanceL2;
@@ -158,7 +158,7 @@ log.innerText = 'BACKWARD: ' + backwardLimit+'\n' + log.innerText;
 				if(forceUpdate || scope.dragged) {
 
 					if(scale !== 1) {       // :: --- Zoom --- ::
-log.innerText = 'SCALE: '+scale+'\n' + log.innerText;
+log.innerText = 'SCALE: ' + scale + '\n' + log.innerText;
 						var zoomDelta = 1 - scale;
 						var newY = scope.camera.position.y + zoomDelta;
 						if( (scale < 1 || newY > scope.lowestAltitude) && (scale > 1 || newY < scope.highestAltitude) ) {
@@ -682,7 +682,7 @@ log.innerText = 'handleTouchMoveDolly\n' + log.innerText;
 				handleMouseDownPan( event );
 
 				state = STATE.PAN;
-                state = STATE.DOLLY;
+//                state = STATE.DOLLY;
 
 				break;
 
@@ -861,7 +861,7 @@ log.innerText = 'handleTouchMoveDolly\n' + log.innerText;
                 //if ( state !== STATE.TOUCH_ROTATE ) return; // is this needed?
 
                 if ( scope.enableZoom === true) handleTouchMoveDolly( event ); // handleTouchMoveZoom( event ); //
-                //if ( scope.enableRotate === true) handleTouchMoveRotate( event );
+                if ( scope.enableRotate === true) handleTouchMoveRotate( event );
 
 /*				if ( scope.enableRotate === false ) return;
 				if ( state !== STATE.TOUCH_ROTATE ) return; // is this needed?...
