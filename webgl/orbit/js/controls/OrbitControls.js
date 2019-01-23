@@ -388,12 +388,12 @@ THREE.OrbitControls = function ( object, domElement, textsUpdater ) {
 	}();
 
 	function dollyIn( dollyScale ) {
-        log.innerText += 'dollyIn\n';
+        log.innerText = 'dollyIn\n' + log.innerText;
 			scale *= dollyScale;
 	}
 
 	function dollyOut( dollyScale ) {
-        log.innerText += 'dollyOut\n';
+        log.innerText = 'dollyOut\n' + log.innerText;
 			scale /= dollyScale;
 
 	}
@@ -483,7 +483,7 @@ THREE.OrbitControls = function ( object, domElement, textsUpdater ) {
 	}
 
 	function handleMouseWheel( event ) {
-log.innerText += 'handleMouseWheel\n';
+log.innerText = 'handleMouseWheel\n' + log.innerText;
 		// console.log( 'handleMouseWheel' );
 
 		if ( event.deltaY < 0 ) {
@@ -578,7 +578,7 @@ log.innerText += 'handleMouseWheel\n';
 	}
 
     function handleTouchMoveZoom( event ) {
-log.innerText += 'handleTouchMoveZoom\n';
+log.innerText = 'handleTouchMoveZoom\n' + log.innerText;
         var dx = event.touches[ 0 ].pageX - event.touches[ 1 ].pageX;
         var dy = event.touches[ 0 ].pageY - event.touches[ 1 ].pageY;
 
@@ -841,7 +841,7 @@ log.innerText += 'handleTouchMoveZoom\n';
 		switch ( event.touches.length ) {
 
 			case 1: // one-fingered touch: pan
-                log.innerText += 'touch 1\n';
+                log.innerText = 'touch 1\n' + log.innerText;
 
 				if ( scope.enablePan === false ) return;
 				if ( state !== STATE.TOUCH_PAN ) return; // is this needed?...
@@ -851,7 +851,7 @@ log.innerText += 'handleTouchMoveZoom\n';
 				break;
 
 			case 2: // two-fingered touch: dolly-rotate
-                log.innerText += 'touch 2\n';
+                log.innerText = 'touch 2\n' + log.innerText;
 
                 if ( scope.enableZoom === false && scope.enableRotate === false ) return;
                 //if ( state !== STATE.TOUCH_ROTATE ) return; // is this needed?
