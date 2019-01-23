@@ -623,7 +623,7 @@ log.innerText = 'handleTouchMoveDolly\n' + log.innerText;
 
 		dollyStart.copy( dollyEnd );
 
-		scope.update();
+		scope.update(true);
 
 	}
 
