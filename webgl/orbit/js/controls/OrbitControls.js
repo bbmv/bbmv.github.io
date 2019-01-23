@@ -149,7 +149,7 @@ THREE.OrbitControls = function ( object, domElement, textsUpdater ) {
 			var isPanTowardsZeroVector = deltaDistanceL2 > 0;
 			var backwardLimit = isPanTowardsZeroVector || distanceL2 < scope.LOOK_RADIUS;
 
-log.innerText = 'BACKWARD: ' + backwardLimit + '\n' + log.innerText;
+//log.innerText = 'BACKWARD: ' + backwardLimit + '\n' + log.innerText;
 			if(backwardLimit) {
 				if(scope.panning) {
 					scope.lastDistanceL2 = distanceL2;
@@ -158,7 +158,7 @@ log.innerText = 'BACKWARD: ' + backwardLimit + '\n' + log.innerText;
 				if(forceUpdate || scope.dragged) {
 
 					if(scale !== 1) {       // :: --- Zoom --- ::
-log.innerText = 'SCALE: ' + scale + '\n' + log.innerText;
+//log.innerText = 'SCALE: ' + scale + '\n' + log.innerText;
 						var zoomDelta = 1 - scale;
 						var newY = scope.camera.position.y + zoomDelta;
 						if( (scale < 1 || newY > scope.lowestAltitude) && (scale > 1 || newY < scope.highestAltitude) ) {
@@ -580,7 +580,7 @@ log.innerText = 'handleMouseWheel\n' + log.innerText;
 	}
 
     function handleTouchMoveZoom( event ) {
-log.innerText = 'handleTouchMoveZoom\n' + log.innerText;
+//log.innerText = 'handleTouchMoveZoom\n' + log.innerText;
         var dx = event.touches[ 0 ].pageX - event.touches[ 1 ].pageX;
         var dy = event.touches[ 0 ].pageY - event.touches[ 1 ].pageY;
 
@@ -599,7 +599,7 @@ log.innerText = 'handleTouchMoveZoom\n' + log.innerText;
     }
 
     function handleTouchMoveDolly( event ) {
-log.innerText = 'handleTouchMoveDolly\n' + log.innerText;
+//log.innerText = 'handleTouchMoveDolly\n' + log.innerText;
 
 		//console.log( 'handleTouchMoveDolly' );
 
@@ -607,6 +607,7 @@ log.innerText = 'handleTouchMoveDolly\n' + log.innerText;
 		var dy = event.touches[ 0 ].pageY - event.touches[ 1 ].pageY;
 
 		var distance = Math.sqrt( dx * dx + dy * dy );
+log.innerText = 'DISTANCE: ' + distance + '\n' + log.innerText;
 
 		dollyEnd.set( 0, distance );
 
