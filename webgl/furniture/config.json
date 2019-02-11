@@ -1,10 +1,10 @@
 {
-  "color": {"r": 255, "g": 239, "b": 215 },
+  "color": {"r": 255, "g": 244, "b": 215 },
   "metalness": 0.854,
   "roughness": 0.9,
   "envMapIntensity": 8,
   "aoMapIntensity": 1,
-  "toneMappingExposure": 1.6,  
+  "toneMappingExposure": 1,  
   "wireframe": false,
   "antialias": true
 }

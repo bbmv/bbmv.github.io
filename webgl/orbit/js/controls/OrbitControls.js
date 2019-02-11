@@ -238,11 +238,11 @@ THREE.OrbitControls = function ( object, domElement, textsUpdater ) {
 		tween.start();
 		scope.textsUpdater.exitTextMode();
 	}
-	function startDragging(){ console.log('startDragging');
+	function startDragging(){ //console.log('startDragging');
 		//scope.dragged = true;
 		//scope.stopInertia && clearTimeout(scope.stopInertia);
 	}
-	function stopDragging(){ console.log('stopDragging');
+	function stopDragging(){ //console.log('stopDragging');
 		//scope.dragged = false;
 		scope.rotating = false;
 		scope.panning = false;
@@ -629,7 +629,7 @@ THREE.OrbitControls = function ( object, domElement, textsUpdater ) {
 	//
 
 	function onMouseDown( event ) {
-
+console.log('onMouseDown');
 		if( scope.cameraFocused === true ) getCameraBackOnTrack();
 		if ( scope.enabled === false ) return;
 
@@ -721,7 +721,7 @@ THREE.OrbitControls = function ( object, domElement, textsUpdater ) {
 	}
 
 	function onMouseWheel( event ) {
-
+console.log('onMouseWheel');
 		if( scope.cameraFocused === true ) getCameraBackOnTrack();
 
 		if ( scope.enabled === false || scope.enableZoom === false || ( state !== STATE.NONE && state !== STATE.ROTATE ) ) return;
@@ -745,7 +745,7 @@ THREE.OrbitControls = function ( object, domElement, textsUpdater ) {
 	}
 
 	function onTouchStart( event ) {
-
+console.log('onTouchStart');
 		event.preventDefault();
 		event.stopPropagation();
 		startDragging();
@@ -754,7 +754,10 @@ THREE.OrbitControls = function ( object, domElement, textsUpdater ) {
 
 		if ( scope.enabled === false ) return;
 
-		switch ( event.touches.length ) {
+    var touchLength = event.touches.length;
+    //if(event.shiftKey) touchLength = 2;
+    
+		switch ( touchLength ) {
 
 			case 1:	// one-fingered touch: pan
 
@@ -819,14 +822,17 @@ THREE.OrbitControls = function ( object, domElement, textsUpdater ) {
 	}
 
 	function onTouchMove( event ) {
-
+console.log('onTouchMove');
 		event.preventDefault();
 		event.stopPropagation();
-
-		switch ( event.touches.length ) {
+		
+    var touchLength = event.touches.length;
+    //if(event.shiftKey) touchLength = 2;
+    
+		switch ( touchLength ) {
 
 			case 1: // one-fingered touch: pan
-
+console.log('one-finger');
 				if ( scope.enablePan === false ) return;
 				if ( state !== STATE.TOUCH_PAN ) return; // is this needed?...
 
@@ -835,6 +841,7 @@ THREE.OrbitControls = function ( object, domElement, textsUpdater ) {
 				break;
 
 			case 2: // two-fingered touch: rotate
+console.log('two-fingers');
 
                 if ( scope.enableZoom === false && scope.enableRotate === false ) return;
                 //if ( state !== STATE.TOUCH_ROTATE ) return; // is this needed?
