@@ -1,0 +1,183 @@
+{
+	"_id": "5c410cbcb825e33532bb3fde",
+	"arModels": [{
+		"style": "",
+		"rotation": 1.57,
+		"z": -0.5,
+		"y": 0,
+		"x": -1.5,
+		"_id": "5c410ceab825e33532bb3fdf",
+		"model": {
+			"name": "Chair",
+      "webBundle": {
+        "ambientOcclusion": "./models/test/chair/ao.jpg",
+        "roughness": "./models/test/chair/roughness.jpg",
+        "webBundle": "./models/test/chair/model.zip"
+        },
+      "styles": [
+        {
+          "name": "Linen0",
+          "color": "#ADA597",
+          "webBundle": {
+            "albedo": "./models/test/chair/linen/albedo.jpg"
+            }
+        },
+        {
+          "name": "Wenge0",
+          "color": "#4D4844",
+          "webBundle": {
+            "albedo": "./models/test/chair/wenge/albedo.jpg"
+          }
+        }],
+			"isTransparent": false,
+			"_id": "5c286dec94e23b6f940bdfad"
+		}
+	}, {
+		"style": "",
+		"rotation": -1.57,
+		"z": -0.5,
+		"y": 0,
+		"x": -0.5,
+		"_id": "5c410ceab825e33532bb3fdf",
+		"model": {
+			"name": "Chair",
+      "webBundle": {
+        "ambientOcclusion": "./models/test/chair/ao.jpg",
+        "roughness": "./models/test/chair/roughness.jpg",
+        "webBundle": "./models/test/chair/model.zip"
+        },
+      "styles": [
+        {
+          "name": "Linen1",
+          "color": "#ADA597",
+          "webBundle": {
+            "albedo": "./models/test/chair/linen/albedo.jpg"
+            }
+        },
+        {
+          "name": "Wenge1",
+          "color": "#4D4844",
+          "webBundle": {
+            "albedo": "./models/test/chair/wenge/albedo.jpg"
+          }
+        }],
+			"isTransparent": false,
+			"_id": "5c286dec94e23b6f940bdfad"
+		}
+	}, {
+		"style": "",
+		"rotation": 1.57,
+		"z": -0.5,
+		"y": 0,
+		"x": 0.5,
+		"_id": "5c410ceab825e33532bb3fdf",
+		"model": {
+			"name": "Chair",
+      "webBundle": {
+        "ambientOcclusion": "./models/test/chair/ao.jpg",
+        "roughness": "./models/test/chair/roughness.jpg",
+        "webBundle": "./models/test/chair/model.zip"
+        },
+      "styles": [
+        {
+          "name": "Linen",
+          "color": "#ADA597",
+          "webBundle": {
+            "albedo": "./models/test/chair/linen/albedo.jpg"
+            }
+        },
+        {
+          "name": "Wenge",
+          "color": "#4D4844",
+          "webBundle": {
+            "albedo": "./models/test/chair/wenge/albedo.jpg"
+          }
+        }],
+			"isTransparent": false,
+			"_id": "5c286dec94e23b6f940bdfad"
+		}
+	}, {
+		"style": "",
+		"rotation": 0,
+		"z": -0.5,
+		"y": 0,
+		"x": 1.5,
+		"_id": "5c410ceab825e33532bb3fe0",
+		"model": {
+			"name": "BBQ",
+      "webBundle": {
+        "ambientOcclusion": "./models/test/bbq/ao.jpg",
+        "roughness": "./models/test/bbq/roughness.jpg",
+        "metalness": "./models/test/bbq/metalness.jpg",
+        "normal": "./models/test/bbq/normal.jpg",
+        "webBundle": "./models/test/bbq/model.zip"
+        },
+      "styles": [
+        {
+          "name": "Black",
+          "color": "#000000",
+          "webBundle": {
+            "albedo": "./models/test/bbq/black/albedo.jpg"
+            }
+        },
+        {
+          "name": "Red",
+          "color": "#ff0000",
+          "webBundle": {
+            "albedo": "./models/test/bbq/red/albedo.jpg"
+          }
+        }],
+			"isTransparent": false,
+			"_id": "5c410c96b825e33532bb3fdc"
+		}
+	}, {
+		"style": "",
+		"rotation": 0,
+		"z": 0.425,
+		"y": 0,
+		"x": 1.0,
+		"_id": "5c410ceab825e33532bb3fdf",
+		"model": {
+			"name": "the Tea Maker - Normal",
+			"webBundle": {
+				"albedo": "./models/TeaMaker/body/albedo.jpg",
+				"roughness": "./models/TeaMaker/body/roughness.png",
+				"normal": "./models/TeaMaker/body/normal.png",
+				"metalness": "./models/TeaMaker/body/metalness.png",
+				"ambientOcclusion": "./models/TeaMaker/body/ao.jpg",
+				"webBundle": "./models/TeaMaker/body/model.zip"
+			},
+			"styles": [{
+				"name": "Brushed Stainless Steel",
+				"color": "#cfcfcf",
+				"webBundle": {}
+			}],
+			"isTransparent": false,
+			"_id": "5c286dec94e23b6f940bdfad"
+		}
+	}, {
+		"style": "",
+		"rotation": 0,
+		"z": 0.425,
+		"y": 0,
+		"x": 1.0,
+		"_id": "5c410ceab825e33532bb3fe0",
+		"model": {
+			"name": "the Tea Maker - Transparent",
+			"webBundle": {
+				"albedo": "./models/TeaMaker/glass/albedo.png",
+				"roughness": "./models/TeaMaker/glass/roughness.png",
+				"metalness": "./models/TeaMaker/glass/metalness.png",
+				"webBundle": "./models/TeaMaker/glass/model.zip"
+			},
+			"styles": [{
+				"name": "Brushed Stainless Steel",
+				"color": "#cfcfcf",
+				"webBundle": {}
+			}],
+			"isTransparent": true,
+			"_id": "5c410c96b825e33532bb3fdc"
+		}
+	}],
+	"appId": "5c12d762a4b58479b4de179f"
+}

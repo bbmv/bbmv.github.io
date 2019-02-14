@@ -1,0 +1,19 @@
+{
+  "solid": {
+    "color": {"r": 255, "g": 244, "b": 215 },
+    "metalness": 0.854,
+    "roughness": 0.9,
+    "aoMapIntensity": 1,
+    "envMapIntensity": 8
+  },
+  "transparent": {
+    "color": {"r": 255, "g": 255, "b": 255 },
+    "metalness": 0.7,
+    "roughness": 1,
+    "aoMapIntensity": 1,
+    "envMapIntensity": 11
+  },
+  "toneMappingExposure": 1,  
+  "wireframe": false,
+  "antialias": true
+}
