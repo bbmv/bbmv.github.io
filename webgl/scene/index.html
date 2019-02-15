@@ -81,7 +81,28 @@
 <script src="./dist/plugin.js"></script>
 
 <script>
-    new IHViewer('container0', { sku: '23456', appId: 'data.json' });
+    //new IHViewer('container0', { path: '.', sku: '23456', appId: 'data.json' });
+    //http://api.inhaabit.com/v2/web-product/kitchen-wizz-r-15-pro/59cdd0185f730813f9f224c9
+/*
+api.inhaabit.com/v2/web-product/7-piece-dining/5b85f50f933bce2234d98b21
+api.inhaabit.com/v2/web-product/4-burner-with-sink-bench-and-shelves/5b85f50f933bce2234d98b21
+api.inhaabit.com/v2/web-product/6-burner-with-side-burner-with-bench-and-sink/5b85f50f933bce2234d98b21
+api.inhaabit.com/v2/web-product/9-piece-dining/5b85f50f933bce2234d98b21
+api.inhaabit.com/v2/web-product/11-piece-extension-dining/5b85f50f933bce2234d98b21
+api.inhaabit.com/v2/web-product/7-piece-modular-lounge/5b85f50f933bce2234d98b21
+
+http://api.inhaabit.com/v2/web-product/the-dynamic-duo-tm/59cdd0185f730813f9f224c9
+http://api.inhaabit.com/v2/web-product/the-precision-brewer-tm-thermal/59cdd0185f730813f9f224c9 // test glass colors
+http://api.inhaabit.com/v2/web-product/the-fresh-and-furious-tm/59cdd0185f730813f9f224c9 // test glass colors
+*/
+
+new IHViewer('container0', { path: 'http://api.inhaabit.com/v2/web-product',
+	sku: 'the-dynamic-duo-tm',
+	appId: '59cdd0185f730813f9f224c9' });
+
+
+	//    new IHViewer('container0', { path: 'http://api.inhaabit.com/v2/web-product', sku: 'kitchen-wizz-r-15-pro', appId: '59cdd0185f730813f9f224c9' });
+
     /*		new IHViewer('container0', { appId: '5a60753a81ab6c7d3b68d46e', sku: 'charman-road-stairs' });
             new IHViewer('container1', { appId: '5b85f50f933bce2234d98b21', sku: 'big-d-and-c-on-cart-series-ii' });
             new IHViewer('container2', { appId: '5a60753a81ab6c7d3b68d46e', sku: 'tailor-avalon-sofa' });*/
