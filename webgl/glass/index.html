@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Plugin</title>
+	<style>
+        * {
+            margin: 0;
+            padding: 0;
+            background-repeat: no-repeat;
+        }
+		body {
+            font-family: sans-serif;
+			background-color: #ccc;
+			background-size: cover;
+            /*overflow: hidden;*/
+			/*height: 2000px;*/
+		}
+		#container0 {
+/*			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			/*position: relative;
+
+/*			left: 2.5%;
+			top: 2.5%;
+			height: 95%;
+			width: 95%;*/
+			/*margin: 2rem 0 0 2rem;*/
+			background-color: #ffffff;
+		}
+		#container1 {
+			position: absolute;
+			: 33%;
+			top: 20%;
+			height: 50%;
+			width: 30%;
+			margin: 2rem 0 0 2rem;
+			background-color: #fff;
+		}
+		#container2 {
+			position: absolute;
+			left: 66%;
+			top: 40%;
+			height: 50%;
+			width: 30%;
+			margin: 2rem 0 0 2rem;
+			background-color: #fff;
+		}
+		.ihv_loading {
+			position: relative;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 100%;
+			font-size: 2rem;
+			font-weight: normal;
+			text-align: center;
+			color: #ccc;
+			opacity: 1.0;
+			animation: ihv_fadeOut_loading 3s linear infinite;
+			display: block;
+			z-index: 1000;
+		}
+		@keyframes ihv_fadeOut_loading {
+			0% { opacity: 1.0; }
+			50% { opacity: 0.0; }
+			100% { opacity: 1.0; }
+		}
+
+
+	</style>
+</head>
+<body>
+<!--div style="background-color: #ccf;"-->
+	<div id="container0" style="height: 700px; width: 700px;">
+		<p class="ihv_loading">Loading...</p>
+	</div>
+<!--/div-->
+<!--div id="container1">
+    <p class="ihv_loading">Loading...</p>
+</div>
+
+<div id="container2">
+    <p class="ihv_loading">Loading...</p>
+</div-->
+
+<script src="./dist/plugin.js"></script>
+
+<script>
+
+    new IHViewer('container0', { path: '.', sku: '01234', appId: 'data.json' });
+    //http://api.inhaabit.com/v2/web-product/kitchen-wizz-r-15-pro/59cdd0185f730813f9f224c9
+/*
+api.inhaabit.com/v2/web-product/7-piece-dining/5b85f50f933bce2234d98b21
+api.inhaabit.com/v2/web-product/4-burner-with-sink-bench-and-shelves/5b85f50f933bce2234d98b21
+api.inhaabit.com/v2/web-product/6-burner-with-side-burner-with-bench-and-sink/5b85f50f933bce2234d98b21
+api.inhaabit.com/v2/web-product/9-piece-dining/5b85f50f933bce2234d98b21
+api.inhaabit.com/v2/web-product/11-piece-extension-dining/5b85f50f933bce2234d98b21
+api.inhaabit.com/v2/web-product/7-piece-modular-lounge/5b85f50f933bce2234d98b21
+
+http://api.inhaabit.com/v2/web-product/the-dynamic-duo-tm/59cdd0185f730813f9f224c9
+http://api.inhaabit.com/v2/web-product/the-precision-brewer-tm-thermal/59cdd0185f730813f9f224c9 // test glass colors
+http://api.inhaabit.com/v2/web-product/the-fresh-and-furious-tm/59cdd0185f730813f9f224c9 // test glass colors
+*/
+
+// http://api.inhaabit.com/v2/web-product/453l-4-5-star-bottom-mount/5aaa44fa6e48f91716ee56b1
+
+//new IHViewer('container0', { sku: '453l-4-5-star-bottom-mount', appId: '5aaa44fa6e48f91716ee56b1' });
+
+//new IHViewer('container0', { path: 'http://api.inhaabit.com/v2/web-product', sku: '9-piece-dining', appId: '5b85f50f933bce2234d98b21' });
+// 6-piece-modular-lounge - 5b85f50f933bce2234d98b21
+//new IHViewer('container0', { path: 'http://api.inhaabit.com/v2/web-product', sku: '6-piece-modular-lounge', appId: '5c7df45a9473f871499a73c4' });
+//new IHViewer('container0', { sku: 'the-tea-maker-compact-tm', appId: '5a60753a81ab6c7d3b68d46e' });
+//new IHViewer('container0', { path: 'http://api.inhaabit.com/v2/web-product', sku: '6-burner-with-side-burner-with-bench-and-sink', appId: '5b85f50f933bce2234d98b21' });
+
+//http://api.inhaabit.com/v2/web-product/230l-top-mount/5aaa44fa6e48f91716ee56b1
+//new IHViewer('container0', { path: 'http://api.inhaabit.com/v2/web-product', sku: '230l-top-mount', appId: '5aaa44fa6e48f91716ee56b1' });
+
+    /*		new IHViewer('container0', { appId: '5a60753a81ab6c7d3b68d46e', sku: 'charman-road-stairs' });
+            new IHViewer('container1', { appId: '5b85f50f933bce2234d98b21', sku: 'big-d-and-c-on-cart-series-ii' });
+            new IHViewer('container2', { appId: '5a60753a81ab6c7d3b68d46e', sku: 'tailor-avalon-sofa' });*/
+</script>
+</body>
+</html>

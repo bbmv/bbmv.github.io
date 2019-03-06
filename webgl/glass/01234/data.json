@@ -1,0 +1,53 @@
+{
+	"_id": "5c410cbcb825e33532bb3fde",
+	"arModels": [{
+		"style": "",
+		"rotation": 0,
+		"z": 0,
+		"y": 0,
+		"x": 0,
+		"_id": "5c410ceab825e33532bb3fdf",
+		"model": {
+			"name": "the Tea Maker - Normal",
+			"webBundle": {
+				"albedo": "./models/TeaMaker/body/albedo.jpg",
+				"roughness": "./models/TeaMaker/body/roughness.png",
+				"normal": "./models/TeaMaker/body/normal.png",
+				"metalness": "./models/TeaMaker/body/metalness.png",
+				"ambientOcclusion": "./models/TeaMaker/body/ao.jpg",
+				"webBundle": "./models/TeaMaker/body/model.zip"
+			},
+			"styles": [{
+				"name": "Brushed Stainless Steel",
+				"color": "#cfcfcf",
+				"webBundle": {}
+			}],
+			"isTransparent": false,
+			"_id": "5c286dec94e23b6f940bdfad"
+		}
+	}, {
+		"style": "",
+		"rotation": 0,
+		"z": 0,
+		"y": 0,
+		"x": 0,
+		"_id": "5c410ceab825e33532bb3fe0",
+		"model": {
+			"name": "the Tea Maker - Transparent",
+			"webBundle": {
+				"albedo": "./models/TeaMaker/glass/albedo.png",
+				"roughness": "./models/TeaMaker/glass/roughness.png",
+				"metalness": "./models/TeaMaker/glass/metalness.png",
+				"webBundle": "./models/TeaMaker/glass/model.zip"
+			},
+			"styles": [{
+				"name": "Brushed Stainless Steel",
+				"color": "#cfcfcf",
+				"webBundle": {}
+			}],
+			"isTransparent": true,
+			"_id": "5c410c96b825e33532bb3fdc"
+		}
+	}],
+	"appId": "5c12d762a4b58479b4de179f"
+}
