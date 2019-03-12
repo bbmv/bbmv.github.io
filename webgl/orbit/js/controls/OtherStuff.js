@@ -758,14 +758,10 @@ THREE.OtherStuff = function ( object, domElement, textsUpdater ) {
 	}
 
 	function onTouchStart( event ) {
+        if( scope.cameraFocused === true ) getCameraBackOnTrack();
+        if ( scope.enabled === false ) return;
 
-		event.preventDefault();
-		event.stopPropagation();
-//		startDragging();
-
-		if( scope.cameraFocused === true ) getCameraBackOnTrack();
-
-		if ( scope.enabled === false ) return;
+        event.preventDefault();
 /*
 		switch ( event.touches.length ) {
 
