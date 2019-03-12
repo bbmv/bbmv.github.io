@@ -10,9 +10,9 @@ window.BuildingTexts = function(scene, sceneCamera){
 	this.buildings = [
 		{
 			title: 'kvarter 1',
-			textPosition: new THREE.Vector3(0,100,-1400),
-			cameraPosition: new THREE.Vector3(-1.5, 4.5, -2.2),
-			lookPosition: new THREE.Vector3(0, 1, -4.6),
+            textPosition: new THREE.Vector3(0,100,-1400),
+            cameraPosition: new THREE.Vector3(-1.5, 4.5, -9.2),
+            lookPosition: new THREE.Vector3(0, 1, -4.6),
 			url: "#"
 		},
 		{
@@ -25,8 +25,8 @@ window.BuildingTexts = function(scene, sceneCamera){
 		{
 			title: 'kvarter 3',
 			textPosition: new THREE.Vector3(1100,100,-620),
-			cameraPosition: new THREE.Vector3(5.8, 3, -1.8),
-			lookPosition: new THREE.Vector3(3.4, 0.4, -2),
+			cameraPosition: new THREE.Vector3(5.8, 5, -6.8),
+			lookPosition: new THREE.Vector3(3.4, 0.4, -5),
 			url: "#"
 		},
 		{
@@ -39,8 +39,8 @@ window.BuildingTexts = function(scene, sceneCamera){
 		{
 			title: 'kvarter 6',
 			textPosition: new THREE.Vector3(-1000,100,-2000),
-			cameraPosition: new THREE.Vector3(-1.4, 4, -8.2),
-			lookPosition: new THREE.Vector3(-3.2, 0.9, -6.2),
+			cameraPosition: new THREE.Vector3(-1.4, 4, -12.2),
+			lookPosition: new THREE.Vector3(-3.2, 0.9, -10.2),
 			url: "#"
 		}
 	];
@@ -94,6 +94,7 @@ window.BuildingTexts = function(scene, sceneCamera){
 
 	this.onTextClicked = function (event){   // clicked dom node is this
 		if(scope.animatingCamera === true)  return;
+        window.ORBIT.enabled = false;
 
 		if(!scope.selectedNode) {
 			scope.animatingCamera = true;

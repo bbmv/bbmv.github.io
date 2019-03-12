@@ -206,7 +206,6 @@ var APP = {
 			}
 
 			if ( isVR === true ) {
-
 				camera.updateMatrixWorld();
 
 				controls.update();

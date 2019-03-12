@@ -6,15 +6,17 @@
 		<meta name="generator" content="Three.js Editor">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<link rel="stylesheet" href="css/app.css" />
+		<script src="js/library/touch-emulator.js"></script>
+		<script> //TouchEmulator(); </script>
+
 		<script type="text/javascript" src="js/library/three.min.js"></script>
 		<script type="text/javascript" src="js/library/tween.min.js"></script>
 		<script type="text/javascript" src="js/library/CSS3DRenderer.min.js"></script>
 		<script type="text/javascript" src="js/controls/OrbitControls.js"></script>
+		<script type="text/javascript" src="js/controls/OtherStuff.js"></script>
 		<script type="text/javascript" src="js/controls/AppLoader.js"></script>
 		<script type="text/javascript" src="js/controls/BuildingTexts.js"></script>
 		<script type="text/javascript" src="js/library/Detector.js"></script>
-    <script src="js/library/touch-emulator.js"></script>
-    <script> TouchEmulator(); </script>
 		<script id="vs" type="x-shader/x-vertex">
 
 			varying vec2 vUv;
@@ -63,11 +65,62 @@
 				player.setSize( window.innerWidth, window.innerHeight );
 				player.play();
 
+                window.ORBIT = new THREE.OrbitControls(window.player.camera, player.dom);
+                window.ORBIT.target = new THREE.Vector3(-1.5, 0, -1.5);
+                window.ORBIT.enableDamping = true;
+                window.ORBIT.dampingFactor = 0.05;
+                window.ORBIT.rotateSpeed = 0.03;
+                window.ORBIT.panSpeed = 0.1;
+                window.ORBIT.keyPanSpeed = 4;
+                window.ORBIT.mouseButtons = { LEFT: THREE.MOUSE.RIGHT, MIDDLE: THREE.MOUSE.MIDDLE, RIGHT: THREE.MOUSE.LEFT };
+                var minDistance = 5;
+                var maxDistance = 11;
+                var minPolarAngle = Math.PI * 0.2;
+                var maxPolarAngle = Math.PI * 0.7;
+                var boundaries = {
+                    left: -5,
+                    top: -5,
+					right: 3,
+					bottom: 3
+                };
+                window.ORBIT.addEventListener( 'change', orbitChange );
+
+                var lastTarget = {};
+                // ----------------------------------------------------------
+                function orbitChange() {
+
+                    if(window.ORBIT.target.x === lastTarget.x && window.ORBIT.target.z === lastTarget.z) return;
+
+                    lastTarget.x = window.ORBIT.target.x;
+                    lastTarget.z = window.ORBIT.target.z;
+
+                    window.ORBIT.minDistance = minDistance;
+                    window.ORBIT.maxDistance = maxDistance;
+
+                    window.ORBIT.minPolarAngle = minPolarAngle;
+                    window.ORBIT.maxPolarAngle = maxPolarAngle;
+
+                    if(window.ORBIT.target.x > boundaries.right || window.ORBIT.target.z > boundaries.bottom
+					|| window.ORBIT.target.x < boundaries.left || window.ORBIT.target.z < boundaries.top) {
+
+                        if(window.ORBIT.target.x > boundaries.right) window.ORBIT.target.setX(boundaries.right - 0.0005);
+                        if(window.ORBIT.target.z > boundaries.bottom) window.ORBIT.target.setZ(boundaries.bottom - 0.0005);
+                        if(window.ORBIT.target.x < boundaries.left) window.ORBIT.target.setX(boundaries.left + 0.0005);
+                        if(window.ORBIT.target.z < boundaries.top) window.ORBIT.target.setZ(boundaries.top + 0.0005);
+
+                        window.ORBIT.maxDistance = window.ORBIT.minDistance = window.ORBIT.getDistance();
+                        window.ORBIT.maxPolarAngle = window.ORBIT.minPolarAngle = window.ORBIT.getPolarAngle();
+                    }
+
+                }
+				// ----------------------------------------------------------
+
 				window.textsUpdater = new BuildingTexts( window.player.scene, window.player.camera );
 				textsUpdater.setSize();
 				textsUpdater.load();
 
-				window.controls = new THREE.OrbitControls( window.player.camera, player.dom , textsUpdater );
+				window.controls = new THREE.OtherStuff( window.player.camera, player.dom , textsUpdater );
+
 				initialScreen.style.opacity = "1";
 				canvas3d.appendChild( player.dom );
 
@@ -100,12 +153,28 @@
 				}
 
 				function playAnimation(time) {
-					TWEEN.update(time);
+
+                    TWEEN.update(time);
+
+					//
+
+//                    window.ORBIT.target.copy(window.controls.altitudeTarget);
+                    window.ORBIT.update(time);
+/*                    console.log('UPDATE');
+                    console.log(window.player.camera.clone());
+
+                    var target = new THREE.Vector3;
+                    window.player.camera.getWorldDirection(target);
+                    console.log(target);
+                    //console.log(window.controls.cameraLook);
+*/
 					requestAnimationFrame( playAnimation );
-					controls.onAnimate(time);
-					window.player.animate(time);
-					updateCloud(window.player.camera);
-				}
+                    controls.onAnimate(time);
+                    window.player.animate(time);
+                    window.textsUpdater.update();
+                    updateCloud(window.player.camera);
+
+                }
 
 
 				// tempcode:
@@ -187,7 +256,7 @@
 		</script>
 	</head>
 	<body ontouchstart="">
-		<div id="log" style="top: 0; left: 0; width: 100px; height: 100%; position: absolute; font-size: 1rem;">version 018</div>
+		<!--div id="log" style="top: 0; left: 0; width: 100px; height: 100%; position: absolute; font-size: 1rem;">version 018</div-->
 		<div id="3dCanvas"></div>
 		<div id="text3dLayer" class="text-canvas">
 			<!--Appends Text Dynamically-->
