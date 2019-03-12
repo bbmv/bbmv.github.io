@@ -73,10 +73,15 @@
                 window.ORBIT.panSpeed = 0.1;
                 window.ORBIT.keyPanSpeed = 4;
                 window.ORBIT.mouseButtons = { LEFT: THREE.MOUSE.RIGHT, MIDDLE: THREE.MOUSE.MIDDLE, RIGHT: THREE.MOUSE.LEFT };
-                var minDistance = 5;
-                var maxDistance = 11;
-                var minPolarAngle = Math.PI * 0.2;
-                var maxPolarAngle = Math.PI * 0.7;
+                window.ORBIT.minDistance = 5;
+                window.ORBIT.maxDistance = 11;
+                window.ORBIT.minPolarAngle = Math.PI * 0.2;
+                window.ORBIT.maxPolarAngle = Math.PI * 0.7;
+
+                var minDistance = window.ORBIT.minDistance;
+                var maxDistance = window.ORBIT.maxDistance;
+                var minPolarAngle = window.ORBIT.minPolarAngle;
+                var maxPolarAngle = window.ORBIT.maxPolarAngle;
                 var boundaries = {
                     left: -5,
                     top: -5,
@@ -154,7 +159,7 @@
 
 				function playAnimation(time) {
 
-                    TWEEN.update(time);
+                    //TWEEN.update(time);
 
 					//
 
