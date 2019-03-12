@@ -200,7 +200,7 @@ THREE.OtherStuff = function ( object, domElement, textsUpdater ) {
 	}();
 	function getCameraBackOnTrack(){
 		if(scope.animatingCamera) return;
-//		window.ORBIT.enabled = false;
+		window.ORBIT.enabled = false;
 		scope.animatingCamera = true;
 		var heightCenterVector = scope.zeroVector.clone();
 		var positionVector = scope.camera.position.clone();

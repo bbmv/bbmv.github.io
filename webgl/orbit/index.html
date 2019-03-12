@@ -6,8 +6,8 @@
 		<meta name="generator" content="Three.js Editor">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<link rel="stylesheet" href="css/app.css" />
-		<script src="js/library/touch-emulator.js"></script>
-		<script> //TouchEmulator(); </script>
+		<!--script src="js/library/touch-emulator.js"></script>
+		<script> TouchEmulator(); </script-->
 
 		<script type="text/javascript" src="js/library/three.min.js"></script>
 		<script type="text/javascript" src="js/library/tween.min.js"></script>
@@ -88,7 +88,7 @@
 					right: 3,
 					bottom: 3
                 };
-                //window.ORBIT.addEventListener( 'change', orbitChange );
+                window.ORBIT.addEventListener( 'change', orbitChange );
 
                 var lastTarget = {};
                 // ----------------------------------------------------------
@@ -159,20 +159,10 @@
 
 				function playAnimation(time) {
 
-                    //TWEEN.update(time);
+                    TWEEN.update(time);
 
-					//
-
-//                    window.ORBIT.target.copy(window.controls.altitudeTarget);
                     window.ORBIT.update(time);
-/*                    console.log('UPDATE');
-                    console.log(window.player.camera.clone());
 
-                    var target = new THREE.Vector3;
-                    window.player.camera.getWorldDirection(target);
-                    console.log(target);
-                    //console.log(window.controls.cameraLook);
-*/
 					requestAnimationFrame( playAnimation );
                     controls.onAnimate(time);
                     window.player.animate(time);
