@@ -13,5 +13,14 @@
     "rotationFactor": 0.5,
     "rX": 0.261,
     "rY": 0.188
-  }
+  },
+  "pages": [
+    "https://takethat.com/",
+    "https://takethat.com/timelines/",
+    "https://takethat.com/video/",
+    "https://takethat.com/music/",
+    "https://takethat.com/cinema/",
+    "https://takethat.com/social/",
+    "https://takethat.lnk.to/TTStoreWE"
+  ]
 }
