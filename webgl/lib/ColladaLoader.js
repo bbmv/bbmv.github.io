@@ -108,7 +108,11 @@ THREE.ColladaLoader.prototype = {
 
 			if ( text.length === 0 ) return [];
 
+console.time('parseFloats');
 			var parts = text.trim().split( /\s+/ );
+console.timeEnd('parseFloats');
+console.log();
+
 			var array = new Array( parts.length );
 
 			for ( var i = 0, l = parts.length; i < l; i ++ ) {
