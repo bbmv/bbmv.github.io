@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
+
 	<title>Plugin</title>
 	<style>
         * {
@@ -74,10 +75,11 @@
 
 
 	</style>
+	<script src="./dist/plugin.js"></script>
 </head>
 <body>
-<div style="position: absolute; left: 50%; top:50%; height: 70px; width: 70px; background-color: #1ed36f; z-index: 2;"></div>
-<div style="position: absolute; left: 60%; top:60%; height: 70px; width: 70px; background-color: #5693d3; z-index: 2;"></div>
+<!--div style="position: absolute; left: 50%; top:50%; height: 70px; width: 70px; background-color: #1ed36f; z-index: 2;"></div>
+<div style="position: absolute; left: 60%; top:60%; height: 70px; width: 70px; background-color: #5693d3; z-index: 2;"></div-->
 <div style="background-color: #ccf; position: absolute; height: 1000px; width: 1000px; /*overflow: hidden;*/ z-index: 1;">
 	<div id="container0" style="height: 700px; width: 700px;">
 		<p class="ihv_loading">Loading...</p>
@@ -92,7 +94,7 @@
     <p class="ihv_loading">Loading...</p>
 </div-->
 
-<script src="./dist/plugin.js"></script>
+
 
 <script>
 
@@ -100,8 +102,11 @@
     //http://api.inhaabit.com/v2/web-product/HR6BF157B/5aaa44fa6e48f91716ee56b1
     //new IHViewer('container0', { sku: 'HR6BF157B', appId: '5aaa44fa6e48f91716ee56b1', noFullscreen: false, hideUntilLoaded: true});
 //    new IHViewer('container0', {hideUntilLoaded: false, appId: '5c12d762a4b58479b4de179f', sku: 'kitchen-wizz-r-15-pro', noFullscreen: false, hideUntilLoaded: false});
-    new IHViewer('container0', {hideUntilLoaded: false, appId: '5c12d762a4b58479b4de179f', sku: 'the-smart-grinder-tm-pro', noFullscreen: false, hideUntilLoaded: false});
-    
+
+
+	//new IHViewer('container0', {hideUntilLoaded: false, appId: '5c12d762a4b58479b4de179f', sku: 'the-smart-grinder-tm-pro', noFullscreen: false, hideUntilLoaded: false});
+    new IHViewer('container0', {hideUntilLoaded: false, appId: '5aaa44fa6e48f91716ee56b1', sku: '630l-french-door', cameraHeight: 0.05, noFullscreen: false, hideUntilLoaded: false});
+
 //    new IHViewer('container0', {hideUntilLoaded: false, appId: '5c7df45a9473f871499a73c4', sku: 'island-2-4-burner-deluxe-with-bench-sink-and-shelves', noFullscreen: false, hideUntilLoaded: false});
 
 //	new IHViewer('container0', {hideUntilLoaded: false, appId: '5c12d762a4b58479b4de179f', sku: 'the-smart-kettle-luxe', noFullscreen: false, hideUntilLoaded: false});
