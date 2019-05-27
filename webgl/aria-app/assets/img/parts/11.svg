@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 60 484" style="enable-background:new 0 0 60 484;" xml:space="preserve">
+<g id="connector">
+	<g id="style1">
+		<g id="XMLID_17_">
+			<path id="XMLID_224_" style="fill:#DBDBDA;" d="M0.168,474.35c0,4.312,4.175,8.65,4.175,8.65h51.633c0,0,3.899-2.748,3.899-8.616
+				c0-5.868,0-360.293,0-360.293s0.117-99.462,0.117-105.423S56.061,1,56.061,1H4.428c0,0-4.303,4.636-4.303,7.651"/>
+		</g>
+		<g id="XMLID_20_">
+			<path id="XMLID_223_" style="fill:#DBDBDA;" d="M0.273,7.787"/>
+		</g>
+	</g>
+	<g id="accent_4_">
+		
+			<line id="XMLID_59_" style="opacity:0.1;fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;" x1="58.875" y1="4" x2="58.875" y2="478"/>
+		
+			<line id="XMLID_5_" style="opacity:0.1;fill:none;stroke:#000000;stroke-width:1.9243;stroke-miterlimit:10;" x1="1.408" y1="2.694" x2="1.639" y2="478.333"/>
+		
+			<linearGradient id="XMLID_3_" gradientUnits="userSpaceOnUse" x1="29.9877" y1="524.7358" x2="29.9877" y2="496.6674" gradientTransform="matrix(1 0 0 -1 0 976.6667)">
+			<stop  offset="0" style="stop-color:#000000;stop-opacity:0"/>
+			<stop  offset="1" style="stop-color:#000000;stop-opacity:0.2"/>
+		</linearGradient>
+		<path id="XMLID_71_" style="fill:url(#XMLID_3_);" d="M59.805,452.094l-59.325-0.164c0,0-0.309,19.143-0.309,23.561
+			S3.72,484,3.72,484l52.312-0.006c0,0,3.773-2.203,3.773-9.566S59.805,452.094,59.805,452.094z"/>
+		<linearGradient id="XMLID_4_" gradientUnits="userSpaceOnUse" x1="30.412" y1="31.0819" x2="30.412" y2="3.8775">
+			<stop  offset="0" style="stop-color:#000000;stop-opacity:0"/>
+			<stop  offset="1" style="stop-color:#000000;stop-opacity:0.2"/>
+		</linearGradient>
+		<path id="XMLID_2_" style="fill:url(#XMLID_4_);" d="M60.036,30.918L0.788,31.082c0,0,0-20.452,0-23.561S4.428,0,4.428,0h51.54
+			c0,0,4.068,0.24,4.068,8.339S60.036,30.918,60.036,30.918z"/>
+	</g>
+	<rect id="bounds_2_" x="-0.125" y="1" style="opacity:0;fill:#FFFFFF;" width="60" height="482"/>
+</g>
+<g id="Layer_1">
+</g>
+</svg>
