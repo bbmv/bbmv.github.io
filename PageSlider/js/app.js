@@ -9,10 +9,7 @@
 
     TweenLite.to(slides[0], 0, {top: 0});
 
-    $(document).on('touchmove',function(e){
-        e.preventDefault();
-    });
-
+    slides[0].addEventListener('touchmove',function(e){ e.preventDefault(); });
     document.addEventListener('touchmove',function(e){ e.preventDefault(); });
     document.addEventListener('touchend', onClick, false);
     document.addEventListener('click', onClick, false);
