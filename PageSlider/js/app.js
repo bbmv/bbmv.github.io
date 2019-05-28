@@ -9,6 +9,8 @@
 
     TweenLite.to(slides[0], 0, {top: 0});
 
+    let wrapper = document.getElementsByClassName("wrapper")[0];
+    wrapper.addEventListener('touchmove',function(e){ e.preventDefault(); });
     slides[0].addEventListener('touchmove',function(e){ e.preventDefault(); });
     document.addEventListener('touchmove',function(e){ e.preventDefault(); });
     document.addEventListener('touchend', onClick, false);
