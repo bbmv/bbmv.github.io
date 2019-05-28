@@ -9,6 +9,16 @@ body {
   overflow: hidden;
 }
 
+.wrapper {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background: #ad0000;
+  overflow: hidden;
+}
+
 .slide {
   position: absolute;
   text-align: center;

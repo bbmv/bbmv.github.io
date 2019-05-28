@@ -9,7 +9,10 @@
 
     TweenLite.to(slides[0], 0, {top: 0});
 
-    document.addEventListener('click', function(event) {
+    document.addEventListener('touchend', onClick, false);
+    document.addEventListener('click', onClick, false);
+
+    function onClick(event) {
 
         if(!completed) return;
         completed = false;
@@ -39,7 +42,7 @@
             event.target.style.zIndex = '10';
             nextSlide(slides[0]);
         }*/
-    }, false);
+    }
 
     function nextSlide(eCurrent) {
 
