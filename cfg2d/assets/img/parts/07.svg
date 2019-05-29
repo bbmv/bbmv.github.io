@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 302 512.02" style="enable-background:new 0 0 302 512.02;" xml:space="preserve">
+<g id="powerme">
+	<g id="style1">
+		<path id="asdf" style="fill:#0B60CB;" d="M20.6,23.508H281.4c11.33,0,20.6,9.282,20.6,16.054V486.82c0,15.918-9.27,25.2-20.6,25.2
+			H20.6c-11.33,0-20.6-9.282-20.6-25.2L0,39.562C0,32.79,9.27,23.508,20.6,23.508z"/>
+	</g>
+	<g id="style2">
+		<path id="asdf3" style="fill:#BEBAAE;" d="M148.535,262.766h4.93c10.344,0,18.807,8.474,18.807,18.832v70.743
+			c0,10.358-8.463,18.832-18.807,18.832h-4.93c-10.344,0-18.807-8.474-18.807-18.832v-70.743
+			C129.728,271.24,138.191,262.766,148.535,262.766z"/>
+	</g>
+	<g id="accent_2_">
+		<g id="XMLID_270_" style="opacity:0.3;">
+			<path id="XMLID_46_" style="fill:#FFFFFF;" d="M0,130.592l0-80.999c0-10.112,9.161-18.385,20.357-18.385h261.286
+				c11.196,0,20.357,8.273,20.357,18.385v80.999c0,0.994-0.892,1.799-1.992,1.799H1.992C0.892,132.391,0,131.586,0,130.592z"/>
+		</g>
+		<g id="XMLID_31_">
+			<path id="asdf3_1_" style="fill:#BEBAAE;" d="M145.332,192.331h11.336c23.785,0,43.246,19.486,43.246,43.303v162.669
+				c0,23.817-19.461,43.303-43.246,43.303h-11.336c-23.785,0-43.246-19.486-43.246-43.303V235.634
+				C102.086,211.818,121.547,192.331,145.332,192.331z"/>
+		</g>
+		
+			<linearGradient id="XMLID_2_" gradientUnits="userSpaceOnUse" x1="668.931" y1="390.0902" x2="668.931" y2="425.1329" gradientTransform="matrix(-1 0 0 -1 819.931 558)">
+			<stop  offset="0" style="stop-color:#FFFFFF;stop-opacity:0"/>
+			<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0.3"/>
+		</linearGradient>
+		<rect id="XMLID_85_" x="0" y="132.224" style="fill:url(#XMLID_2_);" width="302" height="40"/>
+	</g>
+	<rect id="XMLID_114_" x="18.838" y="0" style="fill:#444444;" width="264.325" height="23.508"/>
+</g>
+<g id="Layer_1">
+</g>
+</svg>
