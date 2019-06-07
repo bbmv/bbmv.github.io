@@ -561,7 +561,8 @@
 		"priceClasses": [62500, 75000, 81000],
 		"styleCollections": ["5afe824c9367a117b70bf7d2", "5b1601bf9641091f100c3f6c"],
 		"styles": ["5b303d5387d2b40ca8eb8fd6", "5b2ef8cbc16eef6f53402582"]
-	}, {
+	},
+    {
 		"_id": "5b304b0352a63315a3c51002",
 		"slug": "2s",
 		"height": 0.535,
@@ -601,7 +602,8 @@
 		"priceClasses": [93500, 112500, 121500],
 		"styleCollections": ["5afe824c9367a117b70bf7d2", "5b1601bf9641091f100c3f6c"],
 		"styles": ["5b303d5387d2b40ca8eb8fd6", "5b2ef8cbc16eef6f53402582"]
-	}, {
+	},
+    {
 		"_id": "5b304b2c52a63315a3c51003",
 		"slug": "3s",
 		"height": 0.535,
@@ -641,7 +643,8 @@
 		"priceClasses": [125000, 150000, 162000],
 		"styleCollections": ["5afe824c9367a117b70bf7d2", "5b1601bf9641091f100c3f6c"],
 		"styles": ["5b303d5387d2b40ca8eb8fd6", "5b2ef8cbc16eef6f53402582"]
-	}, {
+	},
+    {
 		"_id": "5afe82669367a117b70bf7d4",
 		"slug": "1b",
 		"name": "1B",
@@ -680,7 +683,8 @@
 		"priceClasses": [47000, 56000, 61500],
 		"styleCollections": ["5afe824c9367a117b70bf7d2", "5b1601bf9641091f100c3f6c"],
 		"styles": ["5b303d5387d2b40ca8eb8fd6", "5b2ef8cbc16eef6f53402582"]
-	}, {
+	},
+    {
 		"_id": "5b27a4314d678628011d5147",
 		"slug": "2b",
 		"height": 0.482,
@@ -719,7 +723,8 @@
 		"priceClasses": [73000, 87500, 94500],
 		"styleCollections": ["5afe824c9367a117b70bf7d2", "5b1601bf9641091f100c3f6c"],
 		"styles": ["5b303d5387d2b40ca8eb8fd6", "5b2ef8cbc16eef6f53402582"]
-	}, {
+	},
+    {
 		"_id": "5b304a1987d2b40ca8eb8fd9",
 		"slug": "3b",
 		"height": 0.482,
@@ -758,7 +763,8 @@
 		"priceClasses": [99000, 118500, 118500],
 		"styleCollections": ["5afe824c9367a117b70bf7d2", "5b1601bf9641091f100c3f6c"],
 		"styles": ["5b303d5387d2b40ca8eb8fd6", "5b2ef8cbc16eef6f53402582"]
-	}, {
+	},
+    {
 		"_id": "5afe82b69367a117b70bf7d7",
 		"slug": "pm",
 		"name": "PM",
@@ -827,7 +833,8 @@
 		"extraPrice": 30000,
 		"styleCollections": ["5afe822d9367a117b70bf7cf", "", "5b1601bf9641091f100c3f6c", "5b1601bf9641091f100c3f6c", "5b1601bf9641091f100c3f6c", "5b1601bf9641091f100c3f6c", "5b1601bf9641091f100c3f6c"],
 		"styles": ["5ba64111e9598c2640828558", "", "5b2ef8cbc16eef6f53402582", "5b2ef8cbc16eef6f53402582", "5b2ef8cbc16eef6f53402582", "5b2ef8cbc16eef6f53402582", "5b2ef8cbc16eef6f53402582"]
-	}, {
+	},
+    {
 		"_id": "5b304b6a52a63315a3c51004",
 		"slug": "c180",
 		"height": 0.482,
@@ -867,7 +874,8 @@
 		"extraPrice": 31500,
 		"styleCollections": ["5b1601bf9641091f100c3f6c", "5b1601bf9641091f100c3f6c"],
 		"styles": ["5b2ef8cbc16eef6f53402582", "5b2ef8cbc16eef6f53402582"]
-	}, {
+	},
+    {
 		"_id": "5b304b8552a63315a3c51005",
 		"slug": "c90",
 		"height": 0.601,
@@ -901,7 +909,8 @@
 		"extraPrice": 31500,
 		"styleCollections": ["5b1601bf9641091f100c3f6c"],
 		"styles": ["5b2ef8cbc16eef6f53402582"]
-	}, {
+	},
+    {
 		"_id": "5b304ba252a63315a3c51006",
 		"slug": "c45",
 		"height": 0.507,
@@ -935,7 +944,8 @@
 		"extraPrice": 31000,
 		"styleCollections": ["5b1601bf9641091f100c3f6c"],
 		"styles": ["5b2ef8cbc16eef6f53402582"]
-	}, {
+	},
+    {
 		"_id": "5b1601e39641091f100c3f6e",
 		"slug": "aria-connector",
 		"height": 0.482,
@@ -1022,7 +1032,8 @@
 			"y": 0,
 			"x": 0
 		}
-	}, {
+	},
+    {
 		"_id": "5b678e7e02f05d2581896505",
 		"name": "Bench Frame - 1800",
 		"slug": "aria-bench-frame-1800",
@@ -1056,7 +1067,8 @@
 			"y": 0,
 			"x": 0
 		}
-	}, {
+	},
+    {
 		"_id": "5b678e7802f05d2581896503",
 		"name": "Seat Frame - 1800",
 		"slug": "aria-seat-frame-1800",
@@ -1090,7 +1102,8 @@
 			"y": 0,
 			"x": 0
 		}
-	}, {
+	},
+    {
 		"_id": "5b678e7202f05d2581896501",
 		"name": "Seat Battens - 1800",
 		"slug": "aria-seat-battens-1800",
@@ -1124,7 +1137,8 @@
 			"y": 0,
 			"x": 0
 		}
-	}, {
+	},
+    {
 		"_id": "5b678e6b02f05d25818964ff",
 		"name": "Bench Battens - 1800",
 		"slug": "aria-bench-battens-1800",
@@ -1158,7 +1172,8 @@
 			"y": 0,
 			"x": 0
 		}
-	}, {
+	},
+    {
 		"_id": "5b56be67c4be8c6b81785fcd",
 		"name": "Panel - 45",
 		"slug": "aria-panel-45",
@@ -1192,7 +1207,8 @@
 			"y": 0,
 			"x": 0
 		}
-	}, {
+	},
+    {
 		"_id": "5b56be63c4be8c6b81785fcb",
 		"name": "Panel - 90",
 		"slug": "aria-panel-90",
@@ -1226,7 +1242,8 @@
 			"y": 0,
 			"x": 0
 		}
-	}, {
+	},
+    {
 		"_id": "5b5117bccae8281a61357b1f",
 		"name": "PowerMe Badge",
 		"slug": "aria-powerme-badge",
@@ -1260,7 +1277,43 @@
 			"y": 0,
 			"x": 0
 		}
-	}, {
+	},
+    {
+      "_id": "5b2c3ab5d7e6ef5f87343008",
+      "name": "PowerMe Axle",
+      "slug": "aria-powerme-axle",
+      "inheritStyles": "5b1601bf9641091f100c3f6c",
+      "relatedModels": [],
+      "placeOnTop": false,
+      "categories": ["5ae283e59278a33eba8c75a5"],
+      "defaultIsBorderless": false,
+      "defaultFrame": 1,
+      "frameType": null,
+      "sizes": [],
+      "placementType": "Configurator",
+      "bundle": "https://inhaabit-sydney.s3.amazonaws.com//ar-models/5b2c3ab5d7e6ef5f87343008/bundle.7z",
+      "stylesName": "",
+      "range": null,
+      "isTransparent": false,
+      "tileMode": [],
+      "arName": "",
+      "orientations": [],
+      "slugOverride": "",
+      "version": 2,
+      "webBundle": "https://inhaabit-sydney.s3.amazonaws.com//ar-models/5b2c3ab5d7e6ef5f87343008/modelSource.zip",
+      "brand": "Aria",
+      "link": "models/aria-powerme-axle",
+      "image": "https://api.inhaabit.com/images/no-image.png",
+      "path": "aria-powerme-axle",
+      "meta": [],
+      "settings": {
+        "rotation": 0,
+        "z": 0,
+        "y": 0,
+        "x": 0
+      }
+    },
+    {
 		"_id": "5b511598cae8281a61357b1c",
 		"name": "PowerMe Axle Right",
 		"slug": "aria-powerme-axle-right",
@@ -1294,7 +1347,8 @@
 			"y": 0,
 			"x": 0
 		}
-	}, {
+	},
+    {
 		"_id": "5b511115cae8281a61357b19",
 		"name": "PowerMe Axle Left",
 		"slug": "aria-powerme-axle-left",
@@ -1328,7 +1382,113 @@
 			"y": 0,
 			"x": 0
 		}
-	}, {
+	},
+    {
+      "_id": "5b28a277c0ede530ff80856d",
+      "name": "PowerMe Accent",
+      "slug": "aria-powerme-accent",
+      "stylesName": "",
+      "relatedModels": [],
+      "placeOnTop": false,
+      "categories": ["5aed963d40a9656152f6d43c"],
+      "defaultIsBorderless": false,
+      "defaultFrame": 1,
+      "frameType": null,
+      "sizes": [],
+      "placementType": "Configurator",
+      "inheritStyles": null,
+      "range": null,
+      "bundle": "https://inhaabit-sydney.s3.amazonaws.com//ar-models/5b28a277c0ede530ff80856d/bundle.7z",
+      "arName": "",
+      "slugOverride": "",
+      "isTransparent": false,
+      "tileMode": [],
+      "orientations": [],
+      "version": 2,
+      "webBundle": "https://inhaabit-sydney.s3.amazonaws.com//ar-models/5b28a277c0ede530ff80856d/modelSource.zip",
+      "brand": "Aria",
+      "link": "models/aria-powerme-accent",
+      "image": "https://api.inhaabit.com/images/no-image.png",
+      "path": "aria-powerme-accent",
+      "meta": [],
+      "settings": {
+        "rotation": 0,
+        "z": 0,
+        "y": 0,
+        "x": 0
+      }
+    },
+    {
+      "_id": "5b28a26cc0ede530ff808565",
+      "name": "PowerMe Frame",
+      "slug": "aria-powerme-frame",
+      "stylesName": "Tabletop & Door Finish",
+      "relatedModels": [],
+      "placeOnTop": false,
+      "categories": ["5aed963d40a9656152f6d43c"],
+      "defaultIsBorderless": false,
+      "defaultFrame": 1,
+      "frameType": null,
+      "sizes": [],
+      "placementType": "Configurator",
+      "inheritStyles": "5b1601bf9641091f100c3f6c",
+      "range": null,
+      "bundle": "https://inhaabit-sydney.s3.amazonaws.com//ar-models/5b28a26cc0ede530ff808565/bundle.7z",
+      "arName": "",
+      "slugOverride": "",
+      "isTransparent": false,
+      "tileMode": [],
+      "orientations": [],
+      "version": 2,
+      "webBundle": "https://inhaabit-sydney.s3.amazonaws.com//ar-models/5b28a26cc0ede530ff808565/modelSource.zip",
+      "brand": "Aria",
+      "link": "models/aria-powerme-frame",
+      "image": "https://api.inhaabit.com/images/no-image.png",
+      "path": "aria-powerme-frame",
+      "meta": [],
+      "settings": {
+        "rotation": 0,
+        "z": 0,
+        "y": 0,
+        "x": 0
+      }
+    },
+    {
+      "_id": "5afe822d9367a117b70bf7cf",
+      "name": "PowerMe Tabletop",
+      "slug": "aria-powerme-tabletop",
+      "categories": ["5aed963d40a9656152f6d43c"],
+      "defaultIsBorderless": false,
+      "defaultFrame": 1,
+      "frameType": null,
+      "sizes": [],
+      "placementType": "Configurator",
+      "relatedModels": [],
+      "inheritStyles": null,
+      "placeOnTop": false,
+      "range": null,
+      "stylesName": "Tabletop",
+      "bundle": "https://inhaabit-sydney.s3.amazonaws.com//ar-models/5afe822d9367a117b70bf7cf/bundle.7z",
+      "arName": "",
+      "slugOverride": "",
+      "isTransparent": false,
+      "tileMode": [],
+      "webBundle": "https://inhaabit-sydney.s3.amazonaws.com//ar-models/5afe822d9367a117b70bf7cf/modelSource.zip",
+      "brand": "Aria",
+      "orientations": [],
+      "link": "models/aria-powerme-tabletop",
+      "image": "https://api.inhaabit.com/images/no-image.png",
+      "path": "aria-powerme-tabletop",
+      "meta": [],
+      "settings": {
+        "rotation": 0,
+        "z": 0,
+        "y": 0,
+        "x": 0
+      },
+      "version": 1
+    },
+    {
 		"_id": "5b4ea748a9e95551112d5f7d",
 		"name": "Seat Frame - 1200",
 		"slug": "aria-seat-frame-1200",
@@ -1362,7 +1522,8 @@
 			"y": 0,
 			"x": 0
 		}
-	}, {
+	},
+    {
 		"_id": "5b4ea71ea9e95551112d5f7b",
 		"name": "Seat Battens - 1200",
 		"slug": "aria-seat-battens-1200",
@@ -1396,7 +1557,8 @@
 			"y": 0,
 			"x": 0
 		}
-	}, {
+	},
+    {
 		"_id": "5b39632a52a63315a3c5107b",
 		"name": "Connector Arm",
 		"slug": "aria-connector-arm",
@@ -1430,7 +1592,8 @@
 			"y": 0,
 			"x": 0
 		}
-	}, {
+	},
+    {
 		"_id": "5b39632152a63315a3c51079",
 		"name": "Connector Clamp",
 		"slug": "aria-connector-clamp",
@@ -1464,7 +1627,8 @@
 			"y": 0,
 			"x": 0
 		}
-	}, {
+	},
+    {
 		"_id": "5b39631d52a63315a3c51077",
 		"name": "Connector Pedestal",
 		"slug": "aria-connector-pedestal",
@@ -1498,7 +1662,8 @@
 			"y": 0,
 			"x": 0
 		}
-	}, {
+	},
+    {
 		"_id": "5b39631752a63315a3c51075",
 		"name": "Connector Splay",
 		"slug": "aria-connector-splay",
@@ -1532,7 +1697,8 @@
 			"y": 0,
 			"x": 0
 		}
-	}, {
+	},
+    {
 		"_id": "5b37919b52a63315a3c51073",
 		"name": "Panel - 180",
 		"slug": "aria-panel-180",
@@ -1566,7 +1732,8 @@
 			"y": 0,
 			"x": 0
 		}
-	}, {
+	},
+    {
 		"_id": "5b378fa352a63315a3c51071",
 		"name": "Bench Frame - 1200",
 		"slug": "aria-bench-frame-1200",
@@ -1600,7 +1767,8 @@
 			"y": 0,
 			"x": 0
 		}
-	}, {
+	},
+    {
 		"_id": "5b378f8652a63315a3c5106f",
 		"name": "Seat Frame - 600",
 		"slug": "aria-seat-frame-600",
@@ -1634,41 +1802,8 @@
 			"y": 0,
 			"x": 0
 		}
-	}, {
-		"_id": "5b2c3ab5d7e6ef5f87343008",
-		"name": "PowerMe Axle",
-		"slug": "aria-powerme-axle",
-		"inheritStyles": "5b1601bf9641091f100c3f6c",
-		"relatedModels": [],
-		"placeOnTop": false,
-		"categories": ["5ae283e59278a33eba8c75a5"],
-		"defaultIsBorderless": false,
-		"defaultFrame": 1,
-		"frameType": null,
-		"sizes": [],
-		"placementType": "Configurator",
-		"bundle": "https://inhaabit-sydney.s3.amazonaws.com//ar-models/5b2c3ab5d7e6ef5f87343008/bundle.7z",
-		"stylesName": "",
-		"range": null,
-		"isTransparent": false,
-		"tileMode": [],
-		"arName": "",
-		"orientations": [],
-		"slugOverride": "",
-		"version": 2,
-		"webBundle": "https://inhaabit-sydney.s3.amazonaws.com//ar-models/5b2c3ab5d7e6ef5f87343008/modelSource.zip",
-		"brand": "Aria",
-		"link": "models/aria-powerme-axle",
-		"image": "https://api.inhaabit.com/images/no-image.png",
-		"path": "aria-powerme-axle",
-		"meta": [],
-		"settings": {
-			"rotation": 0,
-			"z": 0,
-			"y": 0,
-			"x": 0
-		}
-	}, {
+	},
+    {
 		"_id": "5b2c3a93d7e6ef5f87343006",
 		"name": "Bench Frame - 600",
 		"slug": "aria-bench-frame-600",
@@ -1702,75 +1837,8 @@
 			"y": 0,
 			"x": 0
 		}
-	}, {
-		"_id": "5b28a277c0ede530ff80856d",
-		"name": "PowerMe Accent",
-		"slug": "aria-powerme-accent",
-		"stylesName": "",
-		"relatedModels": [],
-		"placeOnTop": false,
-		"categories": ["5aed963d40a9656152f6d43c"],
-		"defaultIsBorderless": false,
-		"defaultFrame": 1,
-		"frameType": null,
-		"sizes": [],
-		"placementType": "Configurator",
-		"inheritStyles": null,
-		"range": null,
-		"bundle": "https://inhaabit-sydney.s3.amazonaws.com//ar-models/5b28a277c0ede530ff80856d/bundle.7z",
-		"arName": "",
-		"slugOverride": "",
-		"isTransparent": false,
-		"tileMode": [],
-		"orientations": [],
-		"version": 2,
-		"webBundle": "https://inhaabit-sydney.s3.amazonaws.com//ar-models/5b28a277c0ede530ff80856d/modelSource.zip",
-		"brand": "Aria",
-		"link": "models/aria-powerme-accent",
-		"image": "https://api.inhaabit.com/images/no-image.png",
-		"path": "aria-powerme-accent",
-		"meta": [],
-		"settings": {
-			"rotation": 0,
-			"z": 0,
-			"y": 0,
-			"x": 0
-		}
-	}, {
-		"_id": "5b28a26cc0ede530ff808565",
-		"name": "PowerMe Frame",
-		"slug": "aria-powerme-frame",
-		"stylesName": "Tabletop & Door Finish",
-		"relatedModels": [],
-		"placeOnTop": false,
-		"categories": ["5aed963d40a9656152f6d43c"],
-		"defaultIsBorderless": false,
-		"defaultFrame": 1,
-		"frameType": null,
-		"sizes": [],
-		"placementType": "Configurator",
-		"inheritStyles": "5b1601bf9641091f100c3f6c",
-		"range": null,
-		"bundle": "https://inhaabit-sydney.s3.amazonaws.com//ar-models/5b28a26cc0ede530ff808565/bundle.7z",
-		"arName": "",
-		"slugOverride": "",
-		"isTransparent": false,
-		"tileMode": [],
-		"orientations": [],
-		"version": 2,
-		"webBundle": "https://inhaabit-sydney.s3.amazonaws.com//ar-models/5b28a26cc0ede530ff808565/modelSource.zip",
-		"brand": "Aria",
-		"link": "models/aria-powerme-frame",
-		"image": "https://api.inhaabit.com/images/no-image.png",
-		"path": "aria-powerme-frame",
-		"meta": [],
-		"settings": {
-			"rotation": 0,
-			"z": 0,
-			"y": 0,
-			"x": 0
-		}
-	}, {
+	},
+    {
 		"_id": "5b27a3464d678628011d5140",
 		"name": "Bench Battens - 1200",
 		"slug": "aria-bench-battens-1200",
@@ -1804,7 +1872,8 @@
 			"y": 0,
 			"x": 0
 		}
-	}, {
+	},
+    {
 		"_id": "5b1601bf9641091f100c3f6c",
 		"name": "Connector",
 		"slug": "aria-connector",
@@ -1838,7 +1907,8 @@
 			"y": 0,
 			"x": 0
 		}
-	}, {
+	},
+    {
 		"_id": "5afe824c9367a117b70bf7d2",
 		"name": "Seat Battens - 600",
 		"slug": "aria-seat-battens-600",
@@ -1872,41 +1942,8 @@
 			"y": 0,
 			"x": 0
 		}
-	}, {
-		"_id": "5afe822d9367a117b70bf7cf",
-		"name": "PowerMe Tabletop",
-		"slug": "aria-powerme-tabletop",
-		"categories": ["5aed963d40a9656152f6d43c"],
-		"defaultIsBorderless": false,
-		"defaultFrame": 1,
-		"frameType": null,
-		"sizes": [],
-		"placementType": "Configurator",
-		"relatedModels": [],
-		"inheritStyles": null,
-		"placeOnTop": false,
-		"range": null,
-		"stylesName": "Tabletop",
-		"bundle": "https://inhaabit-sydney.s3.amazonaws.com//ar-models/5afe822d9367a117b70bf7cf/bundle.7z",
-		"arName": "",
-		"slugOverride": "",
-		"isTransparent": false,
-		"tileMode": [],
-		"webBundle": "https://inhaabit-sydney.s3.amazonaws.com//ar-models/5afe822d9367a117b70bf7cf/modelSource.zip",
-		"brand": "Aria",
-		"orientations": [],
-		"link": "models/aria-powerme-tabletop",
-		"image": "https://api.inhaabit.com/images/no-image.png",
-		"path": "aria-powerme-tabletop",
-		"meta": [],
-		"settings": {
-			"rotation": 0,
-			"z": 0,
-			"y": 0,
-			"x": 0
-		},
-		"version": 1
-	}, {
+	},
+    {
 		"_id": "5aed968640a9656152f6d43e",
 		"name": "Bench Battens - 600",
 		"slug": "aria-bench-battens-600",
@@ -1959,7 +1996,8 @@
 			"path": "standard",
 			"image": null
 		}]
-	}, {
+	},
+    {
 		"_id": "5b1601bf9641091f100c3f6c",
 		"name": "Frame",
 		"styles": [{
@@ -2096,7 +2134,8 @@
 			"modelUrl": "http://streetfurniture.com/au/sable-bass",
 			"cartUrl": "http://streetfurniture.com/au/sable-bass"
 		}]
-	}, {
+	},
+    {
 		"_id": "5afe824c9367a117b70bf7d2",
 		"name": "Battens",
 		"styles": [{
@@ -2443,7 +2482,8 @@
 			"androidBundle": "https://inhaabit-sydney.s3.amazonaws.com//ar-models/5b303b9587d2b40ca8eb8fcb/bundle.7z",
 			"webBundle": "https://inhaabit-sydney.s3.amazonaws.com//ar-models/5b303b9587d2b40ca8eb8fcb/bundle.7z"
 		}]
-	}, {
+	},
+    {
 		"_id": "5afe822d9367a117b70bf7cf",
 		"name": "Tabletop",
 		"styles": [{
