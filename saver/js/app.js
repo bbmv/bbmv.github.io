@@ -50,6 +50,9 @@ function download(buffer, filename) {
     var iframe = document.createElement('iframe');
     iframe.style.display = 'none';
     document.body.appendChild(iframe);
+    
+    converted = converted.replace('image/png', 'image/octet-stream');
+    console.log(converted);
     iframe.src = converted;
   };
   fileReader.onerror = function(e) {
