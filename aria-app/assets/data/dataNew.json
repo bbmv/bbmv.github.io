@@ -1,6 +1,6 @@
 {
 	"configurations": [
-		{
+    {
 		"name": "3S",
 		"image": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com/ar-models/qmHZi9-AW-VYeE02.jpg",
 		"category": "ARIA Seats",
@@ -521,7 +521,8 @@
 			"_id": "5b27a4314d678628011d5147"
 		}]
 	}],
-	"sprites": [{
+	"sprites": [
+    {
 		"_id": "5aed96be40a9656152f6d441",
 		"slug": "1s",
 		"name": "1S",
@@ -558,7 +559,7 @@
 		"partCode": "1S",
 		"partCodeReverse": "1SR",
 		"priceClasses": [62500, 75000, 81000],
-		"styles": ["5b303d5387d2b40ca8eb8fd6", "5b2ef8cbc16eef6f53402582"],
+		"styles": ["5b303d5387d2b40ca8eb8fd5", "5b2ef8cbc16eef6f53402582"],
 		"styleCollections": ["5afe824c9367a117b70bf7d2", "5b1601bf9641091f100c3f6c"]
 	}, {
 		"_id": "5b304b0352a63315a3c51002",
@@ -598,7 +599,7 @@
 		"partCode": "2S",
 		"partCodeReverse": "2SR",
 		"priceClasses": [93500, 112500, 121500],
-		"styles": ["5b303d5387d2b40ca8eb8fd6", "5b2ef8cbc16eef6f53402582"],
+		"styles": ["5b303d5387d2b40ca8eb8fd5", "5b2ef8cbc16eef6f53402582"],
 		"styleCollections": ["5afe824c9367a117b70bf7d2", "5b1601bf9641091f100c3f6c"]
 	}, {
 		"_id": "5b304b2c52a63315a3c51003",
@@ -638,7 +639,7 @@
 		"partCode": "3S",
 		"partCodeReverse": "3SR",
 		"priceClasses": [125000, 150000, 162000],
-		"styles": ["5b303d5387d2b40ca8eb8fd6", "5b2ef8cbc16eef6f53402582"],
+		"styles": ["5b303d5387d2b40ca8eb8fd5", "5b2ef8cbc16eef6f53402582"],
 		"styleCollections": ["5afe824c9367a117b70bf7d2", "5b1601bf9641091f100c3f6c"]
 	}, {
 		"_id": "5afe82669367a117b70bf7d4",
@@ -677,7 +678,7 @@
 		"icon": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com/ar-models/Ranl74gJNDPSQ1oX.jpg",
 		"partCode": "1B",
 		"priceClasses": [47000, 56000, 61500],
-		"styles": ["5b303d5387d2b40ca8eb8fd6", "5b2ef8cbc16eef6f53402582"],
+		"styles": ["5b303d5387d2b40ca8eb8fd5", "5b2ef8cbc16eef6f53402582"],
 		"styleCollections": ["5afe824c9367a117b70bf7d2", "5b1601bf9641091f100c3f6c"]
 	}, {
 		"_id": "5b27a4314d678628011d5147",
@@ -716,7 +717,7 @@
 		"icon": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com/ar-models/lM6K0RS6kleLRY-U.jpg",
 		"partCode": "2B",
 		"priceClasses": [73000, 87500, 94500],
-		"styles": ["5b303d5387d2b40ca8eb8fd6", "5b2ef8cbc16eef6f53402582"],
+		"styles": ["5b303d5387d2b40ca8eb8fd5", "5b2ef8cbc16eef6f53402582"],
 		"styleCollections": ["5afe824c9367a117b70bf7d2", "5b1601bf9641091f100c3f6c"]
 	}, {
 		"_id": "5b304a1987d2b40ca8eb8fd9",
@@ -755,7 +756,7 @@
 		"icon": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com/ar-models/jU8CcR-dwNqzV5y7.jpg",
 		"partCode": "3B",
 		"priceClasses": [99000, 118500, 118500],
-		"styles": ["5b303d5387d2b40ca8eb8fd6", "5b2ef8cbc16eef6f53402582"],
+		"styles": ["5b303d5387d2b40ca8eb8fd5", "5b2ef8cbc16eef6f53402582"],
 		"styleCollections": ["5afe824c9367a117b70bf7d2", "5b1601bf9641091f100c3f6c"]
 	}, {
 		"_id": "5afe82b69367a117b70bf7d7",
@@ -930,7 +931,7 @@
 		"icon": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com/ar-models/gD2cKyB-P_o48x53.jpg",
 		"image": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com/ar-models/NXijCPMFKuE839Dq.svg",
 		"partCode": "C45",
-		"priceClasses": [21000],
+		"priceClasses": [31000],
 		"extraPrice": 16000,
 		"styles": ["5b2ef8cbc16eef6f53402582"],
 		"styleCollections": ["5b1601bf9641091f100c3f6c"]
@@ -986,7 +987,8 @@
 		"styles": ["5b2ef8cbc16eef6f53402582", "5b2ef8cbc16eef6f53402582", "5b2ef8cbc16eef6f53402582", "5b2ef8cbc16eef6f53402582", "5b2ef8cbc16eef6f53402582", "5bb57d4f5b43105a4270a336"],
 		"styleCollections": ["5b1601bf9641091f100c3f6c", "5b1601bf9641091f100c3f6c", "5b1601bf9641091f100c3f6c", "5b1601bf9641091f100c3f6c", "5b1601bf9641091f100c3f6c", "5bb57d4f5b43105a4270a335"]
 	}],
-	"arModels": [{
+	"arModels": [
+    {
 		"_id": "5aed968640a9656152f6d43e",
 		"name": "Bench Battens - 600",
 		"slug": "bench-battens-600",
@@ -1001,6 +1003,7 @@
 		"version": 2,
 		"webBundle": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com//ar-models/5aed968640a9656152f6d43e/modelSource.zip",
 		"albedo": null,
+		"emission": null,
 		"metalness": null,
 		"normal": null
 	}, {
@@ -1018,6 +1021,7 @@
 		"version": 2,
 		"path": "powerme-tabletop",
 		"albedo": null,
+		"emission": null,
 		"roughness": null,
 		"metalness": null
 	}, {
@@ -1036,6 +1040,7 @@
 		"version": 3,
 		"webBundle": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com//ar-models/5afe824c9367a117b70bf7d2/modelSource.zip",
 		"albedo": null,
+		"emission": null,
 		"metalness": null
 	}, {
 		"_id": "5b1601bf9641091f100c3f6c",
@@ -1053,7 +1058,8 @@
 		"roughness": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com/ar-models/zMYcRH2tZHk5DXsJ..jpg",
 		"version": 2,
 		"webBundle": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com//ar-models/5b1601bf9641091f100c3f6c/modelSource.zip",
-		"albedo": null
+		"albedo": null,
+		"emission": null
 	}, {
 		"_id": "5b27a3464d678628011d5140",
 		"name": "Bench Battens - 1200",
@@ -1069,6 +1075,7 @@
 		"version": 3,
 		"webBundle": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com//ar-models/5b27a3464d678628011d5140/modelSource.zip",
 		"albedo": null,
+		"emission": null,
 		"metalness": null,
 		"normal": null
 	}, {
@@ -1082,6 +1089,7 @@
 		"bundle": "https://inhaabit-sydney.s3.amazonaws.com//ar-models/5b28a26cc0ede530ff808565/bundle.7z",
 		"normal": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com/ar-models/xWBml9wgv0gkQhPH..jpg",
 		"path": "powerme-frame",
+		"emission": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com/ar-models/Hrwqgo7Xx6CHI-bK..jpg",
 		"version": 2,
 		"webBundle": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com//ar-models/5b28a26cc0ede530ff808565/modelSource.zip",
 		"shadow": null,
@@ -1102,6 +1110,7 @@
 		"roughness": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com/ar-models/kx6zzq6y7W6kvWWl.jpg",
 		"shadow": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com/ar-models/NYViYu8QxOXXXrN6.png",
 		"path": "powerme-accent",
+		"emission": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com/ar-models/-lj6vgs_lZNagrY_.jpg",
 		"version": 4,
 		"webBundle": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com//ar-models/5b28a277c0ede530ff80856d/modelSource.zip",
 		"normal": null
@@ -1120,6 +1129,7 @@
 		"path": "bench-frame-600",
 		"shadow": null,
 		"albedo": null,
+		"emission": null,
 		"roughness": null,
 		"metalness": null
 	}, {
@@ -1137,6 +1147,7 @@
 		"path": "powerme-axle",
 		"shadow": null,
 		"albedo": null,
+		"emission": null,
 		"roughness": null,
 		"metalness": null
 	}, {
@@ -1154,6 +1165,7 @@
 		"webBundle": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com//ar-models/5b378f8652a63315a3c5106f/modelSource.zip",
 		"shadow": null,
 		"albedo": null,
+		"emission": null,
 		"roughness": null,
 		"metalness": null
 	}, {
@@ -1171,6 +1183,7 @@
 		"path": "bench-frame-1200",
 		"shadow": null,
 		"albedo": null,
+		"emission": null,
 		"roughness": null,
 		"metalness": null
 	}, {
@@ -1188,6 +1201,7 @@
 		"version": 3,
 		"webBundle": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com//ar-models/5b37919b52a63315a3c51073/modelSource.zip",
 		"albedo": null,
+		"emission": null,
 		"roughness": null,
 		"metalness": null
 	}, {
@@ -1205,6 +1219,7 @@
 		"version": 3,
 		"webBundle": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com//ar-models/5b39631752a63315a3c51075/modelSource.zip",
 		"albedo": null,
+		"emission": null,
 		"roughness": null,
 		"metalness": null
 	}, {
@@ -1222,6 +1237,7 @@
 		"version": 3,
 		"path": "connector-pedestal",
 		"albedo": null,
+		"emission": null,
 		"roughness": null,
 		"metalness": null
 	}, {
@@ -1239,6 +1255,7 @@
 		"version": 2,
 		"webBundle": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com//ar-models/5b39632152a63315a3c51079/modelSource.zip",
 		"albedo": null,
+		"emission": null,
 		"roughness": null,
 		"metalness": null
 	}, {
@@ -1256,6 +1273,7 @@
 		"path": "connector-arm",
 		"shadow": null,
 		"albedo": null,
+		"emission": null,
 		"roughness": null,
 		"metalness": null
 	}, {
@@ -1273,6 +1291,7 @@
 		"webBundle": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com//ar-models/5b4ea71ea9e95551112d5f7b/modelSource.zip",
 		"path": "seat-battens-1200",
 		"albedo": null,
+		"emission": null,
 		"metalness": null,
 		"normal": null
 	}, {
@@ -1290,6 +1309,7 @@
 		"path": "seat-frame-1200",
 		"shadow": null,
 		"albedo": null,
+		"emission": null,
 		"roughness": null,
 		"metalness": null
 	}, {
@@ -1307,6 +1327,7 @@
 		"path": "powerme-axle-left",
 		"shadow": null,
 		"albedo": null,
+		"emission": null,
 		"roughness": null,
 		"metalness": null
 	}, {
@@ -1324,6 +1345,7 @@
 		"path": "powerme-axle-right",
 		"shadow": null,
 		"albedo": null,
+		"emission": null,
 		"roughness": null,
 		"metalness": null
 	}, {
@@ -1341,6 +1363,7 @@
 		"webBundle": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com//ar-models/5b5117bccae8281a61357b1f/modelSource.zip",
 		"shadow": null,
 		"albedo": null,
+		"emission": null,
 		"roughness": null,
 		"metalness": null
 	}, {
@@ -1358,6 +1381,7 @@
 		"path": "panel-90",
 		"version": 3,
 		"webBundle": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com//ar-models/5b56be63c4be8c6b81785fcb/modelSource.zip",
+		"emission": null,
 		"roughness": null,
 		"metalness": null
 	}, {
@@ -1375,6 +1399,7 @@
 		"path": "panel-45",
 		"version": 11,
 		"webBundle": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com//ar-models/5b56be67c4be8c6b81785fcd/modelSource.zip",
+		"emission": null,
 		"roughness": null,
 		"metalness": null
 	}, {
@@ -1392,6 +1417,7 @@
 		"webBundle": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com//ar-models/5b678e6b02f05d25818964ff/modelSource.zip",
 		"path": "bench-battens-1800",
 		"albedo": null,
+		"emission": null,
 		"metalness": null,
 		"normal": null
 	}, {
@@ -1409,6 +1435,7 @@
 		"webBundle": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com//ar-models/5b678e7202f05d2581896501/modelSource.zip",
 		"path": "seat-battens-1800",
 		"albedo": null,
+		"emission": null,
 		"metalness": null,
 		"normal": null
 	}, {
@@ -1417,15 +1444,16 @@
 		"slug": "seat-frame-1800",
 		"inheritStyles": "5b1601bf9641091f100c3f6c",
 		"placementType": "Floor",
-		"ambientOcclusion": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com/ar-models/AXaEArT7z4v8D9xS.jpg",
-		"bundle": "https://inhaabit-sydney.s3.amazonaws.com//ar-models/5b678e7802f05d2581896503/bundle.7z",
-		"normal": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com/ar-models/pbaZGzPXGb0ZjPGu.jpg",
+		"ambientOcclusion": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com/ar-models/zIImDRZInlYO6wYL.jpg",
+		"bundle": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com//ar-models/5b678e7802f05d2581896503/bundle.7z",
+		"normal": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com/ar-models/Kx2tCZFUgZ_fd-qm..jpg",
 		"stylesName": "",
-		"version": 2,
+		"version": 6,
 		"webBundle": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com//ar-models/5b678e7802f05d2581896503/modelSource.zip",
-		"path": "seat-frame-1800",
 		"shadow": null,
+		"path": "seat-frame-1800",
 		"albedo": null,
+		"emission": null,
 		"roughness": null,
 		"metalness": null
 	}, {
@@ -1434,15 +1462,16 @@
 		"slug": "bench-frame-1800",
 		"inheritStyles": "5b1601bf9641091f100c3f6c",
 		"placementType": "Floor",
-		"ambientOcclusion": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com/ar-models/AhxcnEPmuJG9eHYs.jpg",
-		"bundle": "https://inhaabit-sydney.s3.amazonaws.com//ar-models/5b678e7e02f05d2581896505/bundle.7z",
-		"normal": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com/ar-models/nDPpt7ESpXoUM_hP.jpg",
-		"stylesName": "",
-		"version": 2,
+		"ambientOcclusion": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com/ar-models/zrga0Q80RyyxUA9X..jpg",
+		"bundle": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com//ar-models/5b678e7e02f05d2581896505/bundle.7z",
+		"normal": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com/ar-models/B9T2JfXZJzH6ibAG..jpg",
+		"stylesName": null,
+		"version": 13,
 		"webBundle": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com//ar-models/5b678e7e02f05d2581896505/modelSource.zip",
-		"path": "bench-frame-1800",
 		"shadow": null,
+		"path": "bench-frame-1800",
 		"albedo": null,
+		"emission": null,
 		"roughness": null,
 		"metalness": null
 	}, {
@@ -1458,91 +1487,91 @@
 		"path": "connector-arm-accent",
 		"shadow": null,
 		"albedo": null,
+		"emission": null,
 		"roughness": null,
 		"metalness": null,
 		"normal": null,
 		"ambientOcclusion": null
 	}],
-	"styleCollections": [{
+	"styleCollections": [
+    {
 		"styles": [
-			{
-			"_id": "5b303d5387d2b40ca8eb8fd6",
-			"name": "Hardwood: Cumaru",
-			"slug": "hardwood-cumaru",
-			"sku": "(deprecated)",
+      {
+			"_id": "5b303d5387d2b40ca8eb8fd5",
+			"name": "Alum: Woodgrain Spotted Gum",
+			"slug": "alum-woodgrain-spotted-gum",
+			"sku": "spotted-gum",
 			"arModel": "5afe824c9367a117b70bf7d2",
 			"color": "#deb074",
-			"image": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com/ar-models/OlMAm3dT5JH6jGdT.jpg",
-			"path": "hardwood-cumaru",
-			"albedo": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com/ar-models/xNy4RI9IaUJhXyHR..jpg",
-			"bundle": "https://inhaabit-sydney.s3.amazonaws.com//ar-models/5b303d5387d2b40ca8eb8fd6/bundle.7z",
-			"cartUrl": "(deprecated)"
+			"albedo": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com/ar-models/zLeBdeekv10HHG3p..jpg",
+			"image": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com/ar-models/DsvC-TYgZQMJ8CwC.jpg",
+			"bundle": "https://inhaabit-sydney.s3.amazonaws.com//ar-models/5b303d5387d2b40ca8eb8fd5/bundle.7z",
+			"priceClass": 2,
+			"path": "alum-woodgrain-spotted-gum",
+			"cartUrl": "http://streetfurniture.com/au/spotted-gum",
+			"modelUrl": "http://streetfurniture.com/au/spotted-gum"
 		}, {
 			"_id": "5b303d5387d2b40ca8eb8fd7",
 			"name": "Hardwood: Jarrah",
 			"slug": "hardwood-jarrah",
-			"sku": "(deprecated)",
+			"sku": "jarrah",
 			"arModel": "5afe824c9367a117b70bf7d2",
 			"color": "#84251d",
 			"image": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com/ar-models/z7Vkr4NOsd2ctlGT..jpg",
 			"path": "hardwood-jarrah",
 			"albedo": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com/ar-models/u2o6U5UivcQKx7FV..jpg",
 			"bundle": "https://inhaabit-sydney.s3.amazonaws.com//ar-models/5b303d5387d2b40ca8eb8fd7/bundle.7z",
-			"cartUrl": "(deprecated)"
+			"priceClass": 0,
+			"cartUrl": "http://streetfurniture.com/au/jarrah",
+			"modelUrl": "http://streetfurniture.com/au/jarrah"
 		}, {
 			"_id": "5baed7467140db2eb63229b7",
 			"name": "Alum: Anodised",
 			"slug": "alum-anodised",
-			"sku": "(deprecated)",
+			"sku": "anodised-aluminum",
 			"arModel": "5afe824c9367a117b70bf7d2",
 			"color": "#bfbfbf",
 			"albedoColor": "#bfbfbf",
 			"metalnessColor": "#bcbcbc",
 			"roughnessColor": "#8a8a8a",
+			"priceClass": 0,
 			"image": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com/ar-models/NAvjAakaxm3SZq0R.jpg",
 			"path": "alum-anodised",
-			"cartUrl": "(deprecated)"
-		}, {
-			"_id": "5b303d5387d2b40ca8eb8fd5",
-			"name": "Alum: Woodgrain Spotted Gum",
-			"slug": "alum-woodgrain-spotted-gum",
-			"sku": "(deprecated)",
-			"arModel": "5afe824c9367a117b70bf7d2",
-			"color": "#deb074",
-			"albedo": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com/ar-models/zLeBdeekv10HHG3p..jpg",
-			"image": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com/ar-models/DsvC-TYgZQMJ8CwC.jpg",
-			"bundle": "https://inhaabit-sydney.s3.amazonaws.com//ar-models/5b303d5387d2b40ca8eb8fd5/bundle.7z",
-			"path": "alum-woodgrain-spotted-gum",
-			"cartUrl": "(deprecated)"
+			"cartUrl": "http://streetfurniture.com/au/anodised-aluminum",
+			"modelUrl": "http://streetfurniture.com/au/anodised-aluminum"
 		}, {
 			"_id": "5b303d5387d2b40ca8eb8fd3",
 			"name": "Alum: Woodgrain Bush Cherry",
 			"slug": "alum-woodgrain-bush-cherry",
-			"sku": "(deprecated)",
+			"sku": "bush-cherry",
 			"arModel": "5afe824c9367a117b70bf7d2",
 			"color": "#8a4637",
 			"image": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com/ar-models/XSarsBgtcSMOTs-8.jpg",
 			"path": "alum-woodgrain-bush-cherry",
 			"albedo": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com/ar-models/BLwE_a2F3IDTDVd4..jpg",
 			"bundle": "https://inhaabit-sydney.s3.amazonaws.com//ar-models/5b303d5387d2b40ca8eb8fd3/bundle.7z",
-			"cartUrl": "(deprecated)"
+			"priceClass": 2,
+			"cartUrl": "http://streetfurniture.com/au/bush-cherry",
+			"modelUrl": "http://streetfurniture.com/au/bush-cherry"
 		}, {
 			"_id": "5b30382687d2b40ca8eb8fa3",
 			"name": "Alum: Woodgrain Grey Oak",
 			"slug": "alum-woodgrain-grey-oak",
-			"sku": "(deprecated)",
+			"sku": "woodland-grey",
 			"arModel": "5afe824c9367a117b70bf7d2",
 			"color": "#c5c6c9",
+			"priceClass": 2,
 			"albedo": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com/ar-models/uFw0z3maH6hP0hZS.jpg",
 			"path": "alum-woodgrain-grey-oak",
 			"bundle": "https://inhaabit-sydney.s3.amazonaws.com//ar-models/5b30382687d2b40ca8eb8fa3/bundle.7z",
 			"image": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com/ar-models/HmwOYQ5hnLn9j-PS.jpg",
-			"cartUrl": "(deprecated)"
+			"cartUrl": "http://streetfurniture.com/au/woodland-grey",
+			"modelUrl": "http://streetfurniture.com/au/woodland-grey"
 		}, {
 			"_id": "5b303a4c87d2b40ca8eb8fb7",
 			"name": "Alum: PC Pearl White",
 			"slug": "alum-pc-pearl-white",
-			"sku": "(deprecated)",
+			"sku": "pearl-white",
 			"arModel": "5afe824c9367a117b70bf7d2",
 			"color": "#e5e5e5",
 			"albedoColor": "#FFFFFF",
@@ -1550,167 +1579,193 @@
 			"roughnessColor": "#747474",
 			"image": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com/ar-models/hHaUQgDfuHx6adn8.jpg",
 			"path": "alum-pc-pearl-white",
-			"cartUrl": "(deprecated)"
+			"priceClass": 2,
+			"cartUrl": "http://streetfurniture.com/au/pearl-white",
+			"modelUrl": "http://streetfurniture.com/au/pearl-white"
 		}, {
 			"_id": "5b30392987d2b40ca8eb8faa",
 			"name": "Alum: PC Night Sky",
 			"slug": "alum-pc-night-sky",
-			"sku": "(deprecated)",
+			"sku": "night-sky",
 			"arModel": "5afe824c9367a117b70bf7d2",
 			"color": "#191919",
 			"albedoColor": "#000000",
 			"metalnessColor": "#000000",
 			"roughnessColor": "#747474",
+			"priceClass": 2,
 			"path": "alum-pc-night-sky",
 			"bundle": "",
-			"cartUrl": "(deprecated)"
+			"cartUrl": "http://streetfurniture.com/au/night-sky",
+			"modelUrl": "http://streetfurniture.com/au/night-sky"
 		}, {
 			"_id": "5b303a4c87d2b40ca8eb8fba",
 			"name": "Alum: PC Lobster Red",
 			"slug": "alum-pc-lobster-red",
-			"sku": "(deprecated)",
+			"sku": "lobster-red",
 			"arModel": "5afe824c9367a117b70bf7d2",
 			"color": "#c42d1c",
 			"albedoColor": "#c42d1c",
 			"metalnessColor": "#000000",
 			"roughnessColor": "#747474",
+			"priceClass": 2,
 			"path": "alum-pc-lobster-red",
-			"cartUrl": "(deprecated)"
+			"cartUrl": "http://streetfurniture.com/au/lobster-red",
+			"modelUrl": "http://streetfurniture.com/au/lobster-red"
 		}, {
 			"_id": "5b303b9587d2b40ca8eb8fc5",
 			"name": "Alum: PC Jaybird Blue",
 			"slug": "alum-pc-jaybird-blue",
-			"sku": "(deprecated)",
+			"sku": "jaybird-blue",
 			"arModel": "5afe824c9367a117b70bf7d2",
 			"color": "#0d4191",
 			"albedoColor": "#0d4191",
 			"metalnessColor": "#000000",
 			"roughnessColor": "#747474",
+			"priceClass": 2,
 			"path": "alum-pc-jaybird-blue",
-			"cartUrl": "(deprecated)"
+			"cartUrl": "http://streetfurniture.com/au/jaybird-blue",
+			"modelUrl": "http://streetfurniture.com/au/jaybird-blue"
 		}, {
 			"_id": "5b303b9587d2b40ca8eb8fc6",
 			"name": "Alum: PC Bondi Blue",
 			"slug": "alum-pc-bondi-blue",
-			"sku": "(deprecated)",
+			"sku": "bondi-blue",
 			"arModel": "5afe824c9367a117b70bf7d2",
 			"color": "#306ec1",
 			"albedoColor": "#306ec1",
 			"metalnessColor": "#000000",
 			"roughnessColor": "#515151",
+			"priceClass": 2,
 			"path": "alum-pc-bondi-blue",
-			"cartUrl": "(deprecated)"
+			"cartUrl": "http://streetfurniture.com/au/bondi-blue",
+			"modelUrl": "http://streetfurniture.com/au/bondi-blue"
 		}, {
 			"_id": "5b303b9587d2b40ca8eb8fc7",
 			"name": "Alum: PC Brilliant Yellow",
 			"slug": "alum-pc-brilliant-yellow",
-			"sku": "(deprecated)",
+			"sku": "brilliant-yellow",
 			"arModel": "5afe824c9367a117b70bf7d2",
 			"color": "#fae742",
 			"albedoColor": "#fae742",
 			"metalnessColor": "#000000",
 			"roughnessColor": "#515151",
+			"priceClass": 2,
 			"path": "alum-pc-brilliant-yellow",
-			"cartUrl": "(deprecated)"
+			"cartUrl": "http://streetfurniture.com/au/brilliant-yellow",
+			"modelUrl": "http://streetfurniture.com/au/brilliant-yellow"
 		}, {
 			"_id": "5b303b9587d2b40ca8eb8fc8",
 			"name": "Alum: PC Shamrock Green",
 			"slug": "alum-pc-shamrock-green",
-			"sku": "(deprecated)",
+			"sku": "shamrock-green",
 			"arModel": "5afe824c9367a117b70bf7d2",
 			"color": "#466E40",
 			"albedoColor": "#466E40",
 			"metalnessColor": "#000000",
 			"roughnessColor": "#515151",
+			"priceClass": 2,
 			"path": "alum-pc-shamrock-green",
-			"cartUrl": "(deprecated)"
+			"cartUrl": "http://streetfurniture.com/au/shamrock-green",
+			"modelUrl": "http://streetfurniture.com/au/shamrock-green"
 		}, {
 			"_id": "5b303b9587d2b40ca8eb8fca",
 			"name": "Alum: PC Lycra Strip",
 			"slug": "alum-pc-lycra-strip",
-			"sku": "(deprecated)",
+			"sku": "lycra-strip-green",
 			"arModel": "5afe824c9367a117b70bf7d2",
 			"color": "#C8D953",
 			"albedoColor": "#C8D953",
 			"metalnessColor": "#000000",
 			"roughnessColor": "#515151",
+			"priceClass": 2,
 			"path": "alum-pc-lycra-strip",
-			"cartUrl": "(deprecated)"
+			"cartUrl": "http://streetfurniture.com/au/lycra-strip-green",
+			"modelUrl": "http://streetfurniture.com/au/lycra-strip-green"
 		}, {
 			"_id": "5bb8bbf54636e745015356e4",
 			"name": "Textura Woodland Grey",
 			"slug": "textura-woodland-grey",
-			"sku": "(deprecated)",
+			"sku": "woodland-grey",
 			"arModel": "5afe824c9367a117b70bf7d2",
 			"color": "#5F635E",
 			"albedoColor": "#5F635E",
 			"metalnessColor": "#000000",
 			"roughnessColor": "#9d9d9d",
+			"priceClass": 2,
 			"normal": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com/ar-models/Nn_YgGX5v0qZPzHd..jpg",
 			"bundle": "https://inhaabit-sydney.s3.amazonaws.com//ar-models/5bb8bbf54636e745015356e4/bundle.7z",
 			"path": "textura-woodland-grey",
-			"cartUrl": "(deprecated)"
+			"cartUrl": "http://streetfurniture.com/au/woodland-grey",
+			"modelUrl": "http://streetfurniture.com/au/woodland-grey"
 		}, {
 			"_id": "5b30382687d2b40ca8eb8fa1",
 			"name": "Textura Deep Ocean",
 			"slug": "textura-deep-ocean",
-			"sku": "(deprecated)",
+			"sku": "deep-ocean",
 			"arModel": "5afe824c9367a117b70bf7d2",
 			"color": "#1e426b",
 			"albedoColor": "#143f5c",
 			"metalnessColor": "#000000",
 			"roughnessColor": "#7c7c7c",
+			"priceClass": 2,
 			"normal": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com/ar-models/jukgh_oGcRPETNMI..jpg",
 			"bundle": "https://inhaabit-sydney.s3.amazonaws.com//ar-models/5b30382687d2b40ca8eb8fa1/bundle.7z",
 			"path": "textura-deep-ocean",
-			"cartUrl": "(deprecated)"
+			"cartUrl": "http://streetfurniture.com/au/deep-ocean",
+			"modelUrl": "http://streetfurniture.com/au/deep-ocean"
 		}, {
 			"_id": "5b30392987d2b40ca8eb8fa9",
 			"name": "Textura Monument",
 			"slug": "textura-monument",
-			"sku": "(deprecated)",
+			"sku": "monument",
 			"arModel": "5afe824c9367a117b70bf7d2",
 			"color": "#383C38",
 			"albedoColor": "#383C38",
 			"metalnessColor": "#000000",
 			"roughnessColor": "#747474",
+			"priceClass": 2,
 			"normal": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com/ar-models/FKslOUXgVlER9csk..jpg",
 			"bundle": "https://inhaabit-sydney.s3.amazonaws.com//ar-models/5b30392987d2b40ca8eb8fa9/bundle.7z",
 			"path": "textura-monument",
-			"cartUrl": "(deprecated)"
+			"cartUrl": "http://streetfurniture.com/au/monument",
+			"modelUrl": "http://streetfurniture.com/au/monument"
 		}, {
 			"_id": "5b30374687d2b40ca8eb8f9d",
 			"name": "Textura Ironstone",
 			"slug": "textura-ironstone",
-			"sku": "(deprecated)",
+			"sku": "ironstone",
 			"arModel": "5afe824c9367a117b70bf7d2",
 			"color": "#4d5e63",
 			"albedoColor": "#414d51",
 			"metalnessColor": "#000000",
 			"roughnessColor": "#a1a1a1",
+			"priceClass": 2,
 			"normal": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com/ar-models/xD7HyiJB_Iv8uFNB..jpg",
 			"bundle": "https://inhaabit-sydney.s3.amazonaws.com//ar-models/5b30374687d2b40ca8eb8f9d/bundle.7z",
 			"path": "textura-ironstone",
-			"cartUrl": "(deprecated)"
+			"cartUrl": "http://streetfurniture.com/au/ironstone",
+			"modelUrl": "http://streetfurniture.com/au/ironstone"
 		}, {
 			"_id": "5b30382687d2b40ca8eb8fa2",
 			"name": "Textura Jasper",
 			"slug": "textura-jasper",
-			"sku": "(deprecated)",
+			"sku": "jasper",
 			"arModel": "5afe824c9367a117b70bf7d2",
 			"color": "#8b725e",
 			"albedoColor": "#5c4d3a",
 			"metalnessColor": "#000000",
 			"roughnessColor": "#a1a1a1",
+			"priceClass": 2,
 			"normal": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com/ar-models/OfD2GvfDep2CCDW2..jpg",
 			"bundle": "https://inhaabit-sydney.s3.amazonaws.com//ar-models/5b30382687d2b40ca8eb8fa2/bundle.7z",
 			"path": "textura-jasper",
-			"cartUrl": "(deprecated)"
+			"cartUrl": "http://streetfurniture.com/au/jasper",
+			"modelUrl": "http://streetfurniture.com/au/jasper"
 		}, {
 			"_id": "5b30392987d2b40ca8eb8fa8",
 			"name": "Textura Bronze",
 			"slug": "textura-bronze",
-			"sku": "(deprecated)",
+			"sku": "dark-bronze",
 			"arModel": "5afe824c9367a117b70bf7d2",
 			"color": "#524C40",
 			"albedo": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com/ar-models/Wl4bduIifvVwEvOm..jpg",
@@ -1719,48 +1774,56 @@
 			"roughness": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com/ar-models/XVTvCNG-rCry-aqF..jpg",
 			"bundle": "https://inhaabit-sydney.s3.amazonaws.com//ar-models/5b30392987d2b40ca8eb8fa8/bundle.7z",
 			"image": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com/ar-models/k9ZDtPHExHZ7itBs..jpg",
+			"priceClass": 2,
 			"normal": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com/ar-models/847o9Um9YxwjLnjL..jpg",
-			"cartUrl": "(deprecated)"
+			"cartUrl": "http://streetfurniture.com/au/dark-bronze",
+			"modelUrl": "http://streetfurniture.com/au/dark-bronze"
 		}, {
 			"_id": "5bb8bbf54636e745015356e5",
 			"name": "Textura Night Sky",
 			"slug": "textura-night-sky",
-			"sku": "(deprecated)",
+			"sku": "night-sky",
 			"arModel": "5afe824c9367a117b70bf7d2",
 			"color": "#0b0b0b",
+			"priceClass": 2,
 			"albedo": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com/ar-models/57rdfU8eucEDpj-X.jpg",
 			"image": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com/ar-models/qdfAZG5EbKOqkInt..jpg",
 			"roughness": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com/ar-models/v8m8E5xF1iIeR8wz.jpg",
 			"bundle": "https://inhaabit-sydney.s3.amazonaws.com//ar-models/5bb8bbf54636e745015356e5/bundle.7z",
 			"path": "textura-night-sky",
-			"cartUrl": "(deprecated)"
+			"cartUrl": "http://streetfurniture.com/au/night-sky",
+			"modelUrl": "http://streetfurniture.com/au/night-sky"
 		}, {
 			"_id": "5b303b9587d2b40ca8eb8fcd",
 			"name": "Sable Core Ten",
 			"slug": "sable-core-ten",
-			"sku": "(deprecated)",
+			"sku": "sable-core-ten",
 			"arModel": "5afe824c9367a117b70bf7d2",
 			"color": "#674635",
+			"priceClass": 2,
 			"albedo": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com/ar-models/LdGtvfEomMlJxgWa.jpg",
 			"image": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com/ar-models/wZw2fErxy2LYSe6_..jpg",
 			"roughness": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com/ar-models/vpmKJL0b-CHOqIIP..jpg",
 			"bundle": "https://inhaabit-sydney.s3.amazonaws.com//ar-models/5b303b9587d2b40ca8eb8fcd/bundle.7z",
 			"path": "sable-core-ten",
-			"cartUrl": "(deprecated)"
+			"cartUrl": "http://streetfurniture.com/au/sable-core-ten",
+			"modelUrl": "http://streetfurniture.com/au/sable-core-ten"
 		}, {
 			"_id": "5b303b9587d2b40ca8eb8fcb",
 			"name": "Sable Brilliance",
 			"slug": "sable-brilliance",
-			"sku": "(deprecated)",
+			"sku": "sable-brilliance",
 			"arModel": "5afe824c9367a117b70bf7d2",
 			"color": "#5e5b56",
 			"albedoColor": "#5e5b56",
 			"metalnessColor": "#000000",
 			"roughnessColor": "#a1a1a1",
+			"priceClass": 2,
 			"normal": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com/ar-models/JTaz4vV0mX-Sg7Yp..jpg",
 			"bundle": "https://inhaabit-sydney.s3.amazonaws.com//ar-models/5b303b9587d2b40ca8eb8fcb/bundle.7z",
 			"path": "sable-brilliance",
-			"cartUrl": "(deprecated)"
+			"cartUrl": "http://streetfurniture.com/au/sable-brilliance",
+			"modelUrl": "http://streetfurniture.com/au/sable-brilliance"
 		}],
 		"_id": "5afe824c9367a117b70bf7d2",
 		"name": "Battens"
@@ -1769,84 +1832,90 @@
 			"_id": "5bb57d4f5b43105a4270a336",
 			"name": "Standard",
 			"slug": "standard",
-			"sku": "(deprecated)",
+			"sku": "standard",
 			"arModel": "5bb57d4f5b43105a4270a335",
 			"color": "#d4d4d4",
 			"albedoColor": "#bebebe",
 			"metalnessColor": "#7b7b7b",
 			"roughnessColor": "#4b4b4b",
 			"path": "standard",
-			"cartUrl": "(deprecated)"
+			"cartUrl": "http://streetfurniture.com/au/standard",
+			"modelUrl": "http://streetfurniture.com/au/standard"
 		}],
 		"_id": "5bb57d4f5b43105a4270a335",
 		"name": ""
 	}, {
 		"styles": [
-			{
+      {
 			"_id": "5ba64111e9598c2640828558",
 			"name": "Textura Deep Ocean",
 			"slug": "textura-deep-ocean",
-			"sku": "(deprecated)",
+			"sku": "deep-ocean",
 			"arModel": "5afe822d9367a117b70bf7cf",
 			"color": "#194a82",
 			"albedoColor": "#134766",
 			"metalnessColor": "#000000",
 			"roughnessColor": "#7c7c7c",
 			"path": "textura-deep-ocean",
-			"cartUrl": "(deprecated)"
+			"cartUrl": "http://streetfurniture.com/au/deep-ocean",
+			"modelUrl": "http://streetfurniture.com/au/deep-ocean"
 		}, {
 			"_id": "5ba64111e9598c2640828553",
 			"name": "Textura Woodland Grey",
 			"slug": "textura-woodland-grey",
-			"sku": "(deprecated)",
+			"sku": "woodland-grey",
 			"arModel": "5afe822d9367a117b70bf7cf",
 			"color": "#5F635E",
 			"albedoColor": "#5F635E",
 			"metalnessColor": "#000000",
 			"roughnessColor": "#9d9d9d",
 			"path": "textura-woodland-grey",
-			"cartUrl": "(deprecated)"
+			"cartUrl": "http://streetfurniture.com/au/woodland-grey",
+			"modelUrl": "http://streetfurniture.com/au/woodland-grey"
 		}, {
 			"_id": "5ba64111e9598c2640828555",
 			"name": "Textura Monument",
 			"slug": "textura-monument",
-			"sku": "(deprecated)",
+			"sku": "monument",
 			"arModel": "5afe822d9367a117b70bf7cf",
 			"color": "#383C38",
 			"albedoColor": "#383C38",
 			"metalnessColor": "#000000",
 			"roughnessColor": "#747474",
 			"path": "textura-monument",
-			"cartUrl": "(deprecated)"
+			"cartUrl": "http://streetfurniture.com/au/monument",
+			"modelUrl": "http://streetfurniture.com/au/monument"
 		}, {
 			"_id": "5ba64111e9598c2640828557",
 			"name": "Textura Ironstone",
 			"slug": "textura-ironstone",
-			"sku": "(deprecated)",
+			"sku": "ironstone",
 			"arModel": "5afe822d9367a117b70bf7cf",
 			"color": "#4d5e63",
 			"albedoColor": "#414d51",
 			"metalnessColor": "#000000",
 			"roughnessColor": "#a1a1a1",
 			"path": "textura-ironstone",
-			"cartUrl": "(deprecated)"
+			"cartUrl": "http://streetfurniture.com/au/ironstone",
+			"modelUrl": "http://streetfurniture.com/au/ironstone"
 		}, {
 			"_id": "5ba64124e9598c264082855a",
 			"name": "Textura Jasper",
 			"slug": "textura-jasper",
-			"sku": "(deprecated)",
+			"sku": "jasper",
 			"arModel": "5afe822d9367a117b70bf7cf",
 			"color": "#8b725e",
 			"albedoColor": "#5c4d3a",
 			"metalnessColor": "#000000",
 			"roughnessColor": "#a1a1a1",
 			"path": "textura-jasper",
-			"cartUrl": "(deprecated)"
+			"cartUrl": "http://streetfurniture.com/au/jasper",
+			"modelUrl": "http://streetfurniture.com/au/jasper"
 		}, {
 			"_id": "5ba64111e9598c2640828554",
 			"name": "Textura Bronze",
 			"slug": "textura-bronze",
-			"sku": "(deprecated)",
+			"sku": "dark-bronze",
 			"arModel": "5afe822d9367a117b70bf7cf",
 			"color": "#524C40",
 			"albedo": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com/ar-models/Fny5JgR8tOLTNxdQ.jpg",
@@ -1855,12 +1924,13 @@
 			"path": "textura-bronze",
 			"roughness": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com/ar-models/wsEZ_9oV3bZZxqr8.jpg",
 			"bundle": "https://inhaabit-sydney.s3.amazonaws.com//ar-models/5ba64111e9598c2640828554/bundle.7z",
-			"cartUrl": "(deprecated)"
+			"cartUrl": "http://streetfurniture.com/au/dark-bronze",
+			"modelUrl": "http://streetfurniture.com/au/dark-bronze"
 		}, {
 			"_id": "5ba64111e9598c2640828556",
 			"name": "Textura Night Sky",
 			"slug": "textura-night-sky",
-			"sku": "(deprecated)",
+			"sku": "night-sky",
 			"arModel": "5afe822d9367a117b70bf7cf",
 			"color": "#0b0b0b",
 			"albedoColor": "#0b0b0b",
@@ -1869,24 +1939,26 @@
 			"image": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com/ar-models/MoFKqReUAB9ATaDl..jpg",
 			"bundle": "",
 			"path": "textura-night-sky",
-			"cartUrl": "(deprecated)"
+			"cartUrl": "http://streetfurniture.com/au/night-sky",
+			"modelUrl": "http://streetfurniture.com/au/night-sky"
 		}, {
 			"_id": "5ba640a7e9598c264082854a",
 			"name": "Sable Brilliance",
 			"slug": "sable-brilliance",
-			"sku": "(deprecated)",
+			"sku": "sable-brilliance",
 			"arModel": "5afe822d9367a117b70bf7cf",
 			"color": "#5e5b56",
 			"albedoColor": "#5e5b56",
 			"metalnessColor": "#000000",
 			"roughnessColor": "#a1a1a1",
 			"path": "sable-brilliance",
-			"cartUrl": "(deprecated)"
+			"cartUrl": "http://streetfurniture.com/au/sable-brilliance",
+			"modelUrl": "http://streetfurniture.com/au/sable-brilliance"
 		}, {
 			"_id": "5ba640a7e9598c264082854b",
 			"name": "Sable Core Ten",
 			"slug": "sable-core-ten",
-			"sku": "(deprecated)",
+			"sku": "sable-core-ten",
 			"arModel": "5afe822d9367a117b70bf7cf",
 			"color": "#674635",
 			"albedo": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com/ar-models/86VEYlJBh2hAIx6B..jpg",
@@ -1894,86 +1966,93 @@
 			"roughness": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com/ar-models/4T8QavV6rQWg3qUm..jpg",
 			"bundle": "https://inhaabit-sydney.s3.amazonaws.com//ar-models/5ba640a7e9598c264082854b/bundle.7z",
 			"path": "sable-core-ten",
-			"cartUrl": "(deprecated)"
+			"cartUrl": "http://streetfurniture.com/au/sable-core-ten",
+			"modelUrl": "http://streetfurniture.com/au/sable-core-ten"
 		}, {
 			"_id": "5ba640a7e9598c264082854c",
 			"name": "Sable Bass",
 			"slug": "sable-bass",
-			"sku": "(deprecated)",
+			"sku": "sable-bass",
 			"arModel": "5afe822d9367a117b70bf7cf",
 			"color": "#474D4A",
 			"path": "sable-bass",
-			"cartUrl": "(deprecated)"
+			"cartUrl": "http://streetfurniture.com/au/sable-bass",
+			"modelUrl": "http://streetfurniture.com/au/sable-bass"
 		}],
 		"_id": "5afe822d9367a117b70bf7cf",
 		"name": "Tabletop"
 	}, {
 		"styles": [
-			{
+      {
 			"_id": "5b2ef8cbc16eef6f53402582",
 			"name": "Textura Woodland Grey",
 			"slug": "textura-woodland-grey",
-			"sku": "(deprecated)",
+			"sku": "woodland-grey",
 			"arModel": "5b1601bf9641091f100c3f6c",
 			"color": "#5F635E",
 			"albedoColor": "#5F635E",
 			"metalnessColor": "#000000",
 			"roughnessColor": "#9d9d9d",
 			"path": "textura-woodland-grey",
-			"cartUrl": "(deprecated)"
+			"cartUrl": "http://streetfurniture.com/au/woodland-grey",
+			"modelUrl": "http://streetfurniture.com/au/woodland-grey"
 		}, {
 			"_id": "5b2ef8ccc16eef6f53402588",
 			"name": "Textura Deep Ocean",
 			"slug": "textura-deep-ocean",
-			"sku": "(deprecated)",
+			"sku": "deep-ocean",
 			"arModel": "5b1601bf9641091f100c3f6c",
 			"color": "#1e426b",
 			"albedoColor": "#143f5c",
 			"metalnessColor": "#000000",
 			"roughnessColor": "#7c7c7c",
 			"path": "textura-deep-ocean",
-			"cartUrl": "(deprecated)"
+			"cartUrl": "http://streetfurniture.com/au/deep-ocean",
+			"modelUrl": "http://streetfurniture.com/au/deep-ocean"
 		}, {
 			"_id": "5b2ef8cbc16eef6f53402584",
 			"name": "Textura Monument",
 			"slug": "textura-monument",
-			"sku": "(deprecated)",
+			"sku": "monument",
 			"arModel": "5b1601bf9641091f100c3f6c",
 			"color": "#383C38",
 			"albedoColor": "#383C38",
 			"metalnessColor": "#000000",
 			"roughnessColor": "#747474",
 			"path": "textura-monument",
-			"cartUrl": "(deprecated)"
+			"cartUrl": "http://streetfurniture.com/au/monument",
+			"modelUrl": "http://streetfurniture.com/au/monument"
 		}, {
 			"_id": "5b2ef8cbc16eef6f53402587",
 			"name": "Textura Ironstone",
 			"slug": "textura-ironstone",
-			"sku": "(deprecated)",
+			"sku": "ironstone",
 			"arModel": "5b1601bf9641091f100c3f6c",
 			"color": "#4d5e63",
 			"albedoColor": "#414d51",
 			"metalnessColor": "#000000",
 			"roughnessColor": "#a1a1a1",
 			"path": "textura-ironstone",
-			"cartUrl": "(deprecated)"
+			"cartUrl": "http://streetfurniture.com/au/ironstone",
+			"modelUrl": "http://streetfurniture.com/au/ironstone"
 		}, {
 			"_id": "5b2ef8ccc16eef6f53402589",
 			"name": "Textura Jasper",
 			"slug": "textura-jasper",
-			"sku": "(deprecated)",
+			"sku": "jasper",
 			"arModel": "5b1601bf9641091f100c3f6c",
 			"color": "#8b725e",
 			"albedoColor": "#5c4d3a",
 			"metalnessColor": "#000000",
 			"roughnessColor": "#a1a1a1",
 			"path": "textura-jasper",
-			"cartUrl": "(deprecated)"
+			"cartUrl": "http://streetfurniture.com/au/jasper",
+			"modelUrl": "http://streetfurniture.com/au/jasper"
 		}, {
 			"_id": "5b2ef8cbc16eef6f53402583",
 			"name": "Textura Bronze",
 			"slug": "textura-bronze",
-			"sku": "(deprecated)",
+			"sku": "dark-bronze",
 			"arModel": "5b1601bf9641091f100c3f6c",
 			"color": "#524C40",
 			"albedo": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com/ar-models/rQ_KMUXWhraUblZU.jpg",
@@ -1982,12 +2061,13 @@
 			"roughness": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com/ar-models/_M7JQ9MegQ20uhyk.jpg",
 			"bundle": "https://inhaabit-sydney.s3.amazonaws.com//ar-models/5b2ef8cbc16eef6f53402583/bundle.7z",
 			"image": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com/ar-models/DmuoIcQDFdX7zT0t.jpg",
-			"cartUrl": "(deprecated)"
+			"cartUrl": "http://streetfurniture.com/au/dark-bronze",
+			"modelUrl": "http://streetfurniture.com/au/dark-bronze"
 		}, {
 			"_id": "5b2ef8cbc16eef6f53402585",
 			"name": "Textura Night Sky",
 			"slug": "textura-night-sky",
-			"sku": "(deprecated)",
+			"sku": "night-sky",
 			"arModel": "5b1601bf9641091f100c3f6c",
 			"color": "#0b0b0b",
 			"albedoColor": "#0b0b0b",
@@ -1996,24 +2076,26 @@
 			"path": "textura-night-sky",
 			"bundle": "",
 			"image": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com/ar-models/V3wCTScUP_33OVdX.jpg",
-			"cartUrl": "(deprecated)"
+			"cartUrl": "http://streetfurniture.com/au/night-sky",
+			"modelUrl": "http://streetfurniture.com/au/night-sky"
 		}, {
 			"_id": "5b160ad8f94d022106473fcf",
 			"name": "Sable Brilliance",
 			"slug": "sable-brilliance",
-			"sku": "(deprecated)",
+			"sku": "sable-brilliance",
 			"arModel": "5b1601bf9641091f100c3f6c",
 			"color": "#5e5b56",
 			"albedoColor": "#5e5b56",
 			"metalnessColor": "#000000",
 			"roughnessColor": "#a1a1a1",
 			"path": "sable-brilliance",
-			"cartUrl": "(deprecated)"
+			"cartUrl": "http://streetfurniture.com/au/sable-brilliance",
+			"modelUrl": "http://streetfurniture.com/au/sable-brilliance"
 		}, {
 			"_id": "5b160ad8f94d022106473fd0",
 			"name": "Sable Core Ten",
 			"slug": "sable-core-ten",
-			"sku": "(deprecated)",
+			"sku": "sable-core-ten",
 			"arModel": "5b1601bf9641091f100c3f6c",
 			"color": "#674635",
 			"albedo": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com/ar-models/BZ-6rDO8FasGuSGZ.jpg",
@@ -2021,12 +2103,13 @@
 			"bundle": "https://inhaabit-sydney.s3.amazonaws.com//ar-models/5b160ad8f94d022106473fd0/bundle.7z",
 			"roughness": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com/ar-models/Y4Ca6498w6FXsKtW.jpg",
 			"image": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com/ar-models/OYHmvAI8n3mnP0kN.jpg",
-			"cartUrl": "(deprecated)"
+			"cartUrl": "http://streetfurniture.com/au/sable-core-ten",
+			"modelUrl": "http://streetfurniture.com/au/sable-core-ten"
 		}, {
 			"_id": "5b1e61c863ce986c21f39df9",
 			"name": "Sable Bass",
 			"slug": "sable-bass",
-			"sku": "(deprecated)",
+			"sku": "sable-bass",
 			"arModel": "5b1601bf9641091f100c3f6c",
 			"color": "#474D4A",
 			"albedo": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com/ar-models/mFywsfI-cSfJ3y7r.jpg",
@@ -2034,7 +2117,8 @@
 			"path": "sable-bass",
 			"roughness": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com/ar-models/ivgA7QTZcbYuQ3A-.jpg",
 			"bundle": "https://inhaabit-sydney.s3.amazonaws.com//ar-models/5b1e61c863ce986c21f39df9/bundle.7z",
-			"cartUrl": "(deprecated)"
+			"cartUrl": "http://streetfurniture.com/au/sable-bass",
+			"modelUrl": "http://streetfurniture.com/au/sable-bass"
 		}],
 		"_id": "5b1601bf9641091f100c3f6c",
 		"name": "Frame"
