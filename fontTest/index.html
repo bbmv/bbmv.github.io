@@ -20,9 +20,6 @@
       font-style: normal;
       font-weight: bold;
     }
-    html {
-      font-family: "Helvetica Neue";
-    }
     .button {
       display: flex;
       align-items: center;
@@ -44,23 +41,22 @@
       background-color: #555;
       vertical-align: middle;
       font-size: 30px;
-      line-height: 1;
       width: 100px;
     }
     .wo {
+      width: 400px;
       margin-bottom: 10px;
       color: #fff;
       background-color: #555;
       font-size: 30px;
-      line-height: 30px;
-      vertical-align: middle;
     }
-    .wo1 {
-      font-size: 10px;
+    .arial {
+      font-family: Arial;
     }
-    .wo2 {
-      font-size: 40px;
+    .helvetica {
+      font-family: "Helvetica Neue";
     }
+    
     .table {
       display: table-cell;
       vertical-align: middle
@@ -86,7 +82,7 @@
 	<!--link rel="stylesheet" href="css/style.css"-->
 </head>
 <body>
-  <div class="button">TEXT</div>
+  <!--div class="button">TEXT</div>
   <div class="button">12345</div>
   <div class="button">text</div>
   <div class="button">eeee</div>
@@ -98,15 +94,11 @@
   <div class="string">12345</div>
   <div class="string">TEXT</div>
   <div class="string">text</div>
-  <div class="string">eeee</div>
+  <div class="string">eeee</div-->
   
-  <p class="wrapper">
-    <span class="wo wo2">ooooo</span> 
-    <span class="wo">12345</span> 
-    <span class="wo wo1">TEXT</span> 
-    <span class="wo">text</span> 
-    <span class="wo wo2">eeee</span>
-  </p>
+  <div class="wo helvetica">Arial Text 1234</div> 
+  <div class="wo arial">Helvetica Text 1234</div> 
+  <div class="wo">Default Text 1234</div>
   
 	<!--script src="js/app.js"></script-->
 </body>
