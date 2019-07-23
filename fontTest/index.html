@@ -20,6 +20,18 @@
       font-style: normal;
       font-weight: bold;
     }
+    @font-face {
+      font-family: "Helvetica Neue Light";
+      src: url(./HelveticaNeue-Light.otf);
+      font-style: normal;
+      font-weight: normal;
+    }
+    @font-face {
+      font-family: "Helvetica Neue Roman";
+      src: url(./HelveticaNeue-Roman.otf);
+      font-style: normal;
+      font-weight: normal;
+    }
     .button {
       display: flex;
       align-items: center;
@@ -55,6 +67,12 @@
     }
     .helvetica {
       font-family: "Helvetica Neue";
+    }
+    .helvetica-roman {
+      font-family: "Helvetica Neue Roman";
+    }
+    .helvetica-light {
+      font-family: "Helvetica Neue Light";
     }
     
     .table {
@@ -98,6 +116,8 @@
   
   <div class="wo arial">Arial Text 1234</div> 
   <div class="wo helvetica">Helvetica Text 1234</div> 
+  <div class="wo helvetica-light">Helvetica Light Text 1234</div> 
+  <div class="wo helvetica-roman">Helvetica Roman Text 1234</div> 
   <div class="wo">Default Text 1234</div>
   
 	<!--script src="js/app.js"></script-->
