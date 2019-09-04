@@ -872,6 +872,7 @@ THREE.OrbitControls = function ( object, domElement ) {
                 if ( scope.enableZoom === false && scope.enablePan === false ) return;
                 if ( state !== STATE.TOUCH_DOLLY_PAN ) return; // is this needed?
 
+                if ( scope.enableZoom === true) handleTouchMoveZoom( event );
                 handleTouchMovePan( event );
 
                 break;
