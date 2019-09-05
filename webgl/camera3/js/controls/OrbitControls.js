@@ -829,7 +829,8 @@ THREE.OrbitControls = function ( object, domElement ) {
 
                 if ( scope.enableZoom === false && scope.enablePan === false ) return;
 
-                handleTouchStartPan( event );
+                if ( scope.enableZoom === true) handleTouchStartZoom( event );
+                if ( scope.enablePan === true) handleTouchStartPan( event );
 
                 state = STATE.TOUCH_DOLLY_PAN;
 
@@ -867,13 +868,13 @@ THREE.OrbitControls = function ( object, domElement ) {
 
                 break;
 
-            case 2: // two-fingered touch: dolly-pan
+            case 2: // two-fingered touch: zoom
 
                 if ( scope.enableZoom === false && scope.enablePan === false ) return;
                 if ( state !== STATE.TOUCH_DOLLY_PAN ) return; // is this needed?
 
                 if ( scope.enableZoom === true) handleTouchMoveZoom( event );
-                handleTouchMovePan( event );
+                if ( scope.enablePan === true) handleTouchMovePan( event );
 
                 break;
 
