@@ -21,6 +21,5 @@
   "zoom": 0.75,
   "maxDistance": 5,
   "minDistance": 0.5,
-  "containerSize": {"height": "300px", "width": "300px"},
-  "maps": "./maps/"
+  "containerSize": {"height": "300px", "width": "300px"}
 }
