@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+	<title>Configurator</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			background-repeat: no-repeat;
+		}
+/*		@font-face {
+			font-family: "Helvetica Neue";
+			src: url(assets/fonts/HelveticaNeueLTStd-Lt.otf);
+			font-style: normal;
+			font-weight: normal;
+		}
+		@font-face {
+			font-family: "Helvetica Neue";
+			src: url(assets/fonts/HelveticaNeueLTStd-Blk.otf);
+			font-style: normal;
+			font-weight: bold;
+		}
+		@font-face {
+			font-family: "Icons";
+			src: url(assets/fonts/iconfont.ttf);
+			font-style: normal;
+			font-weight: normal;
+		}*/
+		html, body { height: 100%; }
+		body {
+			font-family: Arial, sans-serif;
+		}
+		.page {
+			display: flex;
+			flex-direction: column;
+			height: 100%;
+			overflow: hidden;
+		}
+		#container {
+			position: relative;
+			flex-grow: 1;
+			/*background: center / contain no-repeat url("./assets/img/background.jpg");*/
+		}
+		#btnPanel {
+			padding: 5px;
+			flex-grow: 0;
+			background-color: #494949;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			flex-wrap: wrap;
+			max-height: 30%;
+			overflow: auto;
+		}
+		.btn {
+			margin: 5px;
+			height: 80px;
+			width: 80px;
+			background-size: cover;
+			background-color: #24a528;
+			cursor: pointer;
+		}
+		.btn:hover {
+			outline: 3px solid #7be0ff;
+		}
+		.label {
+			right: 20px;
+			top: 20px;
+			font-weight: bold;
+			position: absolute;
+		}
+		.label-header {
+			height: 30px;
+			width: 160px;
+			background-color: #fff;
+			color: #c11c22;
+			font-size: 1.3rem;
+			text-align: center;
+			line-height: 30px;
+			border: 1px solid #c11c22;
+			border-radius: 20px 20px 0 0;
+		}
+		#label-price {
+			height: 50px;
+			width: 160px;
+			background-color: #c11c22;
+			color: #fff;
+			font-size: 1.9rem;
+			text-align: center;
+			line-height: 50px;
+			border-radius: 0 0 20px 20px;
+			border: 1px solid #c11c22;
+		}
+	</style>
+</head>
+<body>
+
+<div class="page">
+	<div id="container">
+		<div class="label">
+			<div class="label-header">MUST HAVE!</div>
+			<div id="label-price"></div>
+		</div>
+	</div>
+	<div id="btnPanel"></div>
+</div>
+
+
+
+<!--script src="./lib/touch-emulator.js"></script>
+<script> //TouchEmulator(); </script-->
+
+<script src="./dist/app.js"></script>
+</body>
+</html>

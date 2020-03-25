@@ -1,0 +1,392 @@
+{
+    "scene": [
+        ["black_parts"],
+        ["body_1"],
+        ["body_2"],
+        ["body_4"],
+        ["bottom"],
+        ["engine2"],
+        ["front_cover"],
+        ["front_main"],
+        ["handles", "handles_2"],
+        ["mirrors"],
+        ["saddle", "saddle_2"],
+        ["screws"],
+        ["side_bumper"],
+        ["soft_pads"],
+        ["steering"]
+    ],
+    "objects": {
+        "black_parts": { 
+            "objectMesh": "./assets/models/black_parts/model.zip",
+            "shadowMap": null,
+            "isTransparent": false,
+            "removable": false,
+            "defaultStyle": "style1",
+            "styles": {
+                "style1": {
+                    "icon": null,
+                    "maps": {
+                        "ao": "./assets/models/black_parts/style1/ao.jpg",
+                        "albedo": "./assets/models/black_parts/style1/albedo.jpg"
+                    },
+                    "values": {
+                    },
+                    "price": 100
+                }
+            }
+        },
+        "body_1": { 
+            "objectMesh": "./assets/models/body_1/model.zip",
+            "shadowMap": null,
+            "isTransparent": false,
+            "removable": false,
+            "defaultStyle": "style1",
+            "styles": {
+                "style1": {
+                    "icon": null,
+                    "maps": {
+                        "ao": "./assets/models/body_1/style1/ao.jpg",
+                        "albedo": "./assets/models/body_1/style1/albedo.jpg"
+                    },
+                    "values": {
+                    },
+                    "price": 100
+                }
+            }
+        },
+        "body_2": { 
+            "objectMesh": "./assets/models/body_2/model.zip",
+            "shadowMap": null,
+            "isTransparent": false,
+            "removable": false,
+            "defaultStyle": "style1",
+            "styles": {
+                "style1": {
+                    "icon": null,
+                    "maps": {
+                        "ao": "./assets/models/body_2/style1/ao.jpg",
+                        "albedo": "./assets/models/body_2/style1/albedo.jpg"
+                    },
+                    "values": {
+                        "roughness": 0.20
+                    },
+                    "price": 100
+                },
+                "style2": {
+                    "icon": null,
+                    "maps": {
+                        "ao": "./assets/models/body_2/style1/ao.jpg",
+                        "albedo": "./assets/models/body_2/style2/albedo.jpg"
+                    },
+                    "values": {
+                        "roughness": 0.2
+                    },
+                    "price": 100
+                }
+            }
+        },
+        "body_4": { 
+            "objectMesh": "./assets/models/body_4/model.zip",
+            "shadowMap": null,
+            "isTransparent": false,
+            "removable": false,
+            "defaultStyle": "style1",
+            "styles": {
+                "style1": {
+                    "icon": null,
+                    "maps": {
+                        "ao": "./assets/models/body_4/style1/ao.jpg",
+                        "albedo": "./assets/models/body_4/style1/albedo.jpg"
+                    },
+                    "values": {
+                        "roughness": 0.2
+                    },
+                    "price": 100
+                },
+                "style2": {
+                    "icon": null,
+                    "maps": {
+                        "ao": "./assets/models/body_4/style1/ao.jpg",
+                        "albedo": "./assets/models/body_4/style2/albedo.jpg"
+                    },
+                    "values": {
+                        "roughness": 0.2
+                    },
+                    "price": 100
+                }
+            }
+        },
+        "bottom": { 
+            "objectMesh": "./assets/models/bottom/model.zip",
+            "shadowMap": "./assets/models/bottom/shadow.png",
+            "isTransparent": false,
+            "removable": false,
+            "defaultStyle": "style1",
+            "styles": {
+                "style1": {
+                    "icon": null,
+                    "maps": {
+                        "ao": "./assets/models/bottom/style1/ao.jpg",
+                        "albedo": "./assets/models/bottom/style1/albedo.jpg"
+                    },
+                    "values": {
+                        "color": "#a3a3a3",
+                        "roughness": 0.65
+                    },
+                    "price": 100
+                }
+            }
+        },
+        "engine2": { 
+            "objectMesh": "./assets/models/engine2/model.zip",
+            "shadowMap": null,
+            "isTransparent": false,
+            "removable": false,
+            "defaultStyle": "style1",
+            "styles": {
+                "style1": {
+                    "icon": null,
+                    "maps": {
+                        "ao": "./assets/models/engine2/style1/ao.jpg",
+                        "albedo": "./assets/models/engine2/style1/albedo.jpg"
+                    },
+                    "values": {
+                        "roughness": 0.15
+                    },
+                    "price": 100
+                }
+            }
+        },
+        "front_cover": { 
+            "objectMesh": "./assets/models/front_cover/model.zip",
+            "shadowMap": null,
+            "isTransparent": false,
+            "removable": false,
+            "defaultStyle": "style1",
+            "styles": {
+                "style1": {
+                    "icon": null,
+                    "maps": {
+                        "ao": "./assets/models/front_cover/style1/ao.jpg",
+                        "albedo": "./assets/models/front_cover/style1/albedo.jpg"
+                    },
+                    "values": {
+                    },
+                    "price": 100
+
+                }
+            }
+        },
+        "front_main": { 
+            "objectMesh": "./assets/models/front_main/model.zip",
+            "shadowMap": null,
+            "isTransparent": false,
+            "removable": false,
+            "defaultStyle": "style1",
+            "styles": {
+                "style1": {
+                    "icon": null,
+                    "maps": {
+                        "ao": "./assets/models/front_main/style1/ao.jpg",
+                        "albedo": "./assets/models/front_main/style1/albedo.jpg"
+                    },
+                    "values": {
+                    },
+                    "price": 100
+                }
+            }
+        },
+        "handles": { 
+            "objectMesh": "./assets/models/handles/model.zip",
+            "shadowMap": null,
+            "isTransparent": false,
+            "removable": false,
+            "defaultStyle": "style1",
+            "styles": {
+                "style1": {
+                    "icon": "./assets/models/handles/style1/icon.jpg",
+                    "maps": {
+                        "ao": "./assets/models/handles/style1/ao.jpg",
+                        "albedo": "./assets/models/handles/style1/albedo.jpg"
+                    },
+                    "values": {
+                    },
+                    "price": 90.50
+                }
+            }
+        },
+        "handles_2": { 
+            "objectMesh": "./assets/models/handles_2/model.zip",
+            "shadowMap": null,
+            "isTransparent": false,
+            "removable": false,
+            "defaultStyle": "style1",
+            "styles": {
+                "style1": {
+                    "icon": "./assets/models/handles_2/style1/icon.jpg",
+                    "maps": {
+                        "ao": "./assets/models/handles_2/style1/ao.jpg",
+                        "albedo": "./assets/models/handles_2/style1/albedo.jpg",
+                        "normal": "./assets/models/handles_2/style1/normal.jpg"
+                    },
+                    "values": {
+                    },
+                    "price": 95.25
+                }
+            }
+        },
+        "mirrors": { 
+            "objectMesh": "./assets/models/mirrors/model.zip",
+            "shadowMap": null,
+            "isTransparent": false,
+            "removable": true,
+            "defaultStyle": "style1",
+            "styles": {
+                "style1": {
+                    "icon": "./assets/models/mirrors/style1/icon.jpg",
+                    "maps": {
+                        "ao": "./assets/models/mirrors/style1/ao.jpg",
+                        "albedo": "./assets/models/mirrors/style1/albedo.jpg"
+                    },
+                    "values": {
+                        "roughness": 0.2
+                    },
+                    "price": 75.8
+                }
+            }
+        },
+        "saddle": { 
+            "objectMesh": "./assets/models/saddle/model.zip",
+            "shadowMap": null,
+            "isTransparent": false,
+            "removable": false,
+            "group": ["saddle", "body_2", "body_4"],
+            "defaultStyle": "style1",
+            "styles": {
+                "style1": {
+                    "icon": "./assets/models/saddle/style1/icon.jpg",
+                    "maps": {
+                        "ao": "./assets/models/saddle/style1/ao.jpg",
+                        "albedo": "./assets/models/saddle/style1/albedo.jpg",
+                        "normal": "./assets/models/saddle/style1/normal.jpg"
+                    },
+                    "values": {
+                    },
+                    "price": 107.12
+                },
+                "style2": {
+                    "icon": "./assets/models/saddle/style2/icon.jpg",
+                    "maps": {
+                        "ao": "./assets/models/saddle/style1/ao.jpg",
+                        "albedo": "./assets/models/saddle/style2/albedo.jpg",
+                        "normal": "./assets/models/saddle/style2/normal.jpg",
+                        "metalness": "./assets/models/saddle/style2/metalness.jpg",
+                        "roughness": "./assets/models/saddle/style2/roughness.jpg"
+                    },
+                    "values": {
+                    },
+                    "price": 112.45
+                }
+            }
+        },
+        "saddle_2": { 
+            "objectMesh": "./assets/models/saddle_2/model.zip",
+            "shadowMap": null,
+            "isTransparent": false,
+            "removable": false,
+            "defaultStyle": "style1",
+            "styles": {
+                "style1": {
+                    "icon": "./assets/models/saddle_2/style1/icon.jpg",
+                    "maps": {
+                        "ao": "./assets/models/saddle_2/style1/ao.jpg",
+                        "albedo": "./assets/models/saddle_2/style1/albedo.jpg"
+                    },
+                    "values": {
+                    },
+                    "price": 135.27
+                }
+            }
+        },
+        "screws": { 
+            "objectMesh": "./assets/models/screws/model.zip",
+            "shadowMap": null,
+            "isTransparent": false,
+            "removable": false,
+            "defaultStyle": "style1",
+            "styles": {
+                "style1": {
+                    "icon": null,
+                    "maps": {
+                        "ao": "./assets/models/screws/style1/ao.jpg",
+                        "albedo": "./assets/models/screws/style1/albedo.jpg"
+                    },
+                    "values": {
+                        "roughness": 0.2
+                    },
+                    "price": 80.12
+                }
+            }
+        },
+        "side_bumper": { 
+            "objectMesh": "./assets/models/side_bumper/model.zip",
+            "shadowMap": null,
+            "isTransparent": false,
+            "removable": true,
+            "defaultStyle": "style1",
+            "styles": {
+                "style1": {
+                    "icon": "./assets/models/side_bumper/style1/icon.jpg",
+                    "maps": {
+                        "ao": "./assets/models/side_bumper/style1/ao.jpg",
+                        "albedo": "./assets/models/side_bumper/style1/albedo.jpg"
+                    },
+                    "values": {
+                        "roughness": 0.7
+                    },
+                    "price": 50.55
+                }
+            }
+        },
+        "soft_pads": { 
+            "objectMesh": "./assets/models/soft_pads/model.zip",
+            "shadowMap": null,
+            "isTransparent": false,
+            "removable": true,
+            "defaultStyle": "style1",
+            "styles": {
+                "style1": {
+                    "icon": "./assets/models/soft_pads/style1/icon.jpg",
+                    "maps": {
+                        "ao": "./assets/models/soft_pads/style1/ao.jpg",
+                        "albedo": "./assets/models/soft_pads/style1/albedo.jpg"
+                    },
+                    "values": {
+                        "roughness": 0.3
+                    },
+                    "price": 25.70
+                }
+            }
+        },
+        "steering": { 
+            "objectMesh": "./assets/models/steering/model.zip",
+            "shadowMap": null,
+            "isTransparent": false,
+            "removable": false,
+            "defaultStyle": "style1",
+            "styles": {
+                "style1": {
+                    "icon": null,
+                    "maps": {
+                        "ao": "./assets/models/steering/style1/ao.jpg",
+                        "albedo": "./assets/models/steering/style1/albedo.jpg"
+                    },
+                    "values": {
+                    },
+                    "price": 54.24
+                }
+            }
+        }
+    }
+}
