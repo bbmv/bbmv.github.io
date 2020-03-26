@@ -80,7 +80,8 @@
                         "albedo": "./assets/models/body_2/style2/albedo.jpg"
                     },
                     "values": {
-                        "roughness": 0.2
+                        "roughness": 0.4,
+                        "metalness": 0
                     },
                     "price": 100
                 }
@@ -111,7 +112,8 @@
                         "albedo": "./assets/models/body_4/style2/albedo.jpg"
                     },
                     "values": {
-                        "roughness": 0.2
+                        "roughness": 0.4,
+                        "metalness": 0
                     },
                     "price": 100
                 }
@@ -285,6 +287,8 @@
                         "roughness": "./assets/models/saddle/style2/roughness.jpg"
                     },
                     "values": {
+                        "roughness": 0.4,
+                        "metalness": 0
                     },
                     "price": 112.45
                 }

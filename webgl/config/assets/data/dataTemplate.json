@@ -1,0 +1,33 @@
+"scene": {
+    "place1": ["o1"], 
+    "place2": ["o2", "o3", "o4"], 
+    "place3": ["o5"]
+},
+"objects": {
+    "o1": { 
+        "objectMesh": "url",
+        "shadowMesh": "url",
+        "shadowMap": "url",
+        "removable": true,
+        "defaultStyle": "s1",
+        "styles": {
+            "s1": {
+                "icon": "url", // если url у icon отсутствует, то кнопка для icon не создается
+                "maps": {
+                    "ao": "url",
+                    "albedo": "url",
+                    "normal": "url",
+                    "metalness": "url",
+                    "roughness": "url",
+                    "emission": "url"
+                },
+                "values": {
+                    "coolor": "#383C38",
+                    "metalness": 0,
+                    "roughness": 0,
+                    "emissive": 0
+                }
+            }
+        },
+    }
+}
