@@ -69,7 +69,6 @@
                         "albedo": "./assets/models/body_2/style1/albedo.jpg"
                     },
                     "values": {
-                        "roughness": 0.20
                     },
                     "price": 100
                 },
@@ -80,8 +79,6 @@
                         "albedo": "./assets/models/body_2/style2/albedo.jpg"
                     },
                     "values": {
-                        "roughness": 0.4,
-                        "metalness": 0
                     },
                     "price": 100
                 }
@@ -101,7 +98,6 @@
                         "albedo": "./assets/models/body_4/style1/albedo.jpg"
                     },
                     "values": {
-                        "roughness": 0.2
                     },
                     "price": 100
                 },
@@ -112,8 +108,6 @@
                         "albedo": "./assets/models/body_4/style2/albedo.jpg"
                     },
                     "values": {
-                        "roughness": 0.4,
-                        "metalness": 0
                     },
                     "price": 100
                 }
@@ -133,8 +127,7 @@
                         "albedo": "./assets/models/bottom/style1/albedo.jpg"
                     },
                     "values": {
-                        "color": "#a3a3a3",
-                        "roughness": 0.65
+                        "color": "#a3a3a3"
                     },
                     "price": 100
                 }
@@ -154,7 +147,6 @@
                         "albedo": "./assets/models/engine2/style1/albedo.jpg"
                     },
                     "values": {
-                        "roughness": 0.15
                     },
                     "price": 100
                 }
@@ -252,7 +244,6 @@
                         "albedo": "./assets/models/mirrors/style1/albedo.jpg"
                     },
                     "values": {
-                        "roughness": 0.2
                     },
                     "price": 75.8
                 }
@@ -282,9 +273,7 @@
                     "maps": {
                         "ao": "./assets/models/saddle/style1/ao.jpg",
                         "albedo": "./assets/models/saddle/style2/albedo.jpg",
-                        "normal": "./assets/models/saddle/style2/normal.jpg",
-                        "metalness": "./assets/models/saddle/style2/metalness.jpg",
-                        "roughness": "./assets/models/saddle/style2/roughness.jpg"
+                        "normal": "./assets/models/saddle/style2/normal.jpg"
                     },
                     "values": {
                         "roughness": 0.4,
@@ -327,7 +316,6 @@
                         "albedo": "./assets/models/screws/style1/albedo.jpg"
                     },
                     "values": {
-                        "roughness": 0.2
                     },
                     "price": 80.12
                 }
@@ -347,7 +335,6 @@
                         "albedo": "./assets/models/side_bumper/style1/albedo.jpg"
                     },
                     "values": {
-                        "roughness": 0.7
                     },
                     "price": 50.55
                 }
@@ -367,7 +354,6 @@
                         "albedo": "./assets/models/soft_pads/style1/albedo.jpg"
                     },
                     "values": {
-                        "roughness": 0.3
                     },
                     "price": 25.70
                 }
