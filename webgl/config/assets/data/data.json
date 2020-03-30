@@ -8,12 +8,9 @@
         ["engine2"],
         ["front_cover"],
         ["front_main"],
-        ["handles", "handles_2"],
-        ["mirrors"],
-        ["saddle", "saddle_2"],
+        ["handles"],
+        ["saddle"],
         ["screws"],
-        ["side_bumper"],
-        ["soft_pads"],
         ["steering"]
     ],
     "objects": {
@@ -187,26 +184,6 @@
                     "values": {
                     },
                     "price": 90.50
-                }
-            }
-        },
-        "handles_2": { 
-            "objectMesh": "./assets/models/handles_2/model.zip",
-            "shadowMap": null,
-            "isTransparent": false,
-            "removable": false,
-            "defaultStyle": "style1",
-            "styles": {
-                "style1": {
-                    "icon": "./assets/models/handles_2/style1/icon.jpg",
-                    "maps": {
-                        "ao": "./assets/models/handles_2/style1/ao.jpg",
-                        "albedo": "./assets/models/handles_2/style1/albedo.jpg",
-                        "normal": "./assets/models/handles_2/style1/normal.jpg"
-                    },
-                    "values": {
-                    },
-                    "price": 95.25
                 }
             }
         },
