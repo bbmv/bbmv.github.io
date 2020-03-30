@@ -33,6 +33,16 @@
                     "values": {
                     },
                     "price": 100
+                },
+                "style2": {
+                    "icon": null,
+                    "maps": {
+                        "ao": "./assets/models/black_parts/style1/ao.jpg",
+                        "albedo": "./assets/models/black_parts/style2/albedo.jpg"
+                    },
+                    "values": {
+                    },
+                    "price": 111
                 }
             }
         },
@@ -80,7 +90,27 @@
                     },
                     "values": {
                     },
-                    "price": 100
+                    "price": 110
+                },
+                "style3": {
+                    "icon": null,
+                    "maps": {
+                        "ao": "./assets/models/body_2/style1/ao.jpg",
+                        "albedo": "./assets/models/body_2/style3/albedo.jpg"
+                    },
+                    "values": {
+                    },
+                    "price": 101
+                },
+                "style4": {
+                    "icon": null,
+                    "maps": {
+                        "ao": "./assets/models/body_2/style1/ao.jpg",
+                        "albedo": "./assets/models/body_2/style4/albedo.jpg"
+                    },
+                    "values": {
+                    },
+                    "price": 105
                 }
             }
         },
@@ -109,7 +139,27 @@
                     },
                     "values": {
                     },
-                    "price": 100
+                    "price": 120
+                },
+                "style3": {
+                    "icon": null,
+                    "maps": {
+                        "ao": "./assets/models/body_4/style1/ao.jpg",
+                        "albedo": "./assets/models/body_4/style3/albedo.jpg"
+                    },
+                    "values": {
+                    },
+                    "price": 110
+                },
+                "style4": {
+                    "icon": null,
+                    "maps": {
+                        "ao": "./assets/models/body_4/style1/ao.jpg",
+                        "albedo": "./assets/models/body_4/style4/albedo.jpg"
+                    },
+                    "values": {
+                    },
+                    "price": 105
                 }
             }
         },
@@ -273,13 +323,39 @@
                     "maps": {
                         "ao": "./assets/models/saddle/style1/ao.jpg",
                         "albedo": "./assets/models/saddle/style2/albedo.jpg",
-                        "normal": "./assets/models/saddle/style2/normal.jpg"
+                        "normal": "./assets/models/saddle/style1/normal.jpg"
                     },
                     "values": {
                         "roughness": 0.4,
                         "metalness": 0
                     },
-                    "price": 112.45
+                    "price": 115.00
+                },
+                "style3": {
+                    "icon": "./assets/models/saddle/style3/icon.jpg",
+                    "maps": {
+                        "ao": "./assets/models/saddle/style1/ao.jpg",
+                        "albedo": "./assets/models/saddle/style3/albedo.jpg",
+                        "normal": "./assets/models/saddle/style1/normal.jpg"
+                    },
+                    "values": {
+                        "roughness": 0.4,
+                        "metalness": 0
+                    },
+                    "price": 102.55
+                },
+                "style4": {
+                    "icon": "./assets/models/saddle/style4/icon.jpg",
+                    "maps": {
+                        "ao": "./assets/models/saddle/style1/ao.jpg",
+                        "albedo": "./assets/models/saddle/style4/albedo.jpg",
+                        "normal": "./assets/models/saddle/style1/normal.jpg"
+                    },
+                    "values": {
+                        "roughness": 0.4,
+                        "metalness": 0
+                    },
+                    "price": 122.40
                 }
             }
         },
