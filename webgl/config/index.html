@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 
 	<title>Configurator</title>
 	<style>
@@ -30,9 +31,16 @@
 			font-style: normal;
 			font-weight: normal;
 		}*/
+		@font-face {
+			font-family: "Icons";
+			src: url(./assets/fonts/icons.ttf);
+			font-style: normal;
+			font-weight: normal;
+		}
 		html, body { height: 100%; }
 		body {
-			font-family: Arial, sans-serif;
+			font-family: 'Open Sans', sans-serif;
+			user-select: none;
 		}
 		.page {
 			display: flex;
@@ -41,33 +49,132 @@
 			background: linear-gradient(0deg, rgba(250,250,250,1) 40%, rgba(204,204,204,1) 100%);
 			overflow: hidden;
 		}
+		.plymth {
+			top: 25px;
+			left: 15px;
+			color: #fff;
+			font-size: 2.3rem;
+			font-family: "Icons";
+			position: absolute;
+		}
+		.watercraft {
+			bottom: 10px;
+			left: 15px;
+			color: #000;
+			font-size: 4.5rem;
+			font-family: "Icons";
+			position: absolute;
+		}
+		.rounded-button {
+			height: 62px;
+			width: 195px;
+			line-height: 62px;
+			border-radius: 62px;
+			box-sizing: border-box;
+			cursor: pointer;
+			outline: none;
+		}
+		.cart {
+			top: 25px;
+			right: 22px;
+			margin-left: 10px;
+			color: #000;
+			font-size: 2rem;
+			background-color: #fff;
+			border: solid 1px #4EA96F;
+			position: absolute;
+		}
+		.ar {
+			top: 105px;
+			right: 22px;
+			padding-left: 25px;
+			color: #fff;
+			background: radial-gradient(circle at 80%, rgba(50,228,115,1) 0%, rgba(78,169,111,1) 100%);
+			position: absolute;
+		}
+		#cart-price {
+			color: #000;
+			font-size: 1.5rem;
+			margin-left: 25px;
+			vertical-align: 5px;
+		}
+		.cart-icon {
+			color: #4EA96F;
+			font-size: 3.2rem;
+			font-family: "Icons";
+			margin-right: 25px;
+			float: right;
+		}
+		.ar-icon {
+			color: #fff;
+			font-size: 2.8rem;
+			font-family: "Icons";
+			margin-right: 25px;
+			float: right;
+		}
+		.panel {
+			max-height: 25vh;
+			/*background-color: #a2a52b;*/
+			padding: 5px 5px 5px 50px;
+			box-sizing: border-box;
+			display: block;
+			overflow: auto;
+		}
+		.menu {
+			padding: 5px 5px 5px 50px;
+			background-color: #4EA96F;
+			color: #fff;
+			font-weight: bold;
+			font-size: 1.2rem;
+			box-sizing: border-box;
+			display: block;
+		}
+		.option {
+			padding: 12px 30px;
+			margin: 0 5px;
+			display: inline-block;
+			cursor: pointer;
+		}
+		.option:hover {
+			color: #bfbfbf;
+		}
+		#tab {
+			height: 10px;
+			background-color: #4EA96F;
+			display: block;
+			position: absolute;
+		}
 		#container {
 			position: relative;
 			flex-grow: 1;
 
 			/*background: center / contain no-repeat url("./assets/img/background.jpg");*/
 		}
-		#btnPanel {
-			padding: 5px;
-			flex-grow: 0;
-			background-color: #494949;
-			display: flex;
-			flex-direction: row;
-			justify-content: center;
-			flex-wrap: wrap;
-			max-height: 30%;
-			overflow: auto;
+		#container-menu {
+			background-color: #fff;
+			/*max-height: 30%;*/
+			/*overflow: hidden;*/
 		}
 		.btn {
-			margin: 5px;
-			height: 80px;
-			width: 80px;
-			background-size: cover;
-			background-color: #24a528;
+			font-size: .97rem;
+			padding-left: 40px;
+			margin: 25px 15px 10px 15px;
+			height: 100px;
+			width: 260px;
+			border: solid 1px #4EA96F;
+			border-radius: 100px;
+			background-size: 30%;
+			background-position: bottom 50% right 15px;
+			background-color: #fff;
+			box-sizing: border-box;
+			line-height: 100px;
 			cursor: pointer;
+			outline: none;
+			display: inline-block;
 		}
 		.btn:hover {
-			outline: 3px solid #7be0ff;
+			border-color: #5cd691;
+			background-color: #f4f4f4;
 		}
 		.label {
 			right: 20px;
@@ -103,12 +210,12 @@
 
 <div class="page">
 	<div id="container">
-		<div class="label">
-			<div class="label-header">MUST HAVE!</div>
-			<div id="label-price"></div>
-		</div>
+		<div class="plymth">&#xe902;</div>
+		<div class="watercraft">&#xe903;</div>
+		<div class="rounded-button cart"><span id="cart-price"></span><span class="cart-icon">&#xe901;</span></div>
+		<div class="rounded-button ar">Save to <span style="font-size: 1.4rem">AR</span><span class="ar-icon">&#xe900;</span></div>
 	</div>
-	<div id="btnPanel"></div>
+	<div id="container-menu"></div>
 </div>
 
 

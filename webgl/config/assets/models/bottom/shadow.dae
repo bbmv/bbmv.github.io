@@ -5,35 +5,22 @@
       <author>Blender User</author>
       <authoring_tool>Blender 2.80.75 commit date:2019-07-29, commit time:14:47, hash:f6cb5f54494e</authoring_tool>
     </contributor>
-    <created>2020-03-24T19:53:41</created>
-    <modified>2020-03-24T19:53:41</modified>
+    <created>2020-04-01T13:29:48</created>
+    <modified>2020-04-01T13:29:48</modified>
     <unit name="meter" meter="1"/>
     <up_axis>Z_UP</up_axis>
   </asset>
   <library_effects>
-    <effect id="lambert4-effect">
+    <effect id="lambert25-effect">
       <profile_COMMON>
-        <newparam sid="ddd_jpg-surface">
-          <surface type="2D">
-            <init_from>ddd_jpg</init_from>
-          </surface>
-        </newparam>
-        <newparam sid="ddd_jpg-sampler">
-          <sampler2D>
-            <source>ddd_jpg-surface</source>
-          </sampler2D>
-        </newparam>
         <technique sid="common">
           <lambert>
             <emission>
               <color sid="emission">0 0 0 1</color>
             </emission>
             <diffuse>
-              <texture texture="ddd_jpg-sampler" texcoord="shadow_baseShape-map1"/>
+              <color sid="diffuse">0 0 0 1</color>
             </diffuse>
-            <transparent opaque="A_ONE">
-              <color sid="alpha">0 0 0 0</color>
-            </transparent>
             <index_of_refraction>
               <float sid="ior">1.45</float>
             </index_of_refraction>
@@ -42,69 +29,65 @@
       </profile_COMMON>
     </effect>
   </library_effects>
-  <library_images>
-    <image id="ddd_jpg" name="ddd_jpg">
-      <init_from>ddd.jpg</init_from>
-    </image>
-  </library_images>
+  <library_images/>
   <library_materials>
-    <material id="lambert4-material" name="lambert4">
-      <instance_effect url="#lambert4-effect"/>
+    <material id="lambert25-material" name="lambert25">
+      <instance_effect url="#lambert25-effect"/>
     </material>
   </library_materials>
   <library_geometries>
-    <geometry id="shadow_baseShape-mesh" name="shadow_baseShape">
+    <geometry id="_21_shadow_baseShape-mesh" name="_21_shadow_baseShape">
       <mesh>
-        <source id="shadow_baseShape-mesh-positions">
-          <float_array id="shadow_baseShape-mesh-positions-array" count="48">-0.004999995 0 0.004999995 -0.001666665 0 0.004999995 0.001666665 0 0.004999995 0.004999995 0 0.004999995 -0.004999995 0 0.001666665 -0.001666665 0 0.001666665 0.001666665 0 0.001666665 0.004999995 0 0.001666665 -0.004999995 0 -0.001666665 -0.001666665 0 -0.001666665 0.001666665 0 -0.001666665 0.004999995 0 -0.001666665 -0.004999995 0 -0.004999995 -0.001666665 0 -0.004999995 0.001666665 0 -0.004999995 0.004999995 0 -0.004999995</float_array>
+        <source id="_21_shadow_baseShape-mesh-positions">
+          <float_array id="_21_shadow_baseShape-mesh-positions-array" count="48">-78.70815 -78.70815 -0.5019379 -26.23605 -78.70815 -0.5019379 26.23605 -78.70815 -0.5019379 78.70815 -78.70815 -0.5019379 -78.70815 -26.23605 -0.5019392 -26.23605 -26.23605 -0.5019392 26.23605 -26.23605 -0.5019392 78.70815 -26.23605 -0.5019392 -78.70815 26.23605 -0.5019404 -26.23605 26.23605 -0.5019404 26.23605 26.23605 -0.5019404 78.70815 26.23605 -0.5019404 -78.70815 78.70815 -0.5019379 -26.23605 78.70815 -0.5019379 26.23605 78.70815 -0.5019379 78.70815 78.70815 -0.5019379</float_array>
           <technique_common>
-            <accessor source="#shadow_baseShape-mesh-positions-array" count="16" stride="3">
+            <accessor source="#_21_shadow_baseShape-mesh-positions-array" count="16" stride="3">
               <param name="X" type="float"/>
               <param name="Y" type="float"/>
               <param name="Z" type="float"/>
             </accessor>
           </technique_common>
         </source>
-        <source id="shadow_baseShape-mesh-normals">
-          <float_array id="shadow_baseShape-mesh-normals-array" count="3">0 -1 0</float_array>
+        <source id="_21_shadow_baseShape-mesh-normals">
+          <float_array id="_21_shadow_baseShape-mesh-normals-array" count="18">0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1</float_array>
           <technique_common>
-            <accessor source="#shadow_baseShape-mesh-normals-array" count="1" stride="3">
+            <accessor source="#_21_shadow_baseShape-mesh-normals-array" count="6" stride="3">
               <param name="X" type="float"/>
               <param name="Y" type="float"/>
               <param name="Z" type="float"/>
             </accessor>
           </technique_common>
         </source>
-        <source id="shadow_baseShape-mesh-map-0">
-          <float_array id="shadow_baseShape-mesh-map-0-array" count="108">0.001991987 0.998008 0.3339974 0.998008 0.001991987 0.6660027 0.001991987 0.6660027 0.3339974 0.998008 0.3339974 0.6660027 0.001991987 0.6660027 0.3339974 0.6660027 0.001991987 0.3339974 0.001991987 0.3339974 0.3339974 0.6660027 0.3339974 0.3339974 0.001991987 0.3339974 0.3339974 0.3339974 0.001991987 0.001991987 0.001991987 0.001991987 0.3339974 0.3339974 0.3339974 0.001991987 0.3339974 0.998008 0.6660027 0.998008 0.3339974 0.6660027 0.3339974 0.6660027 0.6660027 0.998008 0.6660027 0.6660027 0.3339974 0.6660027 0.6660027 0.6660027 0.3339974 0.3339974 0.3339974 0.3339974 0.6660027 0.6660027 0.6660027 0.3339974 0.3339974 0.3339974 0.6660027 0.3339974 0.3339974 0.001991987 0.3339974 0.001991987 0.6660027 0.3339974 0.6660027 0.001991987 0.6660027 0.998008 0.998008 0.998008 0.6660027 0.6660027 0.6660027 0.6660027 0.998008 0.998008 0.998008 0.6660027 0.6660027 0.6660027 0.998008 0.6660027 0.6660027 0.3339974 0.6660027 0.3339974 0.998008 0.6660027 0.998008 0.3339974 0.6660027 0.3339974 0.998008 0.3339974 0.6660027 0.001991987 0.6660027 0.001991987 0.998008 0.3339974 0.998008 0.001991987</float_array>
+        <source id="_21_shadow_baseShape-mesh-map-0">
+          <float_array id="_21_shadow_baseShape-mesh-map-0-array" count="108">0.001991987 0.998008 0.001991987 0.6660027 0.3339974 0.998008 0.3339974 0.998008 0.001991987 0.6660027 0.3339974 0.6660027 0.001991987 0.6660027 0.001991987 0.3339974 0.3339974 0.6660027 0.3339974 0.6660027 0.001991987 0.3339974 0.3339974 0.3339974 0.001991987 0.3339974 0.001991987 0.001991987 0.3339974 0.3339974 0.3339974 0.3339974 0.001991987 0.001991987 0.3339974 0.001991987 0.3339974 0.998008 0.3339974 0.6660027 0.6660027 0.998008 0.6660027 0.998008 0.3339974 0.6660027 0.6660027 0.6660027 0.3339974 0.6660027 0.3339974 0.3339974 0.6660027 0.6660027 0.6660027 0.6660027 0.3339974 0.3339974 0.6660027 0.3339974 0.3339974 0.3339974 0.3339974 0.001991987 0.6660027 0.3339974 0.6660027 0.3339974 0.3339974 0.001991987 0.6660027 0.001991987 0.6660027 0.998008 0.6660027 0.6660027 0.998008 0.998008 0.998008 0.998008 0.6660027 0.6660027 0.998008 0.6660027 0.6660027 0.6660027 0.6660027 0.3339974 0.998008 0.6660027 0.998008 0.6660027 0.6660027 0.3339974 0.998008 0.3339974 0.6660027 0.3339974 0.6660027 0.001991987 0.998008 0.3339974 0.998008 0.3339974 0.6660027 0.001991987 0.998008 0.001991987</float_array>
           <technique_common>
-            <accessor source="#shadow_baseShape-mesh-map-0-array" count="54" stride="2">
+            <accessor source="#_21_shadow_baseShape-mesh-map-0-array" count="54" stride="2">
               <param name="S" type="float"/>
               <param name="T" type="float"/>
             </accessor>
           </technique_common>
         </source>
-        <vertices id="shadow_baseShape-mesh-vertices">
-          <input semantic="POSITION" source="#shadow_baseShape-mesh-positions"/>
+        <vertices id="_21_shadow_baseShape-mesh-vertices">
+          <input semantic="POSITION" source="#_21_shadow_baseShape-mesh-positions"/>
         </vertices>
-        <triangles material="lambert4-material" count="18">
-          <input semantic="VERTEX" source="#shadow_baseShape-mesh-vertices" offset="0"/>
-          <input semantic="NORMAL" source="#shadow_baseShape-mesh-normals" offset="1"/>
-          <input semantic="TEXCOORD" source="#shadow_baseShape-mesh-map-0" offset="2" set="0"/>
-          <p>0 0 0 4 0 1 1 0 2 1 0 3 4 0 4 5 0 5 1 0 6 5 0 7 2 0 8 2 0 9 5 0 10 6 0 11 2 0 12 6 0 13 3 0 14 3 0 15 6 0 16 7 0 17 4 0 18 8 0 19 5 0 20 5 0 21 8 0 22 9 0 23 5 0 24 9 0 25 6 0 26 6 0 27 9 0 28 10 0 29 6 0 30 10 0 31 7 0 32 7 0 33 10 0 34 11 0 35 8 0 36 12 0 37 9 0 38 9 0 39 12 0 40 13 0 41 9 0 42 13 0 43 10 0 44 10 0 45 13 0 46 14 0 47 10 0 48 14 0 49 11 0 50 11 0 51 14 0 52 15 0 53</p>
+        <triangles material="lambert25-material" count="18">
+          <input semantic="VERTEX" source="#_21_shadow_baseShape-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#_21_shadow_baseShape-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#_21_shadow_baseShape-mesh-map-0" offset="2" set="0"/>
+          <p>0 0 0 1 0 1 4 0 2 4 1 3 1 1 4 5 1 5 1 2 6 2 2 7 5 2 8 5 1 9 2 1 10 6 1 11 2 0 12 3 0 13 6 0 14 6 1 15 3 1 16 7 1 17 4 1 18 5 1 19 8 1 20 8 1 21 5 1 22 9 1 23 5 1 24 6 1 25 9 1 26 9 1 27 6 1 28 10 1 29 6 1 30 7 1 31 10 1 32 10 1 33 7 1 34 11 1 35 8 3 36 9 3 37 12 3 38 12 4 39 9 4 40 13 4 41 9 3 42 10 3 43 13 3 44 13 5 45 10 5 46 14 5 47 10 3 48 11 3 49 14 3 50 14 4 51 11 4 52 15 4 53</p>
         </triangles>
       </mesh>
     </geometry>
   </library_geometries>
   <library_visual_scenes>
     <visual_scene id="Scene" name="Scene">
-      <node id="shadow_base" name="shadow_base" type="NODE">
-        <matrix sid="transform">-155.3893 -2.21321e-12 1.35846e-5 0 -1.35846e-5 2.53161e-5 -155.3893 -6.4159e-4 0 -155.3893 -2.53161e-5 -0.005957487 0 0 0 1</matrix>
-        <instance_geometry url="#shadow_baseShape-mesh" name="shadow_base">
+      <node id="_21_shadow_base" name="_21_shadow_base" type="NODE">
+        <matrix sid="transform">0.01 0 0 0 0 0.01 0 0 0 0 0.01 0 0 0 0 1</matrix>
+        <instance_geometry url="#_21_shadow_baseShape-mesh" name="_21_shadow_base">
           <bind_material>
             <technique_common>
-              <instance_material symbol="lambert4-material" target="#lambert4-material">
-                <bind_vertex_input semantic="shadow_baseShape-map1" input_semantic="TEXCOORD" input_set="0"/>
+              <instance_material symbol="lambert25-material" target="#lambert25-material">
+                <bind_vertex_input semantic="_21_shadow_baseShape-map1" input_semantic="TEXCOORD" input_set="0"/>
               </instance_material>
             </technique_common>
           </bind_material>

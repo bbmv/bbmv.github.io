@@ -1,0 +1,66 @@
+Parameters for all objects (we can fine tune these in the jason later on)
+
+metalness > 0.5
+roughtness > 0.4
+aoMap > 1.5
+envMap > 7
+
+___________________________________________________________________
+
+Parts that have thier albedo map:
+
+_01_body_1
+_12_handles
+_13_handles_2
+_15_saddle_2
+_06_logos
+
+___________________________________________________________________
+
+COLOR PARAMENTERS
+
+Parts that always have the same color on each version:
+
+_05_black_parts > {r:0,g:0,b:0} "color": "#000000"
+_17_engine > {r:0,g:0,b:0}      "color": "#000000"
+_16_screws > {r:57,g:57,b:57}   "color": "#393939"
+_11_bottom > {r:0,g:0,b:0}      "color": "#000000"
+_10_front_main > {r:0,g:0,b:0}  "color": "#000000"
+_19_front_cover > {r:0,g:0,b:0} "color": "#000000"
+_08_steering > {r:0,g:0,b:0}    "color": "#000000"
+
+Add-on (the same on each version)
+
+_09_mirrors > {r:203,g:202,b:202}   "color": "#CBCACA"
+_18_soft_pads  > {r:48,g:48,b:48}   "color": "#303030"
+_20_side_bumpers > {r:78,g:78,b:78} "color": "#4E4E4E"
+
+___________________________________________________________________
+
+VARIANTS:
+
+COLORS version 1
+_02_body_2 > {r:250,g:103,b:0}          "color": "#FA6700"
+_03_body_3 > {r:208,g:208,b:208}        "color": "#D0D0D0"
+_04_body_4 > {r:0,g:0,b:0}              "color": "#000000"
+_07_top_steering > {r:208,g:208,b:208}  "color": "#D0D0D0"
+_14_saddle > {r:250,g:103,b:0}          "color": "#FA6700"
+
+COLORS version 2
+_02_body_2 > {r:191,g:233,b:0}        "color": "#BFE900"
+_03_body_3 > {r:208,g:208,b:208}      "color": "#D0D0D0"
+_04_body_4 > {r:0,g:37,b:208}         "color": "#0025D0"
+_07_top_steering > {r:0,g:0,b:0}      "color": "#000000"
+_14_saddle > {r:191,g:233,b:0}        "color": "#BFE900"
+
+COLORS version 3
+_02_body_2 > {r:0,g:150,b:233}            "color": "#0096E9"
+_03_body_3 > {r:208,g:208,b:208}          "color": "#D0D0D0"
+_04_body_4 > {r:208,g:208,b:208}          "color": "#D0D0D0"
+_07_top_steering > {r:208,g:208,b:208}    "color": "#D0D0D0"
+_14_saddle > {r:0,g:150,b:233}            "color": "#0096E9"
+
+
+
+
+
