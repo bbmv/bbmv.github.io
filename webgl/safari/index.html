@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Effects</title>
+	<style>
+        * {
+            margin: 0;
+            padding: 0;
+            background-repeat: no-repeat;
+        }
+		body {
+            font-family: sans-serif;
+			background-color: #000;
+		}
+		h1 {
+			font-size: 4.5rem;
+		}
+		.red {
+			color: #df0000;
+		}
+		.stuff__content p {
+			padding-top: 1.8rem;
+			line-height: 130%;
+		}
+		.stuff {
+			top: 0;
+			width: 100%;
+			position: absolute;
+		}
+		.stuff__content {
+			box-sizing: border-box;
+			padding-top: 3vh;
+            height: 100vh;
+			font-size: 1.3rem;
+			text-align: center;
+		}
+		.label {
+      position: absolute;
+      top: 20px;
+      left: 50%;
+			transform: translateX(-50%);
+			color: #fff;
+			z-index: 100;
+
+		}
+	</style>
+</head>
+<body>
+  <div class="label">Click to change the image</div>
+	<div id="container3D"></div>
+
+	<script src="./dist/app.js"></script>
+</body>
+</html>
