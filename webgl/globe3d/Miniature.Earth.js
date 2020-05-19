@@ -266,7 +266,7 @@ Earth.prototype.init = function() {
         //this.renderer.shadowMap.type = THREE.PCFSoftShadowMap;
         //this.renderer.outputEncoding = THREE.sRGBEncoding;
 
-        this.options.shininess = 0.5;
+        this.options.shininess = 0.3;
 /*
         this.light1 = new THREE.SpotLight( new THREE.Color(this.options.lightColor), this.options.lightIntensity );
         this.light1.angle = Math.PI;
@@ -284,19 +284,25 @@ Earth.prototype.init = function() {
         pointLight.position.set( 700, 100, -20 );
         this.scene.add( pointLight );
 */
-        var light = new THREE.HemisphereLight( 0xffffff, 0xffffff, 0.5 );
+        var light = new THREE.HemisphereLight( 0xffffff, 0xcccccc, 0.5 );
         this.scene.add( light );
 
-        this.light3 = new THREE.SpotLight( new THREE.Color(this.options.lightColor), this.options.lightIntensity );
-        this.light3.angle = Math.PI;
-        this.light3.penumbra = 1;
-        this.light3.decay = 2;
+        this.light3 = new THREE.DirectionalLight( new THREE.Color(this.options.lightColor), this.options.lightIntensity );
         //this.light3.distance = 0;
         //this.light3.position.set( -0.5, 0.5, -1 ).normalize();
         this.camera.add(this.light3);
-        this.light3.position.x = this.camera.position.z * 0.7;
+        this.light3.position.x = this.camera.position.z * 0.5;
         this.light3.position.y = this.camera.position.z * 0.7;
         //this.scene.add( this.light3 );
+        this.light4 = new THREE.SpotLight( new THREE.Color(this.options.lightColor), 0.4 );
+        this.light4.angle = Math.PI * 0.5;
+        //this.light3.penumbra = 1;
+        this.light3.decay = 2;
+        //this.light3.distance = 0;
+        //this.light3.position.set( -0.5, 0.5, -1 ).normalize();
+        this.light4.position.x = this.camera.position.z * 0.5;
+        this.light4.position.y = this.camera.position.z * 0.7;
+        //this.camera.add(this.light4);
 
        /* const light1 = new THREE.PointLight( 0xffffff, 2.5, 200, 3.0 );
         light1.position.set( 100, -50, -20 );
