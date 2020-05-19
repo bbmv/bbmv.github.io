@@ -261,67 +261,16 @@ Earth.prototype.init = function() {
 		
 	}  else if ( this.options.light == 'lights' ) {
 
-        //this.renderer.gammaInput = true;
-        //this.renderer.shadowMap.enabled = true;
-        //this.renderer.shadowMap.type = THREE.PCFSoftShadowMap;
-        //this.renderer.outputEncoding = THREE.sRGBEncoding;
-
         this.options.shininess = 0.3;
-/*
-        this.light1 = new THREE.SpotLight( new THREE.Color(this.options.lightColor), this.options.lightIntensity );
-        this.light1.angle = Math.PI;
-       // var light = new THREE.PointLight( 0xff0000, 1, 100 );
-        this.light1.position.set( 700, 100, -20 );
-        //this.scene.add( this.light1 );
-        this.light2 = this.light1.clone();
-        this.light2.castShadow = false;
-        //this.light2 = new THREE.SpotLight( new THREE.Color(this.options.lightColor), this.options.lightIntensity );
-        this.light2.position.set( 700, -100, -20 );
-        //this.scene.add( this.light2 );
-        //this.light3 = this.light1.clone();
 
-        const pointLight = new THREE.PointLight( 0xffaa00, 1, 5000 );
-        pointLight.position.set( 700, 100, -20 );
-        this.scene.add( pointLight );
-*/
-        var light = new THREE.HemisphereLight( 0xffffff, 0xcccccc, 0.5 );
-        this.scene.add( light );
+        var hLight = new THREE.HemisphereLight( 0xffffff, 0xcccccc, 0.5 );
+        this.scene.add( hLight );
 
-        this.light3 = new THREE.DirectionalLight( new THREE.Color(this.options.lightColor), this.options.lightIntensity );
-        //this.light3.distance = 0;
-        //this.light3.position.set( -0.5, 0.5, -1 ).normalize();
-        this.camera.add(this.light3);
-        this.light3.position.x = this.camera.position.z * 0.5;
-        this.light3.position.y = this.camera.position.z * 0.7;
-        //this.scene.add( this.light3 );
-        this.light4 = new THREE.SpotLight( new THREE.Color(this.options.lightColor), 0.4 );
-        this.light4.angle = Math.PI * 0.5;
-        //this.light3.penumbra = 1;
-        this.light3.decay = 2;
-        //this.light3.distance = 0;
-        //this.light3.position.set( -0.5, 0.5, -1 ).normalize();
-        this.light4.position.x = this.camera.position.z * 0.5;
-        this.light4.position.y = this.camera.position.z * 0.7;
-        //this.camera.add(this.light4);
-
-       /* const light1 = new THREE.PointLight( 0xffffff, 2.5, 200, 3.0 );
-        light1.position.set( 100, -50, -20 );
-        this.scene.add( light1 );
-
-        const light2 = new THREE.PointLight( 0xffffff, 2.5, 200, 3.0 );
-        light2.position.set( -100, -50, -20 );
-        this.scene.add( light2 );
-*/ /*
-        const dlight = new THREE.DirectionalLight( 0xffffff, 0.3 );
-        dlight.position.set( 1, -1, -0.5 ).normalize();
-        this.scene.add( dlight );
-
-        const dlight2 = new THREE.DirectionalLight( 0xffffff, 0.3 );
-        dlight2.position.set( -1, 1, -1 ).normalize();
-        this.scene.add( dlight2 );*/
+        this.dLight = new THREE.DirectionalLight( new THREE.Color(this.options.lightColor), this.options.lightIntensity );
+        this.dLight.position.x = this.camera.position.z * 0.5;
+        this.dLight.position.y = this.camera.position.z * 0.7;
+        this.camera.add(this.dLight);
     }
-
-
 
     // events
 	
