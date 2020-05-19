@@ -3,6 +3,7 @@ body {
 	text-align: center;
 }
 
+
 ul,
 dl,
 p {
@@ -26,6 +27,7 @@ p {
 	width: 100%;
 	max-width: 50%;
 }
+
 
 h1 {
 	font-size: 1.75em;
