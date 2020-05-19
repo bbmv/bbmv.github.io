@@ -266,7 +266,7 @@ Earth.prototype.init = function() {
         //this.renderer.shadowMap.type = THREE.PCFSoftShadowMap;
         //this.renderer.outputEncoding = THREE.sRGBEncoding;
 
-        this.options.shininess = 0.4;
+        this.options.shininess = 0.5;
 /*
         this.light1 = new THREE.SpotLight( new THREE.Color(this.options.lightColor), this.options.lightIntensity );
         this.light1.angle = Math.PI;
