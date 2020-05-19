@@ -18,7 +18,7 @@ window.addEventListener( "load", function() {
 
 	// sun
 	
-	var myearth = new Earth( "myearth3", {
+	var myearth3 = new Earth( "myearth3", {
 		light: 'lights',
 		lightIntensity : 0.5,
 		lightAmbience : 0.1,
@@ -33,8 +33,18 @@ window.addEventListener( "load", function() {
 <body>
 	<div id="multi-wrapper">
 		
-		<div class="earth-wrap">
+		<!--div class="earth-wrap">
 			<div id="myearth"></div>
+			<em>light: "none"</em>
+		</div>
+		
+		<div-- class="earth-wrap">
+			<div id="myearth2"></div>
+			<em>light: "simple"</em> (default)
+		</div-->
+		
+		<div class="earth-wrap">
+			<div id="myearth3"></div>
 		</div>
 
 	</div>
