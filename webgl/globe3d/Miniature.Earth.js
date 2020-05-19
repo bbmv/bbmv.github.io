@@ -288,7 +288,9 @@ Earth.prototype.init = function() {
         this.scene.add( light );
 
         this.light3 = new THREE.SpotLight( new THREE.Color(this.options.lightColor), this.options.lightIntensity );
-        this.light3.angle = Math.PI * 0.2;
+        this.light3.angle = Math.PI;
+        this.light3.penumbra = 1;
+        this.light3.decay = 2;
         //this.light3.distance = 0;
         //this.light3.position.set( -0.5, 0.5, -1 ).normalize();
         this.camera.add(this.light3);
