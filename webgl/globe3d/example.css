@@ -3,7 +3,6 @@ body {
 	text-align: center;
 }
 
-
 ul,
 dl,
 p {
@@ -25,7 +24,7 @@ p {
 .earth-wrap {
 	display: inline-block;
 	width: 100%;
-	max-width: 50%;
+	max-width: 15%;
 }
 
 

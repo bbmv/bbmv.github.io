@@ -16,17 +16,60 @@
 
 window.addEventListener( "load", function() {
 
-	// sun
-	
-	var myearth3 = new Earth( "myearth3", {
+	var earth2 = new Earth( "earth2", {
 		light: 'lights',
 		lightIntensity : 0.7,
 		lightAmbience : 0.1,
         mapLandColor: '#97c53a',
         mapSeaColor: '#1167a4',
-        autoRotate: true,
+        autoRotate: false,
         autoRotateSpeed: 2
 	} );
+    var earth3 = new Earth( "earth3", {
+        light: 'lights',
+        lightIntensity : 0.7,
+        lightAmbience : 0.1,
+        mapLandColor: '#a0be66',
+        mapSeaColor: '#26618b',
+        autoRotate: false,
+        autoRotateSpeed: 2
+    } );
+    var earth4 = new Earth( "earth4", {
+        light: 'lights',
+        lightIntensity : 0.7,
+        lightAmbience : 0.1,
+        mapLandColor: '#adb36b',
+        mapSeaColor: '#3b5971',
+        autoRotate: false,
+        autoRotateSpeed: 2
+    } );
+    var earth5 = new Earth( "earth5", {
+        light: 'lights',
+        lightIntensity : 0.7,
+        lightAmbience : 0.1,
+        mapLandColor: '#b9a777',
+        mapSeaColor: '#565459',
+        autoRotate: false,
+        autoRotateSpeed: 2
+    } );
+    var earth6 = new Earth( "earth6", {
+        light: 'lights',
+        lightIntensity : 0.7,
+        lightAmbience : 0.1,
+        mapLandColor: '#ca9d80',
+        mapSeaColor: '#704f3e',
+        autoRotate: false,
+        autoRotateSpeed: 2
+    } );
+    var earth7 = new Earth( "earth7", {
+        light: 'lights',
+        lightIntensity : 0.7,
+        lightAmbience : 0.1,
+        mapLandColor: '#a99185',
+        mapSeaColor: '#826c61',
+        autoRotate: false,
+        autoRotateSpeed: 2
+    } );
 
 } );
 
@@ -34,20 +77,32 @@ window.addEventListener( "load", function() {
 
 </head>
 <body>
+
 	<div id="multi-wrapper">
 		
-		<!--div class="earth-wrap">
-			<div id="myearth"></div>
-			<em>light: "none"</em>
-		</div>
-		
-		<div-- class="earth-wrap">
-			<div id="myearth2"></div>
-			<em>light: "simple"</em> (default)
-		</div-->
-		
 		<div class="earth-wrap">
-			<div id="myearth3"></div>
+			<div id="earth2"></div>
+			<em>2</em>
+		</div>
+		<div class="earth-wrap">
+			<div id="earth3"></div>
+			<em>3</em>
+		</div>
+		<div class="earth-wrap">
+			<div id="earth4"></div>
+			<em>4</em>
+		</div>
+		<div class="earth-wrap">
+			<div id="earth5"></div>
+			<em>5</em>
+		</div>
+		<div class="earth-wrap">
+			<div id="earth6"></div>
+			<em>6</em>
+		</div>
+		<div class="earth-wrap">
+			<div id="earth7"></div>
+			<em>7</em>
 		</div>
 
 	</div>
