@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+<title>Light Types</title>
+
+<link rel="stylesheet" href="example.css">
+
+<script src="three.min.js"></script>
+<script src="Miniature.Earth.js"></script>
+<script src="data.js"></script>
+
+<script>
+
+window.addEventListener( "load", function() {
+
+	// sun
+	
+	var myearth3 = new Earth( "myearth3", {
+		light: 'lights',
+		lightIntensity : 0.5,
+		lightAmbience : 0.1,
+		sunLocation : { lat: 30, lng: 30 },
+	} );
+
+} );
+
+</script>
+
+</head>
+<body>
+	<div id="multi-wrapper">
+		
+		<!--div class="earth-wrap">
+			<div id="myearth"></div>
+			<em>light: "none"</em>
+		</div>
+		
+		<div-- class="earth-wrap">
+			<div id="myearth2"></div>
+			<em>light: "simple"</em> (default)
+		</div-->
+		
+		<div class="earth-wrap">
+			<div id="myearth3"></div>
+		</div>
+
+	</div>
+	
+</body>
+</html>
