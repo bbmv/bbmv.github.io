@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    .holder {
+      position: absolute;
+      bottom: 10vh;
+      left: 50%;
+      pointer-events: none;
+    }
+
+    .pan-cube,
+    .pane-cube * {
+      box-sizing: border-box;
+    }
+
+    .pan-cube {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      perspective: 500px;
+      left: 50%;
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%) scale(.3);
+      /* size = 200px * scale */
+    }
+
+    .pan-cube .angle {
+      position: absolute;
+      left: 0%;
+      top: 0%;
+      width: 100%;
+      height: 100%;
+      transform-style: preserve-3d;
+      transform: rotateX(-40deg) rotateY(0deg); /* cube angle */
+    }
+
+    .pan-cube .cube {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transform-style: preserve-3d;
+      transform: translateZ(-100px);
+      transition: transform 0.8s; /* cube rotation duration */
+    }
+
+    .pan-cube .face {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+
+    .pan-cube .face div {
+      position: absolute;
+      background-color: rgba(0, 0, 0, 1);
+      left: 0%;
+      top: 0%;
+      width: 5%; /* line width */
+      height: 100%;
+      border-radius: 1000px;
+    }
+
+    .pan-cube .face div:nth-child(2) {
+      left: auto;
+      right: 0%;
+    }
+
+    .pan-cube .face div:nth-child(3) {
+      left: auto;
+      top: 0%;
+      width: 100%;
+      height: 5%; /* line width */
+    }
+
+    .pan-cube .face div:nth-child(4) {
+      left: auto;
+      top: auto;
+      bottom: 0%;
+      width: 100%;
+      height: 5%; /* line width */
+    }
+
+    .pan-cube .face .text {
+      position: absolute;
+      line-height: 0.8;
+      left: 50%;
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      font-size: 64px;
+      /* background-color: rgba(35, 31, 32, 0.8); */
+      color: rgb(0, 0, 0);
+      font-family: 'Roboto', sans-serif;
+      text-transform: uppercase;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .pan-cube .face-front {
+      background: rgb(255, 255, 255, 1);
+    }
+
+    .pan-cube .face-right {
+      background: rgb(255, 255, 255, 1);
+    }
+
+    .pan-cube .face-back {
+      background: rgb(255, 255, 255, 1);
+    }
+
+    .pan-cube .face-left {
+      background: rgb(255, 255, 255, 1);
+    }
+
+    .pan-cube .face-top {
+      background: rgb(255, 255, 255, 1)
+    }
+
+    .pan-cube .face-bottom {
+      background: rgb(255, 255, 255, 1)
+    }
+
+    .pan-cube .face-front {
+      transform: rotateY(0deg) translateZ(100px);
+    }
+
+    .pan-cube .face-right {
+      transform: rotateY(90deg) translateZ(100px);
+    }
+
+    .pan-cube .face-back {
+      transform: rotateY(180deg) translateZ(100px);
+    }
+
+    .pan-cube .face-left {
+      transform: rotateY(-90deg) translateZ(100px);
+    }
+
+    .pan-cube .face-top {
+      transform: rotateX(90deg) translateZ(100px);
+    }
+
+    .pan-cube .face-bottom {
+      transform: rotateX(-90deg) translateZ(100px);
+    }
+
+    .pan-cube .cube.show-front {
+      transform: translateZ(-100px) rotateY(0deg);
+    }
+
+    .pan-cube .cube.show-right {
+      transform: translateZ(-100px) rotateY(-90deg);
+    }
+
+    .pan-cube .cube.show-back {
+      transform: translateZ(-100px) rotateY(-180deg);
+    }
+
+    .pan-cube .cube.show-left {
+      transform: translateZ(-100px) rotateY(90deg);
+    }
+
+    .pan-cube .cube.show-top {
+      transform: translateZ(-100px) rotateX(-90deg);
+    }
+
+    .pan-cube .cube.show-bottom {
+      transform: translateZ(-100px) rotateX(90deg);
+    }
+
+    .pan-cube .cursor {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      width: 20%;
+    }
+
+    .pan-cube .cursor svg {
+      display: none;
+      overflow: visible;
+    }
+
+    .pan-cube .cursor.pointer svg:nth-child(1) {
+      display: block;
+    }
+
+    .pan-cube .cursor.hand svg:nth-child(2) {
+      display: block;
+    }
+
+    .pan-cube .cursor svg {
+      width: 300%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="holder">
+    <div class="pan-cube">
+      <div class="angle">
+        <div class="cube">
+          <div class="face face-front">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div><span class="text">3D</span>
+          </div>
+          <div class="face face-back">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div><span class="text">3D</span>
+          </div>
+          <div class="face face-left">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div><span class="text">3D</span>
+          </div>
+          <div class="face face-right">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div><span class="text">3D</span>
+          </div>
+          <div class="face face-top">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div><span class="text">3D</span>
+          </div>
+          <div class="face face-bottom">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div><span class="text">3D</span>
+          </div>
+        </div>
+      </div>
+      <div class="cursor hand"> <!-- set hand or pointer, no class for no cursor -->
+        <svg id="cursor_pointer" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><defs><style>.pointer-cls-1{fill:#fff;}.pointer-cls-2{fill:none;stroke:#231f20;stroke-miterlimit:10;stroke-width:4px;}</style></defs><title>pointer</title><path class="pointer-cls-1" d="M48.75,33.76a2.38,2.38,0,0,1,.62,2.29A2.29,2.29,0,0,1,47.5,37.5L34.42,38.75l8.1,17.64a2.25,2.25,0,0,1,0,1.66,3,3,0,0,1-1,1.25l-6,2.7a1.36,1.36,0,0,0-1-.41,1.56,1.56,0,0,1-.83-.21,6.25,6.25,0,0,1-1.25-1L24.67,42.48,15.32,51.2a1.25,1.25,0,0,1-1.25.63,1.21,1.21,0,0,1-.82-.21A2.09,2.09,0,0,1,12,49.75V4.07a1.8,1.8,0,0,1,1.25-1.86A1.21,1.21,0,0,1,14.07,2a2.24,2.24,0,0,1,1.45.62Z"/><path class="pointer-cls-2" d="M34.42,61.59a1.56,1.56,0,0,1-.83-.21,6.25,6.25,0,0,1-1.25-1L24.67,42.48,15.32,51.2a1.25,1.25,0,0,1-1.25.63,1.21,1.21,0,0,1-.82-.21A2.09,2.09,0,0,1,12,49.75V4.07a1.8,1.8,0,0,1,1.25-1.86A1.21,1.21,0,0,1,14.07,2a2.24,2.24,0,0,1,1.45.62L48.75,33.76a2.38,2.38,0,0,1,.62,2.29A2.29,2.29,0,0,1,47.5,37.5L34.42,38.75l8.1,17.64a2.25,2.25,0,0,1,0,1.66,3,3,0,0,1-1,1.25l-6,2.7A1.36,1.36,0,0,0,34.42,61.59Z"/></svg>
+        <svg id="cursor_hand" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><defs><style>.hand-cls-1{fill:#fff;}.hand-cls-2{fill:#231f20;stroke-width:2px;}</style></defs><title>hand</title><path class="hand-cls-1" d="M52.45,27.76a2.24,2.24,0,0,1,2.23,2.31c0,5.18-.39,19.41-2.19,23-2.35,4.72-5,8.62-13.43,8.62s-12.6-4.2-17.88-9.51l-.95-1C14.54,45.54,10.56,41.1,10.48,41a4,4,0,0,1-1.17-2.84,4,4,0,0,1,1.19-2.84,4,4,0,0,1,5.64,0l6.48,6.74a1.16,1.16,0,0,0,1.27.27,1.14,1.14,0,0,0,.72-1.07l0-35.47a3.16,3.16,0,1,1,6.29,0V27.37a1.16,1.16,0,1,0,2.32,0V24.29a3.59,3.59,0,0,1,3.85-3.47A3.09,3.09,0,0,1,40.2,23.9v4.24a1.16,1.16,0,1,0,2.31,0V26.22a3.09,3.09,0,1,1,6.17,0v5a1.16,1.16,0,0,0,2.31,0v-3A3.48,3.48,0,0,1,52.45,27.76Z"/><path class="hand-cls-2" d="M33.26,19.72a6.66,6.66,0,0,1,3.85-1.21A5.4,5.4,0,0,1,42.18,22,5.4,5.4,0,0,1,51,25.71a5.18,5.18,0,0,1,1.48-.26A4.54,4.54,0,0,1,57,30.07c0,.78,0,19.22-2.44,24-2.5,5-5.76,9.89-15.5,9.89C29.67,64,25,59.28,19.54,53.81l-.95-.94C12.85,47.13,8.84,42.64,8.8,42.6A6.21,6.21,0,0,1,7,38.16a6.33,6.33,0,0,1,10.8-4.47l4.5,4.69,0-32.6a5.47,5.47,0,1,1,10.93,0Zm3.85,1.1a3.59,3.59,0,0,0-3.85,3.47v3.08a1.16,1.16,0,1,1-2.32,0V5.78a3.16,3.16,0,1,0-6.29,0l0,35.47a1.14,1.14,0,0,1-.72,1.07,1.16,1.16,0,0,1-1.27-.27l-6.48-6.74a4,4,0,0,0-5.64,0,4,4,0,0,0-1.19,2.84A4,4,0,0,0,10.48,41c.08.09,4.06,4.53,9.75,10.22l.95,1c5.28,5.31,9.45,9.51,17.88,9.51s11.08-3.9,13.43-8.62c1.8-3.59,2.19-17.82,2.19-23a2.24,2.24,0,0,0-2.23-2.31,3.48,3.48,0,0,0-1.46.45v3a1.16,1.16,0,0,1-2.31,0v-5a3.09,3.09,0,1,0-6.17,0v1.92a1.16,1.16,0,1,1-2.31,0V23.9A3.09,3.09,0,0,0,37.11,20.82Z"/></svg>
+      </div>
+    </div>
+  </div>
+</body>
+
+<script>
+  ( function () {
+    var panCube = document.querySelector( '.pan-cube' );
+    if ( typeof panCube === "undefined" || panCube === null ) return false;
+    var cube = panCube.querySelector( ".cube" );
+    var mod = {
+      cursor: panCube.querySelector( ".cursor" ),
+      wait: 1.2,
+      playOrder: {
+        index: 0,
+        list: [ "left", "front", "right", "front", "top", "front", "bottom", "front" ]
+      },
+      side: cube.className.trim().split( "show-" ).length > 1 ? cube.className.split( "show-" )[ 1 ].split( " " ).shift() : "front",
+      positions: {
+        "front-right": "100% 50% - 0% 50%",
+        "front-back": "100% 50% - 0% 50%",
+        "front-left": "0% 50% - 100% 50%",
+        "front-top": "50% 0% - 50% 100%",
+        "front-bottom": "50% 100% - 50% 0%",
+        "right-front": "0% 50% - 100% 50%",
+        "right-back": "100% 50% - 0% 50%",
+        "right-left": "0% 50% - 100% 50%",
+        "right-top": "0% 0% - 100% 100%",
+        "right-bottom": "0% 100% - 100% 0%",
+        "back-front": "0% 50% - 100% 50%",
+        "back-right": "0% 50% - 100% 50%",
+        "back-left": "0% 50% - 100% 50%",
+        "back-top": "100% 100% - 0% 0%",
+        "back-bottom": "100% 0% - 0% 100%",
+        "left-front": "100% 50% - 0% 50%",
+        "left-right": "100% 50% - 0% 50%",
+        "left-back": "100% 50% - 0% 50%",
+        "left-top": "100% 0% - 0% 100%",
+        "left-bottom": "100% 100% - 0% 0%",
+        "top-front": "50% 100% - 50% 0%",
+        "top-right": "100% 100% - 0% 0%",
+        "top-back": "0% 100% - 100% 0%",
+        "top-left": "0% 100% - 100% 0%",
+        "top-bottom": "50% 100% - 50% 0%",
+        "bottom-front": "50% 0% - 50% 100%",
+        "bottom-right": "100% 0% - 0% 100%",
+        "bottom-back": "0% 50% - 100% 0%",
+        "bottom-left": "0% 0% - 100% 100%",
+        "bottom-top": "50% 0% - 50% 100%"
+      },
+      changeSide: function ( side ) {
+        // console.log( mod.side, side );
+        var position = mod.positions[ mod.side + "-" + side ];
+        var pos = {
+          l1: position.trim().split( " " ).shift(),
+          t1: position.trim().split( "-" ).shift().trim().split( " " ).pop(),
+          l2: position.trim().split( "-" ).pop().trim().split( " " ).shift(),
+          t2: position.trim().split( "-" ).pop().trim().split( " " ).pop()
+        }
+        mod.cursor.style.transition = "left 0.2s, top 0.2s";
+        mod.cursor.style.left = pos.l1;
+        mod.cursor.style.top = pos.t1;
+        setTimeout( function () {
+          mod.cursor.style.transition = "left 0.8s, top 0.8s";
+          mod.cursor.style.left = pos.l2;
+          mod.cursor.style.top = pos.t2;
+          cube.className = cube.className.split( " show-" ).shift() + " show-" + side;
+        }, 200 );
+        mod.side = side;
+      },
+      play: function () {
+        if ( mod.playOrder.index < 0 || mod.playOrder.index > mod.playOrder.list.length - 1 ) mod.playOrder.index = 0;
+        var side = mod.playOrder.list[ mod.playOrder.index ];
+        mod.changeSide( side );
+        mod.playOrder.index += 1;
+        setTimeout( mod.play, mod.wait * 1000 );
+      },
+      start: function () {
+        setTimeout( mod.play, 500 );
+      }
+    };
+    mod.start();
+  } )();
+</script>
+
+</html>
