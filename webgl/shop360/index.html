@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Cube Panorama 360</title>
+	<style>
+        * {
+            margin: 0;
+            padding: 0;
+            background-repeat: no-repeat;
+        }
+		body {
+            font-family: sans-serif;
+			background-color: #000;
+			background-size: cover;
+            overflow: hidden;
+			/*position: relative;*/
+		}
+	</style>
+</head>
+<body>
+
+<div id="container3D"></div>
+
+<div id="lightbox">
+	<div class="shadow" id="shadow"></div>
+	<article class="container" id="container">
+		<div class="box" id="box">
+			<div class="close" id="close">✖</div>
+			<div class="title" id="title"></div>
+		</div>
+	</article>
+</div>
+
+<!--div id="console"></div-->
+
+<script src="./dist/app.js"></script>
+
+</body>
+</html>
