@@ -17,6 +17,25 @@
             overflow: hidden;
 			/*position: relative;*/
 		}
+		#loading {
+			position: absolute;
+			top: 50%;
+			width: 100%;
+			font-size: 2rem;
+			font-weight: normal;
+			text-align: center;
+			color: #ccc;
+			opacity: 1.0;
+			animation: ihv_fadeOut_loading 3s linear infinite;
+			display: block;
+			z-index: 1000;
+		}
+		@keyframes ihv_fadeOut_loading {
+			0% { opacity: 1.0; }
+			50% { opacity: 0.0; }
+			100% { opacity: 1.0; }
+		}
+
 	</style>
 </head>
 <body>
@@ -33,6 +52,7 @@
 	</article>
 </div>
 
+<p id="loading">Loading...</p>
 <!--div id="console"></div-->
 
 <script src="./dist/app.js"></script>
