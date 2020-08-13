@@ -1,0 +1,60 @@
+{
+  "products": [
+    {
+        "id": 1,
+        "title": "Product name",
+        "subtitle": "Product subtitle",
+        "image": "./images/bagA.png",
+        "url": "https://www.google.com/"
+    },
+    {
+        "id": 2,
+        "title": "Product name",
+        "subtitle": "Product subtitle",
+        "image": "./images/bagB.png",
+        "url": "https://www.google.com/"
+    },
+    {
+        "id": 3,
+        "title": "Product name",
+        "subtitle": "Product subtitle",
+        "image": "./images/bagC.png",
+        "url": "https://www.google.com/"
+    },
+    {
+        "id": 4,
+        "title": "Product name",
+        "subtitle": "Product subtitle",
+        "image": "./images/bagD.png",
+        "url": "https://www.google.com/"
+    },
+    {
+        "id": 5,
+        "title": "Product name",
+        "subtitle": "Product subtitle",
+        "image": "./images/bagE.png",
+        "url": "https://www.google.com/"
+    },
+    {
+        "id": 6,
+        "title": "Product name",
+        "subtitle": "Product subtitle",
+        "image": "./images/bagF.png",
+        "url": "https://www.google.com/"
+    },
+    {
+        "id": 7,
+        "title": "Product name",
+        "subtitle": "Product subtitle",
+        "image": "./images/bagG.png",
+        "url": "https://www.google.com/"
+    },
+    {
+        "id": 8,
+        "title": "Product name",
+        "subtitle": "Product subtitle",
+        "image": "./images/bagH.png",
+        "url": "https://www.google.com/"
+    }
+  ]
+}
