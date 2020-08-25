@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tiles</title>
+	<style>
+        * {
+            margin: 0;
+            padding: 0;
+            background-repeat: no-repeat;
+        }
+		body {
+            font-family: sans-serif;
+			background-color: #b9e2ff;
+/*			background-image: linear-gradient(-162deg, #FCFBF6 16%, #D7D1C5 99%);
+			background-attachment: fixed;*/
+            overflow: hidden;
+		}
+		#loading {
+			position: absolute;
+			top:50%;
+			width: 100%;
+			font-size: 2rem;
+			font-weight: normal;
+			text-align: center;
+			color: #555;
+			opacity: 1.0;
+			animation: fadeOut 3s linear infinite;
+			z-index: 1000;
+        }
+        @keyframes fadeOut {
+            0% { opacity: 1.0; }
+            50% { opacity: 0.0; }
+            100% { opacity: 1.0; }
+        }
+
+    .panel {
+      top: 20px;
+      left: 20px;
+      position: absolute;
+      z-index: 1000;
+    }
+    .button {
+      width: 100px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      margin: 2px;
+      color: #fff;
+      background-color: #00f;
+      cursor: pointer;
+      z-index: 1000;
+    }
+	</style>
+	<script src="./lib/inflate.min.js"></script>
+</head>
+<body>
+  <div class="panel">
+    <div class="button" id="action1">Action 1</div>
+    <div class="button" id="action2">Action 2</div>
+	<!--div class="button" id="action3">Action 3</div>
+	<div class="button" id="action4">Action 4</div>
+    <div class="button" id="action5">stop PB</div-->
+  </div>
+	<p id="loading">Loading...</p>
+	<div id="container3D"></div>
+	<!--div id="label">Start!</div-->
+	<script src="./dist/app.js"></script>
+</body>
+</html>
