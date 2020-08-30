@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<base href="/webgl/acttv/">
 	<title>Tiles</title>
 	<style>
         * {
@@ -12,9 +11,7 @@
         }
 		body {
             font-family: sans-serif;
-			background-color: #a2c6e2;
-/*			background-image: linear-gradient(-162deg, #FCFBF6 16%, #D7D1C5 99%);
-			background-attachment: fixed;*/
+/*			background-color: #a2c6e2;*/
             overflow: hidden;
 		}
 		#loading {
@@ -36,6 +33,7 @@
         }
 
     .panel {
+	  display: none;
       top: 20px;
       left: 20px;
       position: absolute;
@@ -53,18 +51,38 @@
       z-index: 1000;
     }
 	</style>
+	<link rel="stylesheet" href="./css/style.css">
 	<script src="./lib/inflate.min.js"></script>
 </head>
 <body>
-  <div class="panel">
-    <div class="button" id="action1">Screen Play</div>
-    <div class="button" id="action2">Subwoofer Play</div>
-	<div class="button" id="action3">Play</div>
-	<!--div class="button" id="action4">Playback</div-->
-    <!--div class="button" id="action5">stop PB</div-->
-  </div>
 	<p id="loading">Loading...</p>
 	<div id="container3D"></div>
+	<div class="panel">
+		<div class="button" id="action1">Screen Play</div>
+		<div class="button" id="action2">Subwoofer Play</div>
+		<div class="button" id="action3">Play</div>
+		<!--div class="button" id="action4">Playback</div-->
+		<!--div class="button" id="action5">stop PB</div-->
+	</div>
+
+	<article id="ui">
+		<div class="logo"></div>
+		<section class="sidebar">
+			<div id="close"></div>
+			<div id="view"></div>
+		</section>
+		<section class="footer">
+			<div class="btn" id="screen">
+				<div class="icon"></div>
+				<div class="text">Dual Cell screen technology provides the deepest black and brightest colors</div>
+			</div>
+			<div class="btn"  id="subwoofer">
+				<div class="icon"></div>
+				<div class="text">Datachable subwoofer for incredible immersive surround sound</div>
+			</div>
+		</section>
+	</article>
+
 	<!--div id="label">Start!</div-->
 	<script src="./dist/app.js"></script>
 </body>

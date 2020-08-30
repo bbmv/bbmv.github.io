@@ -1,0 +1,102 @@
+:root {
+	--color: #37ad9c;
+}
+#container3D {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+#render {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+#label {
+    padding: 1rem;
+    color: #333333;
+    position: absolute;
+    box-sizing: border-box;
+    font-size: 1.5rem;
+    top: 0;
+    left: 0;
+    text-align: left;
+    height: 20vh;
+    width: 20vw;
+    overflow: hidden;
+}
+#ui {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	pointer-events: none;
+}
+.logo {
+	position: absolute;
+	top: 2vw;
+	left: 2vw;
+	width: 13vw;
+	height: 4vw;
+	background: url("../assets/images/dual-cell-logo.png") top/contain no-repeat;
+}
+.sidebar {
+	position: absolute;
+	top: 2vw;
+	right: 2vw;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+}
+.footer {
+	position: absolute;
+	left: 50%;
+	bottom: 4vw;
+	transform: translateX(-50%);
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+#close {
+	background: url("../assets/images/close-btn.png") top/contain no-repeat;
+	width: 4vw;
+	height: 2.5vw;
+}
+#view {
+	background: url("../assets/images/base-view-btn.png") top/contain no-repeat;
+	width: 4vw;
+	height: 4vw;
+}
+#screen, #subwoofer {
+	width: 21vw;
+	border-radius: 1vw;
+	border: solid .15vw var(--color);
+	padding: .7vw;
+	font-size: 1vw;
+	color: var(--color);
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-content: center;
+	cursor: pointer;
+	pointer-events: auto;
+}
+#screen {
+	margin-right: 7vw;
+}
+.icon {
+	width: 5vw;
+	background-color: var(--color);
+	margin-right: .7vw;
+}
+.text {
+	padding: .2vw 0;
+	align-self: center;
+}
+#screen .icon {
+	background: url("../assets/images/x2-icon.png") center/contain no-repeat;
+}
+#subwoofer .icon {
+	background: url("../assets/images/sub-icon.png") center/contain no-repeat;
+}
+
+
