@@ -1,5 +1,6 @@
 :root {
 	--color: #37ad9c;
+	--factor: 1;
 }
 #container3D {
 	position: absolute;
@@ -21,8 +22,8 @@
     top: 0;
     left: 0;
     text-align: left;
-    height: 20vh;
-    width: 20vw;
+    height: calc(var(--factor) * 20vh);
+    width: calc(var(--factor) * 20vw);
     overflow: hidden;
 }
 #ui {
@@ -33,16 +34,16 @@
 }
 .logo {
 	position: absolute;
-	top: 2vw;
-	left: 2vw;
-	width: 13vw;
-	height: 4vw;
+	top: calc(var(--factor) * 2vw);
+	left: calc(var(--factor) * 2vw);
+	width: calc(var(--factor) * 13vw);
+	height: calc(var(--factor) * 4vw);
 	background: url("../assets/images/dual-cell-logo.png") top/contain no-repeat;
 }
 .sidebar {
 	position: absolute;
-	top: 2vw;
-	right: 2vw;
+	top: calc(var(--factor) * 2vw);
+	right: calc(var(--factor) * 2vw);
 	display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
@@ -50,7 +51,7 @@
 .footer {
 	position: absolute;
 	left: 50%;
-	bottom: 4vw;
+	bottom: calc(var(--factor) * 4vw);
 	transform: translateX(-50%);
 	display: flex;
 	flex-direction: row;
@@ -58,20 +59,24 @@
 }
 #close {
 	background: url("../assets/images/close-btn.png") top/contain no-repeat;
-	width: 4vw;
-	height: 2.5vw;
+	width: calc(var(--factor) * 4vw);
+	height: calc(var(--factor) * 2.5vw);
 }
 #view {
 	background: url("../assets/images/base-view-btn.png") top/contain no-repeat;
-	width: 4vw;
-	height: 4vw;
+	width: calc(var(--factor) * 4vw);
+	height: calc(var(--factor) * 4vw);
+	cursor: pointer;
+	pointer-events: auto;
 }
-#screen, #subwoofer {
-	width: 21vw;
-	border-radius: 1vw;
-	border: solid .15vw var(--color);
-	padding: .7vw;
-	font-size: 1vw;
+/*#screen, #subwoofer*/
+.btn {
+	width: calc(var(--factor) * 21vw);
+	border-radius: calc(var(--factor) * 1vw);
+	border: solid calc(var(--factor) * .15vw) var(--color);
+	padding: calc(var(--factor) * .7vw);
+	font-size: calc(var(--factor) * 1vw);
+	background-color: white;
 	color: var(--color);
 	display: flex;
 	flex-direction: row;
@@ -81,15 +86,15 @@
 	pointer-events: auto;
 }
 #screen {
-	margin-right: 7vw;
+	margin: 0 calc(var(--factor) * 7vw) 0 0;
 }
 .icon {
-	width: 5vw;
+	width: calc(var(--factor) * 5vw);
 	background-color: var(--color);
-	margin-right: .7vw;
+	margin-right: calc(var(--factor) * .7vw);
 }
 .text {
-	padding: .2vw 0;
+	padding: calc(var(--factor) * .2vw) 0;
 	align-self: center;
 }
 #screen .icon {
@@ -99,4 +104,35 @@
 	background: url("../assets/images/sub-icon.png") center/contain no-repeat;
 }
 
-
+@media screen and (max-width: 1600px) {
+	:root { --factor: 1; }
+}
+@media screen and (max-width: 1400px) {
+	:root { --factor: 1.2; }
+}
+@media screen and (max-width: 1200px) {
+	:root { --factor: 1.4; }
+}
+@media screen and (max-width: 1000px) {
+	:root { --factor: 1.7; }
+}
+@media screen and (max-width: 800px) {
+	:root { --factor: 2.0; 	}
+	.footer { flex-direction: column; }
+	#screen { margin: 0 0 calc(var(--factor) * 1vw) 0; }
+}
+@media screen and (max-width: 700px) {
+	:root { --factor: 2.25; }
+}
+@media screen and (max-width: 600px) {
+	:root { --factor: 2.5; }
+}
+@media screen and (max-width: 500px) {
+	:root { --factor: 2.75; }
+}
+@media screen and (max-width: 400px) {
+	:root { --factor: 3.0; }
+}
+@media screen and (max-width: 300px) {
+	:root { --factor: 3.5; }
+}
