@@ -1,0 +1,79 @@
+{
+	"_id": "603eccbd68df2207320a88b2",
+	"name": "Tibbo",
+	"partGroups": [{
+		"_id": "603f2e7369ccef07c9e715a1",
+		"name": "Frame",
+		"parts": [{
+			"_id": "603ec81568df2207320a88b0",
+			"name": "Frame",
+			"styles": [{
+				"_id": "603ec75d68df2207320a88ac",
+				"name": "Oak",
+				"albedo": "./assets/models/maps/qECA2hIg8zK27VNp.png",
+				"imageColor": "#c48c4a"
+			}, {
+				"_id": "603ec74368df2207320a88ab",
+				"name": "Chrome",
+				"albedo": "./assets/models/maps/2QmJb5Kcc9Vny1WL.png",
+				"metalnessColor": "#ffffff",
+				"roughnessColor": "#000000",
+				"image": "https://inhaabit-dev.s3-ap-southeast-2.amazonaws.com/ar-models/_orEHLwPE4mm2G4r.png"
+			}, {
+				"_id": "603ec72a68df2207320a88aa",
+				"name": "Ash",
+				"albedo": "./assets/models/maps/piCS9ojPgeX_Wcso.png",
+				"image": "https://inhaabit-dev.s3-ap-southeast-2.amazonaws.com/ar-models/5N662ckDkEnM5Eap.jpg"
+			}],
+			"metalnessColor": "#000000",
+			"roughness": "./assets/models/maps/SA9siDh1oh8SGN8M.png",
+			"ao": "./assets/models/maps/LGgvZeJ9YadY9c9A.png",
+			"bundle": "./assets/models/bundle1.zip",
+			"model": null
+		}]
+	}, {
+		"_id": "603eccdd68df2207320a88b4",
+		"name": "Seat",
+		"parts": [{
+			"_id": "603ec99068df2207320a88b1",
+			"name": "Seat (No Cushion)",
+			"styles": [{
+				"_id": "603ec7b168df2207320a88ae",
+				"name": "Dark Grey",
+				"albedo": "./assets/models/maps/BIn8kFemT8D3KA2F.png",
+				"image": "https://inhaabit-dev.s3-ap-southeast-2.amazonaws.com/ar-models/UXYugOt0Rp6rqSRm.jpg"
+			}, {
+				"_id": "603ec7a568df2207320a88ad",
+				"name": "Cool Taupe",
+				"albedo": "./assets/models/maps/8jf8diNISBWI-PgA.png",
+				"image": "https://inhaabit-dev.s3-ap-southeast-2.amazonaws.com/ar-models/u0a5Fh8xn3KVF1oV.png"
+			}],
+			"metalnessColor": "#000000",
+			"roughnessColor": "#dfdfdf",
+			"normal": "./assets/models/maps/I0s1dvxZAluW5LV0.png",
+			"ao": "./assets/models/maps/FwGS6X7RmlSMnWiN.png",
+			"bundle": "./assets/models/bundle2.zip",
+			"model": null
+		}, {
+			"_id": "603ec7bf68df2207320a88af",
+			"name": "Seat",
+			"styles": [{
+				"_id": "603ec7b168df2207320a88ae",
+				"name": "Dark Grey",
+				"albedo": "./assets/models/maps/BIn8kFemT8D3KA2F.png",
+				"image": "https://inhaabit-dev.s3-ap-southeast-2.amazonaws.com/ar-models/UXYugOt0Rp6rqSRm.jpg"
+			}, {
+				"_id": "603ec7a568df2207320a88ad",
+				"name": "Cool Taupe",
+				"albedo": "./assets/models/maps/8jf8diNISBWI-PgA.png",
+				"image": "https://inhaabit-dev.s3-ap-southeast-2.amazonaws.com/ar-models/u0a5Fh8xn3KVF1oV.png"
+			}],
+			"metalnessColor": "#000000",
+			"roughnessColor": "#dfdfdf",
+			"normal": "./assets/models/maps/pYpVL272uiWeAdAf.png",
+			"ao": "./assets/models/maps/GHlmYpT-O73Swqo2.png",
+			"bundle": "./assets/models/bundle3.zip",
+			"model": null
+		}]
+	}]
+}

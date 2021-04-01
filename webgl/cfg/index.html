@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Configurator</title>
+	<style>
+        * {
+            margin: 0;
+            padding: 0;
+            background-repeat: no-repeat;
+        }
+		div {box-sizing: border-box;}
+		body, html {
+			height: 100%;
+			width: 100%;
+		}
+		body {
+            font-family: sans-serif;
+			background-color: #ccc;
+			background-size: cover;
+			box-sizing: border-box;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			overflow: hidden;
+		}
+		#container0 {
+			height: 90vh;
+			width: 90vw;
+			position: relative;
+			background-color: #d7d7d7;
+			border:4px dashed red;
+		}
+		.btn {
+			height: 20px;
+			width: 20px;
+			border-radius: 50%;
+			margin-left: 10px;
+			background-color: #fff;
+			border: 3px solid #60abdf;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			cursor: pointer;
+		}
+		.button {
+			padding: 2px 7px;
+			border-radius: 10px;
+			margin: 0 4px;
+			color: #4d739d;
+			background-color: #fff;
+			font-size: 1rem;
+			border: 3px solid #60abdf;
+			cursor: pointer;
+		}
+		#tools {
+			top: 20px;
+			left: 20px;
+			height: 20px;
+			display: flex;
+			position: absolute;
+			align-items: center;
+		}
+		#progressbar {
+			margin-left: 10px;
+			height: 10px;
+			width: 150px;
+			border-radius: 5px;
+			background-color: #fff;
+		}
+
+	</style>
+</head>
+<body onload="window.Configure(
+		{
+			sku: 'gemini-teak-corner',
+			appId: '5dd62aa5fe40784ff468e8d2',
+			containerId: 'container0',
+			cameraHeight: 1.5,
+			hideUntilLoaded: false,
+			maps: 'https://api.inhaabit.com/viewer/maps/maps-nau/',
+			maxDistance: {frame: 1.5, fullscreen: 1.5},
+			minDistance: {frame: 1.05, fullscreen: 1.05},
+			noFullscreen: true,
+			show360Icon: true,
+			solid: {metalness: 1, roughness: 1, aoMapIntensity: 1, envMapIntensity: 3.4},
+			transparent: {metalness: 1, roughness: 1, aoMapIntensity: 1, envMapIntensity: 5},
+			loadingProgress: loadingProgress,
+			addSelector: addSelector
+		})">
+
+<div id="container0">
+	<div id="tools">
+		<div id="shoot" class="button" title="Make a picture">shoot</div>
+		<!--div id="top" class="button" title="top">top</div>
+		<div id="bottom" class="button" title="bottom">bottom</div-->
+		<div id="front" class="button" title="front">front</div>
+		<div id="back" class="button" title="back">back</div>
+		<div id="left" class="button" title="left">left</div>
+		<div id="right" class="button" title="right">right</div>
+
+		<div id="shadow" class="button" title="shadow">shadow</div>
+
+		<div id="progressbar"></div>
+	</div>
+</div>
+
+<script src="./dist/ui/ui.js"></script>
+<script src="./dist/configure.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+{
+	"_id": "604e010cfa0683109b9498f1",
+	"name": "Ant",
+	"partGroups": [{
+		"_id": "604e02c3edc0a016ea58c4fb",
+		"name": "1",
+		"parts": [{
+			"_id": "604e02c3edc0a016ea58c4fc",
+			"name": "1",
+			"styles": [{
+				"_id": "604e02c3edc0a016ea58c4fd",
+				"name": "Brown",
+				"albedo": "./assets/models/maps/OS71ftbfW2hQDXck..png"
+			}],
+			"ao": "./assets/models/maps/-QSm0C3FUOjKgiT5..png",
+			"metalness": "./assets/models/maps/Y8j7M55SbWfLbOOx..png",
+			"roughness": "./assets/models/maps/T1IzzIR2TqO0jkm_..png",
+			"bundle": "./assets/models/bundle1.zip",
+			"model": null
+		}]
+	}, {
+		"_id": "604e0359843b921a36d7fad3",
+		"name": "2",
+		"parts": [{
+			"_id": "604e0359843b921a36d7fad4",
+			"name": "2",
+			"styles": [{
+				"_id": "604e0359843b921a36d7fad5",
+				"name": "Brown",
+				"albedo": "./assets/models/maps/FZN85qxASDMMhFmx..png"
+			},{
+				"_id": "604e0359843b921a36d7fad5",
+				"name": "Brown 2",
+				"albedo": "./assets/models/maps/FZN85qxASDMMhFmx2..png"
+			}],
+			"ao": "./assets/models/maps/k5BQAOCNe1nr-E5r..png",
+			"metalness": "./assets/models/maps/E2fGlqBL9PGcd-jv..png",
+			"roughness": "./assets/models/maps/8d_Jj6d6834vaISL..png",
+			"bundle": "./assets/models/bundle2.zip",
+			"model": null
+		}]
+	}, {
+		"_id": "604e035a843b921a36d7fad6",
+		"name": "3",
+		"parts": [{
+			"_id": "604e035a843b921a36d7fad7",
+			"name": "3",
+			"styles": [{
+				"_id": "604e035a843b921a36d7fad8",
+				"name": "Brown",
+				"albedo": "./assets/models/maps/o0pGvgIcu9MwWJPX..png"
+			},{
+				"_id": "604e035a843b921a36d7fad8",
+				"name": "Brown 2",
+				"albedo": "./assets/models/maps/o0pGvgIcu9MwWJPX2..png"
+			}],
+			"ao": "./assets/models/maps/TdSvtQNnqlgrMGtp..png",
+			"metalness": "./assets/models/maps/xVRzvLS8Moy4KaEJ..png",
+			"roughness": "./assets/models/maps/fvLzXBqCSNVjMUTE..png",
+			"bundle": "./assets/models/bundle3.zip",
+			"model": null
+		}]
+	}]
+}
