@@ -23,7 +23,7 @@
 		}
 		#container {
 			position: relative;
-			background-color: #60abdf;
+			/* background-color: #60abdf; */
 		}
 		.button {
 			position: absolute;
@@ -31,15 +31,23 @@
 			background-color: #e2e2e2;
 			cursor: pointer;
 		}
+		#log {
+			position: absolute;
+			left: 0;
+			top: 0;
+			background-color: white;
+			color: black;
+			font-size: large;
+		}
 	</style>
 </head>
 <body>
-	<div id="container" style="transform: scale(0.9);"></div>
-
+	<div id="container"></div>
 	<div id="unit1" class="button" style="right: 0; top: 200px;">Unit#1</div>
 	<div id="unit2" class="button" style="right: 0; top: 250px;">Unit#2</div>
 	<div id="unit3" class="button" style="right: 0; top: 300px;">Unit#3</div>
 	<div id="bin" class="button" style="right: 5%; bottom: 5%">TRASH BIN</div>
-	<script src="./dist/app.js"></script>
+	<div id="log"></div>
+	<script src="./dist/grillex.js"></script>
 </body>
 </html>
