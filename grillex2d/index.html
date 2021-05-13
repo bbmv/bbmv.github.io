@@ -25,27 +25,28 @@
 			position: relative;
 			/* background-color: #60abdf; */
 		}
+		#pieces {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		#configurations {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+		}
 		.button {
 			position: absolute;
 			padding: 5px;
 			background-color: #e2e2e2;
 			cursor: pointer;
 		}
-		#log {
-			position: absolute;
-			left: 0;
-			top: 0;
-			background-color: white;
-			color: black;
-			font-size: large;
-		}
 	</style>
 </head>
 <body>
 	<div id="container"></div>
-	<div id="unit1" class="button" style="right: 0; top: 200px;">Unit#1</div>
-	<div id="unit2" class="button" style="right: 0; top: 250px;">Unit#2</div>
-	<div id="unit3" class="button" style="right: 0; top: 300px;">Unit#3</div>
+	<div id="pieces"></div>
+	<div id="configurations"></div>
 	<div id="bin" class="button" style="right: 5%; bottom: 5%">TRASH BIN</div>
 	<div id="log"></div>
 	<script src="./dist/grillex.js"></script>
