@@ -1,0 +1,22 @@
+{
+  "config": {
+		"levels": [],
+		"chessboard": {
+			"image": "./assets/images/chessboard/chessboard.png"
+		},
+		"chessmen": {
+			"king": {
+				"image": "./assets/images/chessmen/king.png"
+			},
+			"queen": {
+				"image": "./assets/images/chessmen/queen.png"
+			},
+			"rook": {
+				"image": "./assets/images/chessmen/rook.png"
+			},
+			"pawn": {
+				"image": "./assets/images/chessmen/pawn.png"
+			}
+		}
+	}
+}

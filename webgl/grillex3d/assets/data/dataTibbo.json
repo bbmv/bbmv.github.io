@@ -1,0 +1,78 @@
+{
+	"_id": "603eccbd68df2207320a88b2",
+	"name": "Tibbo",
+	"partGroups": [{
+		"_id": "603f2e7369ccef07c9e715a1",
+		"name": "Frame",
+		"parts": [{
+			"_id": "603ec81568df2207320a88b0",
+			"name": "Frame",
+			"styles": [{
+				"_id": "603ec75d68df2207320a88ac",
+				"name": "Oak",
+				"albedo": "https://inhaabit-capi.s3-ap-southeast-2.amazonaws.com/ar-models/Tds6TbHts48oafUv.png",
+				"imageColor": "#c48c4a"
+			}, {
+				"_id": "603ec74368df2207320a88ab",
+				"name": "Chrome",
+				"albedo": "https://inhaabit-capi.s3-ap-southeast-2.amazonaws.com/ar-models/mpI02R2Ksr5yjXKz.png",
+				"metalnessColor": 1,
+				"roughnessColor": 0,
+				"image": "https://inhaabit-capi.s3-ap-southeast-2.amazonaws.com/ar-models/xasHNzctZl6MH_ng.png"
+			}, {
+				"_id": "603ec72a68df2207320a88aa",
+				"name": "Ash",
+				"albedo": "https://inhaabit-capi.s3-ap-southeast-2.amazonaws.com/ar-models/Itm8GZ8D9T-RytV5.png",
+				"image": "https://inhaabit-capi.s3-ap-southeast-2.amazonaws.com/ar-models/PommomI3Do_goKu5.jpg"
+			}],
+			"metalnessColor": 0,
+			"roughness": "https://inhaabit-capi.s3-ap-southeast-2.amazonaws.com/ar-models/93_ktj0Bef1B3uYl.png",
+			"ao": "https://inhaabit-capi.s3-ap-southeast-2.amazonaws.com/ar-models/cVoY57Yf19WYDVh9.png",
+			"bundle": "https://inhaabit-capi.s3-ap-southeast-2.amazonaws.com/ar-models/603ec81568df2207320a88b0/bundle.zip"
+		}]
+	}, {
+		"_id": "603eccdd68df2207320a88b4",
+		"name": "Seat",
+		"parts": [{
+			"_id": "603ec99068df2207320a88b1",
+			"name": "Seat (No Cushion)",
+			"styles": [{
+				"_id": "603ec7b168df2207320a88ae",
+				"name": "Dark Grey",
+				"albedo": "https://inhaabit-capi.s3-ap-southeast-2.amazonaws.com/ar-models/eM77FNogqmmeAjlH.png",
+				"image": "https://inhaabit-capi.s3-ap-southeast-2.amazonaws.com/ar-models/QGGF45QpjmgE-iw4.jpg",
+				"imageColor": "#6f6f6f"
+			}, {
+				"_id": "603ec7a568df2207320a88ad",
+				"name": "Cool Taupe",
+				"albedo": "https://inhaabit-capi.s3-ap-southeast-2.amazonaws.com/ar-models/k_AydkrzqlLVI3dM.png",
+				"image": "https://inhaabit-capi.s3-ap-southeast-2.amazonaws.com/ar-models/smYp0BQj43JsEDLN.png"
+			}],
+			"metalnessColor": 0,
+			"roughnessColor": 0.8745098039215686,
+			"normal": "https://inhaabit-capi.s3-ap-southeast-2.amazonaws.com/ar-models/TX8Phg0SU9zmJIzy.png",
+			"ao": "https://inhaabit-capi.s3-ap-southeast-2.amazonaws.com/ar-models/4mrll4aOgI_OK90g.png",
+			"bundle": "https://inhaabit-capi.s3-ap-southeast-2.amazonaws.com/ar-models/603ec99068df2207320a88b1/bundle.zip"
+		}, {
+			"_id": "603ec7bf68df2207320a88af",
+			"name": "Seat",
+			"styles": [{
+				"_id": "603ec7b168df2207320a88ae",
+				"name": "Dark Grey",
+				"albedo": "https://inhaabit-capi.s3-ap-southeast-2.amazonaws.com/ar-models/eM77FNogqmmeAjlH.png",
+				"image": "https://inhaabit-capi.s3-ap-southeast-2.amazonaws.com/ar-models/QGGF45QpjmgE-iw4.jpg",
+				"imageColor": "#6f6f6f"
+			}, {
+				"_id": "603ec7a568df2207320a88ad",
+				"name": "Cool Taupe",
+				"albedo": "https://inhaabit-capi.s3-ap-southeast-2.amazonaws.com/ar-models/k_AydkrzqlLVI3dM.png",
+				"image": "https://inhaabit-capi.s3-ap-southeast-2.amazonaws.com/ar-models/smYp0BQj43JsEDLN.png"
+			}],
+			"metalnessColor": 0,
+			"roughnessColor": 0.8745098039215686,
+			"normal": "https://inhaabit-capi.s3-ap-southeast-2.amazonaws.com/ar-models/8M0aPvB78gGmhKkx.png",
+			"ao": "https://inhaabit-capi.s3-ap-southeast-2.amazonaws.com/ar-models/GHlmYpT-O73Swqo2.png",
+			"bundle": "https://inhaabit-capi.s3-ap-southeast-2.amazonaws.com/ar-models/603ec7bf68df2207320a88af/bundle.zip"
+		}]
+	}]
+}

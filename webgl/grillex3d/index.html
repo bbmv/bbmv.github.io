@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Grillex</title>
+	<style>
+        * {
+            margin: 0;
+            padding: 0;
+            background-repeat: no-repeat;
+        }
+		div {box-sizing: border-box;}
+		body, html {
+			height: 100%;
+			width: 100%;
+		}
+		body {
+            font-family: sans-serif;
+			background-color: #ccc;
+			background-size: cover;
+			box-sizing: border-box;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			overflow: hidden;
+		}
+		#container {
+			height: 90vh;
+			width: 90vw;
+			position: relative;
+			background-color: #d7d7d7;
+			/*border:4px dashed red;*/
+		}
+		.btn {
+			height: 20px;
+			width: 20px;
+			border-radius: 50%;
+			margin: 2px 4px;
+			background: #7b7b7b no-repeat 50% 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			cursor: pointer;
+		}
+		.button {
+			padding: 2px 7px;
+			border-radius: 10px;
+			margin: 2px 4px;
+			color: #4d739d;
+			background-color: #fff;
+			font-size: 1rem;
+			border: 3px solid #60abdf;
+			cursor: pointer;
+		}
+		#tools {
+			top: 20px;
+			left: 20px;
+			height: 20px;
+			display: flex;
+			flex-wrap: wrap;
+			position: absolute;
+			align-items: center;
+		}
+		#selectors {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+		}
+		#progressbar {
+			margin: 2px 4px;
+			height: 10px;
+			width: 150px;
+			border-radius: 5px;
+			background-color: #fff;
+		}
+		@keyframes loader {
+			100% {
+				transform: rotate(360deg);
+			}
+		}
+		#loadingCircle {
+			left: 50%;
+			top: 50%;
+			width: 80px;
+			height: 80px;
+			position: absolute;
+			display: none;
+			justify-content: center;
+			align-items: center;
+			border: 9px solid #000291;
+			border-left-color: #333;
+			border-bottom-color: #6d6d91;
+			border-right-color: transparent;
+			border-radius: 100%;
+			animation: loader 0.7s infinite linear;
+			opacity: 0.5;
+		}
+	</style>
+</head>
+<body>
+<div id="container"></div>
+<div id="tools">
+	<div id="progressbar"></div>
+	<div id="selectors"></div>
+</div>
+<div id="loadingCircle"></div>
+<script src="./dist/grillex.js"></script>
+</body>
+</html>
