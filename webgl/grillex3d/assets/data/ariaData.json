@@ -1554,7 +1554,8 @@
 	],
 	"styleCollections": [
       {
-		"styles": [{
+		"styles": [
+			{
 			"_id": "5b303d5387d2b40ca8eb8fd5",
 			"name": "Alum: Woodgrain Spotted Gum",
 			"slug": "alum-woodgrain-spotted-gum",
@@ -1568,7 +1569,8 @@
 			"path": "alum-woodgrain-spotted-gum",
 			"cartUrl": "http://streetfurniture.com/au/spotted-gum",
 			"modelUrl": "http://streetfurniture.com/au/spotted-gum"
-		}, {
+		},
+			{
 			"_id": "5b303d5387d2b40ca8eb8fd7",
 			"name": "Hardwood: Jarrah",
 			"slug": "hardwood-jarrah",
@@ -1582,7 +1584,8 @@
 			"priceClass": 0,
 			"cartUrl": "http://streetfurniture.com/au/jarrah",
 			"modelUrl": "http://streetfurniture.com/au/jarrah"
-		}, {
+		},
+			{
 			"_id": "5baed7467140db2eb63229b7",
 			"name": "Alum: Anodised",
 			"slug": "alum-anodised",
@@ -1597,7 +1600,8 @@
 			"path": "alum-anodised",
 			"cartUrl": "http://streetfurniture.com/au/anodised-aluminum",
 			"modelUrl": "http://streetfurniture.com/au/anodised-aluminum"
-		}, {
+		},
+			{
 			"_id": "5b303d5387d2b40ca8eb8fd3",
 			"name": "Alum: Woodgrain Bush Cherry",
 			"slug": "alum-woodgrain-bush-cherry",
@@ -1611,7 +1615,8 @@
 			"priceClass": 2,
 			"cartUrl": "http://streetfurniture.com/au/bush-cherry",
 			"modelUrl": "http://streetfurniture.com/au/bush-cherry"
-		}, {
+		},
+			{
 			"_id": "5b30382687d2b40ca8eb8fa3",
 			"name": "Alum: Woodgrain Grey Oak",
 			"slug": "alum-woodgrain-grey-oak",
@@ -1625,7 +1630,8 @@
 			"image": "https://inhaabit-sydney.s3-ap-southeast-2.amazonaws.com/ar-models/HmwOYQ5hnLn9j-PS.jpg",
 			"cartUrl": "http://streetfurniture.com/au/woodland-grey",
 			"modelUrl": "http://streetfurniture.com/au/woodland-grey"
-		}, {
+		},
+			{
 			"_id": "5b303a4c87d2b40ca8eb8fb7",
 			"name": "Alum: PC Pearl White",
 			"slug": "alum-pc-pearl-white",
@@ -1640,7 +1646,8 @@
 			"priceClass": 2,
 			"cartUrl": "http://streetfurniture.com/au/pearl-white",
 			"modelUrl": "http://streetfurniture.com/au/pearl-white"
-		}, {
+		},
+			{
 			"_id": "5b30392987d2b40ca8eb8faa",
 			"name": "Alum: PC Night Sky",
 			"slug": "alum-pc-night-sky",
