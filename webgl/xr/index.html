@@ -14,6 +14,7 @@
 			overflow: hidden;
 			touch-action: none;
 			display: flex;
+			user-select: none;
 		}
 		.iframe-container {
 			width: 100%;
@@ -27,8 +28,8 @@
 			position: absolute;
 			opacity: 1;
 			/*background-color: #99a4df;*/
-			font-size: 1rem;
-			color: #000;
+			font-size: 1.2rem;
+			color: #fff;
 			z-index: 1;
 			overflow-y: scroll;
 			/*display: none;*/
@@ -135,7 +136,7 @@
 	(async function() {
 
 		configurator.startEngine();
-		configurator.setBounds( {x: -2, y: 0, z: -2.5}, {x: 2, y: 2.5, z:2.5} );
+		// configurator.setBounds( {x: -2, y: 0, z: -2.5}, {x: 2, y: 2.5, z:2.5} );
 		initLoadingEvent();
 
 		configurator.initXR();
