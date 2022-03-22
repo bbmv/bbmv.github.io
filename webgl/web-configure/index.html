@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<base href="/webgl/build/">
+	<title>Configurator Test</title>
+	<link rel="stylesheet" href="/css/style.css">
+	<style>
+		html, body {
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			touch-action: none;
+			display: flex;
+		}
+		.iframe-container {
+			width: 100%;
+			height: 100%;
+		}
+	</style>
+</head>
+<body>
+
+<div class="panel">
+	<div id="progressbar"></div>
+	<div id="selectors"></div>
+</div>
+
+<div class="iframe-container">
+	<div id="container0" style="width:100%; height:100%;"></div>
+</div>
+
+<script src="/dist/configure.js"></script>
+<script>
+	(async function() {
+		const configurator = new Configurator({
+			debug: true,
+			appId: '6131c24699b4e10333925012',
+			gtag: 'G-XVYV33XJV2',
+			containerId: 'container0',
+			solid: {
+				'envMapIntensity': 1.0,
+			},
+			transparent: {
+				'envMapIntensity': 5
+			},
+			cameraHeight: 3,
+			minDistance: 0.5,
+			materialSide: 'double',
+		});
+
+		async function createFixture(modelUrl, position, scale, rotation, rotationMask, name) {
+			const product = await configurator.newProduct(modelUrl);
+			product.setPosition(position[0], position[1], position[2]);
+			product.setScale(scale[0], scale[1], scale[2]);
+			product.setRotation(rotation[0], rotation[1], rotation[2]);
+			product.boundingShell.mesh.name = name;
+			product.rotationMask = rotationMask;
+			product.setUVScale(scale[0], scale[1]);
+			product.draggable = false;
+
+			if(name === 'floor') {
+				product.setUVScale(scale[0], scale[2]);
+			} else {
+				product.setUVScale(scale[0], scale[1]);
+			}
+			return product;
+		}
+
+		async function initWithRoom(width, depth) {
+			const HEIGHT = 2.5;
+			const THICKNESS = 0.1;
+			const WALL_URL = 'https://capi.inhaabit.com/product/wall-1x1';
+			const FLOOR_URL = 'https://capi.inhaabit.com/product/floor-1x1';
+
+			configurator.startEngine();
+			configurator.setBounds( {x: -width/2, y: 0, z: -depth/2}, {x: width/2, y: HEIGHT, z:depth/2} );
+
+			configurator.initHighlighter();
+			configurator.initInteraction();
+
+			configurator.initView();
+
+			await createFixture(WALL_URL, [0, 0, depth/2 + THICKNESS/2], [width + 2*THICKNESS, HEIGHT, 1], [0, Math.PI, 0], true, 'wall');
+			await createFixture(WALL_URL, [-width/2-THICKNESS/2, 0, 0], [depth, HEIGHT, 1], [0, Math.PI / 2, 0], true, 'wall');
+			await createFixture(WALL_URL, [0, 0, -depth/2 - THICKNESS/2], [width + 2*THICKNESS, HEIGHT, 1], [0, 0, 0], true, 'wall');
+			await createFixture(WALL_URL, [width/2+THICKNESS/2, 0, 0], [depth, HEIGHT, 1], [0, -Math.PI / 2, 0], true, 'wall');
+			const floor = await createFixture(FLOOR_URL, [0, 0, 0], [width, 1, depth], [0, 0, 0], false, 'floor');
+		}
+
+		await initWithRoom(4, 3);
+
+		const products = [];
+
+		const product1 = await configurator.newProduct('https://capi.inhaabit.com/product/pau4wfw(p68186c5a)');//'https://capi.inhaabit.com/product/about-a-lounge-aal81'); // 'https://capi.inhaabit.com/product/reversi-sofa'
+		product1.selectable = true;
+		product1.draggable = true;
+		product1.setPosition(1, 0.005, 0.7);
+		product1.setRotation(0, Math.PI*0.3, 0);
+		product1.rotatesToBounds = true;
+		products.push(product1.backupData);
+
+		const product2 = await configurator.newProduct('https://capi.inhaabit.com/product/about-a-lounge-aal81');//'https://capi.inhaabit.com/product/about-a-lounge-aal81'); // 'https://capi.inhaabit.com/product/reversi-sofa'
+		product2.selectable = true;
+		product2.draggable = true;
+		product2.setPosition(0.7, 0.005, -0.5);
+		product2.setRotation(0, Math.PI*0.5, 0);
+		product2.rotatesToBounds = true;
+		products.push(product2.backupData);
+
+		const product3 = await configurator.newProduct('https://capi.inhaabit.com/product/p99630c3a');//'https://capi.inhaabit.com/product/about-a-lounge-aal81'); // 'https://capi.inhaabit.com/product/reversi-sofa'
+		product3.selectable = true;
+		product3.draggable = true;
+		product3.setPosition(1.7, 0.005, 0);
+		product3.rotatesToBounds = true;
+
+		const product4 = await configurator.newProduct('https://capi.inhaabit.com/product/p99631c4e');//'https://capi.inhaabit.com/product/about-a-lounge-aal81'); // 'https://capi.inhaabit.com/product/reversi-sofa'
+		product4.selectable = true;
+		product4.draggable = true;
+		product4.setPosition(-1.5, 0.005, 0);
+		product4.rotatesToBounds = true;
+
+		configurator.initView();
+		configurator.setCameraAngle([0, 3, 9]);
+
+		const measurements = configurator.setMeasurements(false);
+		measurements.enabled = true;
+	})();
+
+</script>
+</body>
+</html>
