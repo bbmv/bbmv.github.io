@@ -1,0 +1,3 @@
+<FilesMatch "\.(usdz)$">
+Header set Content-Disposition attachment
+</FilesMatch>
