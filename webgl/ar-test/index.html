@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Configurator WebXR Test</title>
+	<link rel="stylesheet" href="/css/style.css">
+	<!--base href="../"-->
+
+	<style>
+		html, body {
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			touch-action: none;
+			display: flex;
+			user-select: none;
+		}
+		.iframe-container {
+			width: 100%;
+			height: 100%;
+		}
+		#selectors {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+		}
+		#progressbar {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			height: 10px;
+			width: 150px;
+			border-radius: 5px;
+			background-color: #fff;
+			visibility: hidden;
+		}
+		.panel {
+			top: 0px;
+			left: 15%;
+			height: 100px;
+			width: 70%;
+			position: absolute;
+			/*z-index: 10002;*/
+		}
+		#scanner {
+			position: absolute;
+			height: 270px;
+			width: 200px;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			border-radius: 5px;
+			color: #000;
+			background-color: #fff;
+			display: flex;
+			justify-content: center;
+			/*align-items: center;*/
+			visibility: hidden;
+		}
+		#_ar-back-btn, #_3d-back-btn, #_ar-quit-btn, #_3d-quit-btn {
+			top: 20px;
+		}
+		#_ar-back-btn, #_3d-back-btn {
+			left: 20px;
+		}
+		#_ar-quit-btn, #_3d-quit-btn {
+			right: 20px;
+		}
+	</style>
+</head>
+<body>
+
+<div id="dom-overlay" class="layer">
+	<div id="_ar-tools" class="layer">
+		<div id="_ar-back-btn" class="btn"><</div>
+		<div id="_ar-quit-btn" class="btn">3D</div>
+		<div id="scanner">Scan the floor!</div>
+	</div>
+	<div id="_3d-tools" class="layer">
+		<div id="_3d-back-btn" class="btn"><</div>
+		<div id="_3d-quit-btn" class="btn">AR</div>
+	</div>
+	<div id="progressbar"></div>
+</div>
+<div id="product-list">
+	<div class="product" id="product1" data-url="https://capi.inhaabit.com/product/ari-chair"></div>
+	<div class="product" id="product2" data-url="https://capi.inhaabit.com/product/p878600w"></div>
+	<div class="product" id="product3" data-url="https://capi.inhaabit.com/product/p879010w"></div>
+</div>
+<div class="iframe-container">
+	<div id="container0" style="position: absolute; width:70%; height:70%; top: 10%; left: 15%;"></div>
+</div>
+
+<script src="/dist/configure.js"></script>
+<script>
+	let configurator = new Configurator({
+		debug: true,
+		appId: '6131c24699b4e10333925012',
+		gtag: 'G-XVYV33XJV2',
+		containerId: 'container0',
+		maps: 'maps_interior/photo2.hdr',
+		solid: {
+			'envMapIntensity': 1.0,
+		},
+		transparent: {
+			'envMapIntensity': 5
+		},
+		cameraHeight: 1,
+		minDistance: 0.5,
+		materialSide: 'double',
+	});
+
+	(async function() {
+
+		const domOverlay = document.getElementById('dom-overlay');
+
+		const _3dTools = document.getElementById('_3d-tools');
+		const _3dBackBtn = document.getElementById('_3d-back-btn');
+		const _3dQuitBtn = document.getElementById('_3d-quit-btn');
+
+		const _ARTools = document.getElementById('_ar-tools');
+		const _ARBackBtn = document.getElementById('_ar-back-btn');
+		const _ARQuitBtn = document.getElementById('_ar-quit-btn');
+
+		const productList = document.getElementById('product-list');
+		const productBtns =  [...document.getElementsByClassName('product')];
+
+		const scanner = document.getElementById('scanner');
+
+		let currentUrl = null;
+		let production = null;
+		let arMode = false;
+		let loaded = false;
+		let positioned = false;
+
+		const centerOf3DScene = { x: 0, y: 0, z: -7 };
+
+		productBtns.forEach( toARBtn => {
+			toARBtn.addEventListener('pointerdown', async event => {
+				productList.style.visibility = 'hidden';
+				currentUrl = event.target.dataset.url;
+				if(arMode) {
+					configurator.setWebXR(true); // AR activation
+					loaded = false;
+				} else {
+					loaded = true;
+					production = await configurator.newProduct(currentUrl);
+					configurator.initView();
+				}
+			});
+		});
+
+		_ARQuitBtn.addEventListener('pointerdown', event => {
+			configurator.setWebXR(false); // AR quit
+		});
+
+		_3dQuitBtn.addEventListener('pointerdown', event => {
+			setARMode();
+			configurator.setWebXR(true);
+		});
+
+		[_3dBackBtn, _ARBackBtn].forEach( b => {
+			b.addEventListener('pointerdown', event => {
+				productList.style.visibility = 'visible';
+			});
+		});
+
+
+		window.addEventListener('trackingStateUpdated', async (event) => {
+		if(!arMode) return;
+		console.log(event.detail.state);
+		switch(event.detail.state) {
+			case 'tracking':
+				// if(loaded) return;
+				console.log('TRACK');
+				scanner.style.visibility = 'visible';
+				positioned = false;
+				break;
+			case 'running':
+				if(!loaded) {
+					loaded = true;
+					production = await configurator.newProduct(currentUrl);
+				}
+				if(production!==null && !positioned) {
+					const pos = event.detail.position;
+					production.setPosition(pos.x, pos.y, pos.z);
+					positioned = true;
+					scanner.style.visibility = 'hidden';
+				}
+				break;
+			case 'stopped':
+				set3DMode();
+				production.setPosition(centerOf3DScene.x, centerOf3DScene.y, centerOf3DScene.z);
+				repaintHTMLElements(); console.log('STOP');
+				// configurator.initView(); // Похоже, где-то возникает ошибка
+				break;
+			}
+		});
+
+		function setARMode() {
+			_ARTools.style.visibility = 'visible';
+			_3dTools.style.visibility = 'hidden';
+			attachTo(productList, domOverlay);
+			arMode = true;
+		}
+
+		function set3DMode() {
+			_ARTools.style.visibility = 'hidden';
+			_3dTools.style.visibility = 'visible';
+			attachTo(productList, document.body);
+			arMode = false;
+		}
+
+		configurator.startEngine();
+		initLoadingEvent();
+		const status = await configurator.isXRSupported();
+
+		if(status) {
+			setARMode();
+		} else {
+			set3DMode();
+		}
+	})();
+
+	function initLoadingEvent() {
+
+		window.addEventListener('rcload', event => {
+			loadingProgress(event.detail.totalProgress*100);
+		});
+	}
+
+	function loadingProgress(percent) {
+
+			const progressbar = document.getElementById('progressbar');
+			progressbar.style.visibility = 'visible';
+			progressbar.style.background = 'linear-gradient(to right, #60abdf ' + percent + '%, #e1e1e1 ' + percent + '%)';
+			if(percent === 100) {
+				firstLoading = false;
+				progressbar.style.visibility = 'hidden';
+			}
+	}
+
+	function repaintHTMLElements() {
+		const iframeContainer =  document.getElementsByClassName('iframe-container')[0];
+		iframeContainer.style.display = 'none';
+		iframeContainer.style.display = 'block';
+
+		const container = document.getElementById('container0');
+
+		const canvas = configurator.getRenderer().domElement;
+		canvas.style.backgroundColor = 'green';
+		container.appendChild(canvas);
+	}
+
+	function repaintHTMLElement(el) {
+		const display = getComputedStyle(el, null).getPropertyValue('display');
+		el.style.display = 'none';
+		el.style.display = display;
+	}
+
+	function attachTo(el, base) {
+		el.parentNode.removeChild(el);
+		base.appendChild(el);
+		return el;
+	}
+</script>
+</body>
+</html>
