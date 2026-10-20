@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MemoryChess</title>
+
+	<style>
+        * {
+            margin: 0;
+            padding: 0;
+            background-repeat: no-repeat;
+        }
+		body {
+            font-family: 'Ubuntu', sans-serif;
+			background-color: #000;
+			background-size: cover;
+            overflow: hidden;
+			width: 100vw;
+			height: 100vh;
+			user-select: none;
+		}
+	</style>
+</head>
+<body>
+<!--div id="main-container"-->
+	<div id="statistics">
+		<div id="attempts">
+			<div class="circle" id="attempt01"></div>
+			<div class="circle" id="attempt02"></div>
+			<div class="circle" id="attempt03"></div>
+			<div class="circle" id="attempt04"></div>
+		</div>
+		<div id="level">
+			<div id="progressbar"></div>
+			<div id="progress-str">0%</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="message-wrapper">
+			<div id="message"></div>
+		</div>
+		<div id="board-place"></div>
+		<div class="tools">
+			<div id="next">Next</div>
+			<div id="answer">Ответ</div>
+		</div>
+	</div>
+	<!--div id="comments"></div>
+	<!--div id="warring">Please rotate your device to portrait</div-->
+	<div id="bubble">
+		<p id="text">Верно!</p>
+		<div id="sign" class="sign pass-img"></div>
+	</div>
+	<div id="logo"></div>
+<div id="keyboard" class="keyboard">
+	<div class="btn number">1</div><div class="btn number">2</div><div class="btn number">3</div><div class="btn number">4</div>
+	<div class="btn number">5</div><div class="btn number">6</div><div class="btn number">7</div><div class="btn backspace">&#8592;</div>
+	<div class="btn letter">a</div><div class="btn letter">b</div><div class="btn letter">c</div><div class="btn letter">d</div>
+	<div class="btn letter">e</div><div class="btn letter">f</div><div class="btn letter">g</div><div class="btn letter">h</div>
+</div>
+<!--/div-->
+<script src="./dist/app.js"></script>
+
+</body>
+</html>
